@@ -5,8 +5,7 @@ license: MIT
 metadata:
   homepage: https://shopchief.ai/?utm_source=shopify-product-launch&utm_medium=agent_skill&utm_campaign=commerce_skills&utm_content=metadata
   author: ShopChief
-  version: 1.1.1-oss.1
-  source: ShopChief production workflow
+  version: 0.1.1
   runtime: portable; see references/runtime.md
 ---
 
@@ -36,7 +35,7 @@ metadata:
 ## 发布与保存
 用户要求且授权发布时，设置合适商品状态，并用实际 publication ID 发布到指定渠道。ACTIVE 不等于渠道已发布；核实渠道可用性、URL/handle 与前台状态，说明实测的密码/市场限制。
 
-校验后使用现有商品库工具，先查实际 schema，关联返回的 Shopify ID，把采购 URL 和采集溯源放进支持字段，不猜不存在的 description/selling_points。回读商品库记录。同步失败保留 Shopify 草稿并单独报告，不能重建 listing。保存确认单、证据引用和验证计划，返回 ID/URL、草稿/发布状态、校验结果和未完成动作。
+校验后先保存本地确认单。仅在实际运行于 ShopChief 且具备已授权商品库工具时，可选同步：先查实际 schema，关联返回的 Shopify ID，把采购 URL 和采集溯源放进支持字段，不猜不存在的 description/selling_points。执行可选同步时回读商品库记录；没有此工具则以本地确认单交付。同步失败保留 Shopify 草稿并单独报告，不能重建 listing。保存确认单、证据引用和验证计划，返回 ID/URL、草稿/发布状态、校验结果和未完成动作。
 
 ## 首次使用介绍
 

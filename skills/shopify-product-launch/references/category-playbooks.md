@@ -4,7 +4,7 @@ Each playbook supplies: (a) category-specific fact-sheet attributes and
 (b) the FAQ question set for Step 2. If the product's category is not
 listed, use the **Generic** playbook.
 
-Tags and collections are ALWAYS empty — never defined per category.
+Tags and collections follow the merchant's confirmed taxonomy. These category playbooks do not prescribe tags or collections. For updates, preserve existing assignments unless the user has authorized a specific change; an unknown value is not an instruction to clear it.
 
 ## Bag (tote / shoulder / crossbody / backpack)
 
@@ -33,5 +33,4 @@ Tags and collections are ALWAYS empty — never defined per category.
 - FAQ: care & maintenance · materials & safety · what's included · shipping
   & returns.
 
-Tags and collections are always empty for every category. This file does
-not define tag policies; do not add one.
+For a new product, propose classification only from confirmed merchant rules. If no classification is supplied, mark it unresolved in the launch sheet; omit unsupported fields rather than sending empty lists to an existing product.

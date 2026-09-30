@@ -34,7 +34,7 @@ def main():
             errors.append(f"{folder.name}: invalid skill name")
         if not re.search(r"^description:\s*\S", pieces[1], re.M):
             errors.append(f"{folder.name}: missing description")
-        desc = next(x["description"] for x in catalog if x["name"] == folder.name)
+        desc = next((x["description"] for x in catalog if x["name"] == folder.name), "")
         if not desc or len(desc) > 1024:
             errors.append(f"{folder.name}: invalid description length")
     for entry in ROOT.glob("skills/*/SKILL*.md"):
@@ -69,11 +69,12 @@ def main():
                 if not rel:
                     continue
                 resolved = (path.parent / rel).resolve()
-                if not resolved.is_relative_to(ROOT) or not resolved.exists():
+                boundary = ROOT / "skills" / path.relative_to(ROOT).parts[1] if path.relative_to(ROOT).parts[0] == "skills" else ROOT
+                if not resolved.is_relative_to(boundary) or not resolved.exists():
                     errors.append(f"{path.relative_to(ROOT)}: broken/escaping reference {target}")
     if errors:
         raise SystemExit("\n".join(errors))
-    print(f"PASS: {len(actual)} skills; {checked} files; catalog, provenance, relative links and secret-pattern checks")
+    print(f"PASS: {len(actual)} skills; {checked} files; catalog, bundled licenses, relative links and secret-pattern checks")
 
 if __name__ == "__main__":
     main()

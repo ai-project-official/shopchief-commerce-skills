@@ -7,7 +7,7 @@ license: MIT
 metadata:
   homepage: https://shopchief.ai/?utm_source=dtc-launch-marketing&utm_medium=agent_skill&utm_campaign=commerce_skills&utm_content=metadata
   author: ShopChief; adapted from Corey Haines
-  version: 0.1.0
+  version: 0.1.1
   upstream: https://github.com/coreyhaines31/marketingskills/tree/5b2c0007766c6a1cf1d53fd8fc73e979e0821022/skills/launch
 ---
 

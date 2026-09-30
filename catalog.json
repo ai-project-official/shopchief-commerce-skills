@@ -3,240 +3,240 @@
     "name": "blog-article-writer",
     "description": "Write complete ecommerce SEO/GEO articles from selected keywords or briefs, using verified product facts, merchant images and internal links. Deliver final copy or an authorized unpublished store draft; keyword discovery belongs to blog-keyword-research.",
     "license": "MIT",
-    "source_type": "shopchief"
+    "version": "0.1.1"
   },
   {
     "name": "blog-keyword-research",
     "description": "Independently research blog keywords, intent clusters, topic priorities and handoff briefs. Planning only: no article writing, final image selection or Shopify writes.",
     "license": "MIT",
-    "source_type": "shopchief"
+    "version": "0.1.1"
   },
   {
     "name": "cart-abandonment-recovery",
     "description": "Trigger: Set up automated email and SMS sequences to win back shoppers who abandon their items during checkout.",
     "license": "MIT",
-    "source_type": "shopchief"
+    "version": "0.1.1"
   },
   {
     "name": "collection-page-seo",
     "description": "Audit and optimize e-commerce collection (category) pages: metadata, H1 and intro copy, FAQ, product cards, pagination and infinite-scroll discoverability, Product + ItemList + BreadcrumbList schema, and faceted navigation rules. Use when the user gives collection URLs (an exploratory sample of 10) and asks why category pages do not rank, how to handle filter parameters, or wants per-page Title/Description/H1/copy/link recommendations. Product detail pages use product-page-seo; whole-site technical health uses site-seo-audit; conversion and trust optimization of product pages uses shopify-product-page-cro — this skill covers only the collection-page layer.",
     "license": "MIT",
-    "source_type": "shopchief"
+    "version": "0.1.1"
   },
   {
     "name": "competitor-deep-analysis",
     "description": "Identify market gaps and strategic advantages through systematic multi-layer intelligence gathering and review mining, localized for DTC and Shopify storefronts: competitor Shopify stores, Amazon listings, TikTok/Meta ad creative libraries, and independent-site pricing pages. Use for competitor commercial intelligence: positioning, product depth, pricing, marketing channels, and customer sentiment. Optional DataForSEO quantitative intelligence (traffic surface, keyword gap) is available under contract. Do not use for domain or technical health checks, backlinks, or AI visibility audits (use site-seo-audit), for keyword metric lookups (use keyword-analysis), or for content editorial planning (use seo-content-research).",
     "license": "MIT",
-    "source_type": "shopchief"
+    "version": "0.1.1"
   },
   {
     "name": "content-decay-diagnosis",
     "description": "Use when a store money page — a collection page, product page, or key landing page — shows search-performance decay (falling clicks, impressions, or rankings over time) and the user wants the cause and a fix. GSC and GA4 data are connected data or supplied files (the input contract specifies the CSV formats; they are optional — without them only a shallow \"potential decay\" diagnosis is possible and must be labeled). Live page state (status, canonical, Title, H1, content) is checked with DataForSEO OnPage Instant Pages. Update briefs cover new Title/Description/H1, page module and merchandising edits, and Schema; consolidation covers collection merges with a 301 map. Do not use for site-wide technical problems (use site-seo-audit) or for multiple URLs competing for the same query (use keyword-cannibalization).",
     "license": "MIT",
-    "source_type": "shopchief"
+    "version": "0.1.1"
   },
   {
     "name": "copywriting",
     "description": "Use when writing, rewriting, or improving marketing copy, product listing copy, product titles, product descriptions, bullet points, SEO descriptions, landing-page copy, ad copy text, or CTA text. Do not use for image generation or social publishing strategy. Long-form keyword-based merchant blogs use available blog-article-writer guidance for article SEO/GEO, merchant images and internal links. Keep product, landing-page, ad and email copy here.",
     "license": "MIT",
-    "source_type": "shopchief"
+    "version": "0.1.1"
   },
   {
     "name": "crawl-index-audit",
     "description": "Diagnose why pages are not discovered, not rendered, not eligible for indexing, or not actually indexed. Judges the four states separately instead of conflating them, and checks robots conflicts, sitemap quality, noindex, parameter/pagination/filter URLs, host and trailing-slash variants, soft 404s, redirect chains, orphan pages, and JS-render discoverability. Crawl and render evidence comes from DataForSEO on_page tools on a bounded URL sample; index status comes from actual GSC evidence; logs establish crawl activity, not indexation, and is marked N/A without them. Use when the user asks why pages are not indexed, reports crawl or sitemap problems, or suspects wasted crawl budget on faceted or paginated URLs. Do not use for page speed or Core Web Vitals (use cwv-performance-audit) or for duplicate-content and keyword cannibalization analysis (use keyword-cannibalization).",
     "license": "MIT",
-    "source_type": "shopchief"
+    "version": "0.1.1"
   },
   {
     "name": "cwv-performance-audit",
     "description": "Mobile-first Core Web Vitals audit: measure LCP, INP, and CLS on representative templates (home, collection, product, article) with live Lighthouse runs, then trace each failing metric to a root cause — TTFB, images, fonts, critical CSS, third-party scripts, hydration cost, DOM size — and split fixes into frontend, backend, and design workstreams. Every metric is labeled lab or field, with tool, device, and test conditions recorded; missing CrUX field data is marked N/A, never estimated. Use when the user reports slow pages, poor PageSpeed scores, or wants a performance budget. Do not use for indexability, canonical, or structured-data checks (use site-seo-audit) or crawl and sitemap diagnostics (use crawl-index-audit).",
     "license": "MIT",
-    "source_type": "shopchief"
+    "version": "0.1.1"
   },
   {
     "name": "dtc-ab-testing",
     "description": "Plan and review storefront A/B experiments for DTC purchase conversion or contribution per visitor. Use for a defined hypothesis, variant design, measurement plan or experiment readout; avoid declaring a winner from a before/after anecdote.",
     "license": "MIT",
-    "source_type": "licensed-upstream-adaptation"
+    "version": "0.1.1"
   },
   {
     "name": "dtc-buyer-psychology",
     "description": "Translate observed DTC buyer hesitation into truthful merchandising and copy improvements using behavioral hypotheses. Use for product choice, risk perception, trust, price framing or checkout friction; never fabricate scarcity or social proof.",
     "license": "MIT",
-    "source_type": "licensed-upstream-adaptation"
+    "version": "0.1.1"
   },
   {
     "name": "dtc-content-strategy",
     "description": "Build a DTC editorial plan around buyer questions, product use, comparisons and care, connecting useful content to relevant store pages. Use for topic selection, content audits and a feasible publishing/distribution calendar.",
     "license": "MIT",
-    "source_type": "licensed-upstream-adaptation"
+    "version": "0.1.1"
   },
   {
     "name": "dtc-growth-experiments",
     "description": "Choose feasible acquisition and retention experiments for an independent DTC store using its product, margin, audience and resources. Use when the seller needs a prioritized growth backlog rather than a generic SaaS marketing list.",
     "license": "MIT",
-    "source_type": "licensed-upstream-adaptation"
+    "version": "0.1.1"
   },
   {
     "name": "dtc-launch-marketing",
     "description": "Plan marketing for a physical DTC product launch, collection drop or restock, including readiness, owned channels, creator distribution and measurement. Store product creation and publication are separate tasks.",
     "license": "MIT",
-    "source_type": "licensed-upstream-adaptation"
+    "version": "0.1.1"
   },
   {
     "name": "dtc-social-content",
     "description": "Create native DTC social posts, carousels and short-video scripts from verified product facts and merchant assets. Use for finished content and feasible distribution plans; posting or creator outreach requires separate authorized scope.",
     "license": "MIT",
-    "source_type": "licensed-upstream-adaptation"
+    "version": "0.1.1"
   },
   {
     "name": "gmc-misrepresentation-audit",
     "description": "Audit storefront and product evidence for Google Merchant Center misrepresentation risks before launch, after account issues, or after fixes. Cross-check GMC data when available and deliver evidence, prioritized remediation and recheck results.",
     "license": "MIT",
-    "source_type": "shopchief"
+    "version": "0.1.1"
   },
   {
     "name": "image-prompt-guide",
     "description": "Prompt engineering and tool routing for AI image generation and editing. Use for: creative generation, product photo editing, e-commerce platform image sets, and specialized scenes (white background, authorized watermark/element cleanup, HD upscale, scene swap, model showcase, selling point, logo design, tech pack, etc.). Do NOT use for: full product development workflows (use available product-planning capabilities), or non-AI operations like resize/crop/compress/format-convert (use native tools).",
     "license": "MIT",
-    "source_type": "shopchief"
+    "version": "0.1.1"
   },
   {
     "name": "internal-link-audit",
     "description": "Use when the user wants an internal-link audit of a store site: crawl internal links with OnPage Content Parsing (initial sample up to 100 pages, suited to Shopify stores), report click depth, broken links, redirect chains and loops, find orphan pages with an explicit statement of which discovery channels were used, grade anchor text (descriptive / vague / mismatched), and deliver a concrete new-link table with source, location, target, recommended anchor, and semantic reason. Declared limitation: this skill does not compute or fabricate PageRank-like values. Do not use for page indexability problems (use site-seo-audit) or for designing the internal-link structure of a new topic-cluster plan (use seo-content-research).",
     "license": "MIT",
-    "source_type": "shopchief"
+    "version": "0.1.1"
   },
   {
     "name": "international-seo-audit",
     "description": "Audit international / multi-language stores: ccTLD vs subdomain vs subdirectory architecture and its cost; hreflang bidirectional return links, x-default, self-referencing tags, and invalid codes; canonicals wrongly pointing at the primary language; auto IP/language redirects that block crawlers; and currency, units, address, regulatory, and local search-intent localization. Use when the user runs one store in several countries or languages and asks why the German/JP/other market page does not rank, how to structure markets, or whether hreflang is correct. Multi-currency checkout configuration requires actually connected store capabilities; single-market SEO uses site-seo-audit — this skill covers the cross-market layer only.",
     "license": "MIT",
-    "source_type": "shopchief"
+    "version": "0.1.1"
   },
   {
     "name": "keyword-analysis",
     "description": "Look up keyword metrics for a specific keyword set: monthly search volume, 12-month trend, keyword difficulty, CPC, paid competition, and search intent. Use when the user gives keywords (or a short list) and asks for volume, difficulty, CPC, competition, intent, or trend direction. Do not use for content topic selection or editorial planning (use seo-content-research), for discovering which keywords competitor domains rank for (use competitor-deep-analysis), or for go/no-go product validation (use product-opportunity-research). Metric-only requests end here. Product-selection keyword discovery/comparison uses product-keyword-research; article keyword plans use blog-keyword-research; finished articles from keywords use blog-article-writer. Reuse this evidence and use only available skills.",
     "license": "MIT",
-    "source_type": "shopchief"
+    "version": "0.1.1"
   },
   {
     "name": "keyword-cannibalization",
     "description": "Use when several URLs on a store may be competing for the same query or search intent and the user wants a diagnosis and fix. Grades each group as confirmed (ranking-swap evidence in the uploaded GSC pages-x-queries export) or potential (structural similarity without swap evidence); selects the primary page; decides keep-separated / re-target / merge+301 / canonical / noindex per URL; outputs a URL action map and a 2/4/8-week monitoring plan. Candidate pages are verified live with OnPage Instant Pages. Shopify hotspots (tag pages, filter pages, variant URLs) are covered. Do not use for site-wide indexability (use site-seo-audit) or for keyword metrics (use keyword-analysis).",
     "license": "MIT",
-    "source_type": "shopchief"
+    "version": "0.1.1"
   },
   {
     "name": "marketing-roas-analyzer",
     "description": "Diagnose marketing performance, build evidence-backed search acquisition deliverables, and run a dated operating review using connected account data plus relevant DataForSEO evidence.",
     "license": "MIT",
-    "source_type": "shopchief"
+    "version": "0.1.1"
   },
   {
     "name": "product-keyword-research",
     "description": "Find Shopify product opportunities from a category or keywords using available keyword connectors and public product reports. Keep measured keyword metrics separate from product-sales estimates.",
     "license": "MIT",
-    "source_type": "shopchief"
+    "version": "0.1.1"
   },
   {
     "name": "product-marketing-context",
     "description": "Build and maintain the current merchant’s store, product, audience, market, brand and operating context from workspace and connected data.",
     "license": "MIT",
-    "source_type": "shopchief"
+    "version": "0.1.1"
   },
   {
     "name": "product-opportunity-research",
     "description": "Research Shopify product opportunities from scratch, validate products, mine niches, assess rising products or expand adjacent lines using available connectors and public evidence. No connector required for a basic screen.",
     "license": "MIT",
-    "source_type": "shopchief"
+    "version": "0.1.1"
   },
   {
     "name": "product-page-seo",
     "description": "Audit and optimize e-commerce product detail pages: metadata, unique descriptions, specs, images, FAQ and trust information; Product / Offer / AggregateRating schema consistency with visible page content; variant URLs and canonicals; and the full out-of-stock and delisting lifecycle (404, 410, 301, substitutes — never redirect everything to the homepage). Use when the user gives product URLs (an exploratory sample of 10 representative pages) and asks why product pages do not rank, how to handle variants, or what to do when a product goes out of stock or is discontinued. Conversion and trust optimization uses shopify-product-page-cro; deep structured-data design uses schema-markup-designer; collection pages use collection-page-seo — this skill covers the PDP template and its lifecycle only.",
     "license": "MIT",
-    "source_type": "shopchief"
+    "version": "0.1.1"
   },
   {
     "name": "profit-margin-analyzer",
     "description": "Analyze gross and net profit margins across products, channels, and segments. Implement cost attribution models to calculate contribution margin and identify profitability drivers. For ad-effect diagnosis and budget reallocation use marketing-roas-analyzer; for marketing strategy use the corresponding marketing skills.",
     "license": "MIT",
-    "source_type": "shopchief"
+    "version": "0.1.1"
   },
   {
     "name": "programmatic-seo-planner",
     "description": "Use when a store owner wants to assess a programmatic SEO play built on e-commerce page patterns — product x attribute pages, brand x category collection pages, use-case / scenario landing pages, comparison pages (product A vs product B), and buyer guides — and, if viable, design the page template set: validate the keyword pattern and combination count against the product catalog, audit the catalog/attribute dataset, decide per URL class generate / consolidate / noindex / canonical, and produce URL, Title, H1, body module, FAQ, and Schema templates plus pilot, scale, and stop conditions with explicit quality-gate assertions. Evidence uses low-cost DataForSEO keyword data (Labs keyword ideas, bulk keyword difficulty) on at most 20 sampled combinations. Do not use for deep editorial research on one topic (use seo-content-research) or for technical issues on already published pages (use site-seo-audit).",
     "license": "MIT",
-    "source_type": "shopchief"
+    "version": "0.1.1"
   },
   {
     "name": "schema-markup-designer",
     "description": "Two jobs in one skill: (1) audit the structured data already on sampled pages by reading source JSON-LD, checking type coverage, @id entity reuse, required/recommended properties, and consistency with visible content; (2) design complete, deployable JSON-LD for the missing types. Hard rule: markup may only restate what the page visibly shows — no invented ratings, prices, or reviews. Every template is validated against the official schema.org / Google Rich Results guidelines with tool and date recorded; unknown optional values are omitted; missing required facts block deployment. On Shopify the focus is Product/Offer agreeing with the visible price and stock state. Use when the user asks for rich results, Product/Organization schema, or a structured-data audit. Page-level SEO basics (titles, meta, headings) use site-seo-audit; product page copy structure uses product-page-seo.",
     "license": "MIT",
-    "source_type": "shopchief"
+    "version": "0.1.1"
   },
   {
     "name": "seo-content-research",
     "description": "Use for an already-listed or already-selling product when the user needs SEO content direction, topic and outline research, programmatic keyword matrices, UGC/category content angles, keyword-to-page mapping, briefs, or prioritization. Evidence is collected directly with built-in DataForSEO tools and public web research under this skill's data contract. Keyword metric lookups (volume, KD, CPC, intent for a given list) use the keyword-analysis skill. Domain health and technical audits use site-seo-audit. Do not produce a Go, Test, or No-go product opportunity decision. Blog-specific keywords and article briefs use blog-keyword-research; complete article writing from a keyword/brief uses blog-article-writer. This skill retains cross-page content strategy and non-blog planning. Pass existing evidence; if a specialist is unavailable complete the requested supported deliverable here.",
     "license": "MIT",
-    "source_type": "shopchief"
+    "version": "0.1.1"
   },
   {
     "name": "shopify-admin-api",
     "description": "Verified catalog of Shopify Admin GraphQL mutations and input types for the pinned API version (2026-07): products, media, variants, inventory, and store operations. Use before writing ANY GraphQL mutation against a connected Shopify store — never guess mutation or input type names. Execution always goes through the store's connected Shopify tools; store building flows belong to shopify-builder, single-product listing SOP to shopify-product-launch. This skill is the pre-write signature dictionary and introspection guide only.",
     "license": "MIT",
-    "source_type": "shopchief"
+    "version": "0.1.1"
   },
   {
     "name": "shopify-builder",
     "description": "Build and adjust the connected Shopify storefront with scoped previews and verification; route product listing to the product-launch workflow.",
     "license": "MIT",
-    "source_type": "shopchief"
+    "version": "0.1.1"
   },
   {
     "name": "shopify-product-launch",
     "description": "Prepare, create and verify Shopify product drafts from merchant facts and keyword evidence; preserve store conventions and publish only within explicit authorization.",
     "license": "MIT",
-    "source_type": "shopchief"
+    "version": "0.1.1"
   },
   {
     "name": "shopify-product-page-cro",
     "description": "Diagnose actual product-page conversion friction and deliver specific copy, asset and layout improvements using connected evidence.",
     "license": "MIT",
-    "source_type": "shopchief"
+    "version": "0.1.1"
   },
   {
     "name": "shopify-upsell-cross-sell",
     "description": "Design relevant product bundles and recommendations using real catalog, margin, inventory and supported storefront capabilities.",
     "license": "MIT",
-    "source_type": "shopchief"
+    "version": "0.1.1"
   },
   {
     "name": "site-migration-seo",
     "description": "Produces the review and implementation package for a site migration — replatforming, redesign, domain change, CMS move, or URL restructuring — so no URL equity is lost. Core is a one-to-one 301 mapping table where each old URL goes to the new URL with the closest matching intent and content (blanket redirects to the homepage are refused), plus a conflict table for many-to-one, one-to-many, unmatched, chained, and circular cases, an old/new template equivalence check, Nginx/Apache/Cloudflare rule examples, pre-launch / launch-day / post-launch-1-90-day checklists, GSC Change of Address guidance, and rollback triggers. The skill does not execute the launch or DNS changes — it only produces files for human review and implementation. Shopify focus: URL structure differences (/collections/.../products) and Shopify-compatible redirect implementation via admin URL Redirects and CSV import. Use before or during a migration; the new site's content health audit afterward uses site-seo-audit, and product URL.",
     "license": "MIT",
-    "source_type": "shopchief"
+    "version": "0.1.1"
   },
   {
     "name": "site-seo-audit",
     "description": "Use for store-wide search audits, coordinating page and content specialists, search competitor gaps, single AI mention checks, backlinks and brand facts, and normal post-optimization reviews. Diagnostic requests stay read-only; optimization continues into reviewable changes within actual authorization. Reuse one evidence ledger and baseline; demonstrated decline uses content-decay-diagnosis.",
     "license": "MIT",
-    "source_type": "shopchief"
+    "version": "0.1.1"
   },
   {
     "name": "supplier-finder",
     "description": "Find supplier candidates, compare evidenced procurement conditions and prepare sample checks using authorized Sorftime or public sources.",
     "license": "MIT",
-    "source_type": "shopchief"
+    "version": "0.1.1"
   },
   {
     "name": "theme-studio",
     "description": "Build or renovate a Shopify theme from a merchant brief, reference page or screenshot. Use when the user wants actual Liquid/JSON/CSS changes, campaign templates or an unpublished theme preview; use copywriting for copy-only requests.",
     "license": "MIT",
-    "source_type": "shopchief"
+    "version": "0.1.1"
   },
   {
     "name": "trend-stage-timing-analyzer",
     "description": "Assess product entry timing from dated demand, seasonality, competition and merchant economics; deliver a qualified test decision.",
     "license": "MIT",
-    "source_type": "shopchief"
+    "version": "0.1.1"
   }
 ]

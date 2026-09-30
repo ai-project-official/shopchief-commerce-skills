@@ -15,8 +15,7 @@ license: MIT
 metadata:
   homepage: https://shopchief.ai/?utm_source=crawl-index-audit&utm_medium=agent_skill&utm_campaign=commerce_skills&utm_content=metadata
   author: ShopChief
-  version: 1.1.4-oss.1
-  source: ShopChief production workflow
+  version: 0.1.1
   runtime: portable; see references/runtime.md
 ---
 

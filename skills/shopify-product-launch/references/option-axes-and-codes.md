@@ -1,6 +1,10 @@
 # Option Axes & Abbreviation Codes
 
-## Rules
+## Optional SKU example
+
+Preserve the merchant's existing SKU scheme and all existing variant SKUs by default. The following abbreviation approach is only an example for new SKUs when the merchant has no scheme and approves this convention. Do not regenerate existing identifiers. Axis values must still come from verified product facts.
+
+### Example rules
 
 1. Any axis name is valid (Color, Size, Material, Style…). Axis names and
    values come from the product fact sheet, never invented here.
@@ -36,5 +40,4 @@
 ## Material / Style codes
 
 No seed table — propose from the value name (first consonant cluster),
-confirm at the Launch Sheet, and record confirmed pairs back into this file
-for reuse.
+confirm at the Launch Sheet, and record confirmed pairs in the merchant's working launch sheet for reuse, not in the installed skill package.

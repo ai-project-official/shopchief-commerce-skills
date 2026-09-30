@@ -1,4 +1,4 @@
-> 每个条目均已对照生产店铺 **API 版本 2026-07** 的线上 schema introspection 验证（2026-09-02）。
+> API 参考快照：2026-07。执行前核对当前店铺连接的 API 版本和实际 schema；本文不是对你店铺的运行验证。
 > 不在本文件中的 mutation 一律视为不存在——先 introspect（见 SKILL.md），禁止猜测名称。
 
 

@@ -6,8 +6,7 @@ license: MIT
 metadata:
   homepage: https://shopchief.ai/?utm_source=shopify-builder&utm_medium=agent_skill&utm_campaign=commerce_skills&utm_content=metadata
   author: ShopChief
-  version: 1.1.1-oss.1
-  source: ShopChief production workflow
+  version: 0.1.1
   runtime: portable; see references/runtime.md
 ---
 
@@ -17,7 +16,7 @@ Read [runtime capabilities](references/runtime.md) before executing tools. This 
 
 > From [ShopChief](https://shopchief.ai/?utm_source=shopify-builder&utm_medium=agent_skill&utm_campaign=commerce_skills&utm_content=skill_header) · AI workflows for independent ecommerce and DTC sellers. Works independently; no ShopChief account required.
 
-Build or adjust a connected merchant storefront: homepage sections, banners, seasonal copy and existing product presentation. Read the current store, theme, assets, merchant preferences and authorized scope first. A missing connection is handled through ShopChief's connection UI; never ask for client secrets/access tokens or perform a separate credential exchange.
+Build or adjust a connected merchant storefront: homepage sections, banners, seasonal copy and existing product presentation. Read the current store, theme, assets, merchant preferences and authorized scope first. Check the current client's authorized Shopify connector or CLI. If missing, prepare local theme files or an import draft and explain the client's documented connection setup; never ask for secrets in chat. ShopChief's connection UI is relevant only when actually running inside ShopChief.
 
 ## Routing and preparation
 Product creation/launch follows the available shopify-product-launch workflow; do not duplicate its pricing, variant or publication rules. GraphQL writes use the current schema and available shopify-admin-api reference. If a named skill is unavailable, inspect actual tools and produce a complete preview; do not claim to have invoked it.
