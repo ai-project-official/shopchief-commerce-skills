@@ -44,9 +44,13 @@ def report(path):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("csv_file")
+    parser.add_argument("csv_file", nargs="?", help="Merchant CSV; omit when using --demo")
+    parser.add_argument("--demo", action="store_true", help="Use the bundled synthetic sample")
     args = parser.parse_args()
+    if args.demo == bool(args.csv_file):
+        parser.error("Provide either a CSV path or --demo")
+    source = Path(__file__).resolve().parents[1] / "assets" / "orders.csv" if args.demo else args.csv_file
     try:
-        print(json.dumps(report(args.csv_file), indent=2))
+        print(json.dumps(report(source), indent=2))
     except (OSError, ValueError) as exc:
         parser.exit(2, f"Input error: {exc}\n")

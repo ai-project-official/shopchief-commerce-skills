@@ -1,74 +1,70 @@
 # ShopChief Commerce Skills
 
-**40 open-source agent skills for independent ecommerce and DTC sellers.** Research products, improve Shopify pages, plan search content, understand contribution margin, and prepare campaigns with evidence you can inspect.
+**40 open-source AI skills for independent ecommerce and DTC sellers.** Research products, improve Shopify pages, plan search content, understand contribution margin and prepare campaigns.
 
-[中文说明](README.zh-CN.md) · [Browse all 40 skills](docs/catalog.md) · [Try an example](examples/README.md) · [ShopChief](https://shopchief.ai/?utm_source=github&utm_medium=opensource&utm_campaign=commerce_skills&utm_content=readme)
+[中文说明](README.zh-CN.md) · [All 40 skills](docs/catalog.md) · [Worked examples](examples/README.md) · [ShopChief](https://shopchief.ai/?utm_source=github&utm_medium=opensource&utm_campaign=commerce_skills&utm_content=readme)
 
 ## Start with a merchant task
 
-| I want to… | Start here | You get |
+| I want to… | Skill | See the result |
 |---|---|---|
-| Know whether orders are profitable | [Profit margin analyzer](skills/profit-margin-analyzer/SKILL.md) | A revenue/cost waterfall, break-even CPA and evidence gaps |
-| Improve a product page | [Shopify PDP CRO](skills/shopify-product-page-cro/SKILL.md) | Findings tied to the actual page, replacement copy and a review plan |
-| Find a product opportunity | [Product opportunity research](skills/product-opportunity-research/SKILL.md) | Supported candidates, risks and a test/defer/reject decision |
-| Understand store search problems | [Site SEO audit](skills/site-seo-audit/SKILL.md) | Scoped findings, source evidence and prioritized actions |
-| Plan a collection launch | [DTC launch marketing](skills/dtc-launch-marketing/SKILL.md) | A contribution-aware launch plan, assets and measurement |
-| Turn product facts into social content | [DTC social content](skills/dtc-social-content/SKILL.md) | Finished scripts/carousels and factual asset requirements |
+| Know where my order margin went | [Profit margin analyzer](skills/profit-margin-analyzer/SKILL.md) | [CSV → contribution waterfall → next action](skills/profit-margin-analyzer/assets/worked-example.md) |
+| Make a product page clearer | [Shopify PDP CRO](skills/shopify-product-page-cro/SKILL.md) | [Source page → findings → finished replacement copy](skills/shopify-product-page-cro/assets/worked-review.md) |
+| Validate a product opportunity | [Product opportunity research](skills/product-opportunity-research/SKILL.md) | Supported candidates, risks and a test/defer/reject decision |
+| Understand store search problems | [Site SEO audit](skills/site-seo-audit/SKILL.md) | Evidence and prioritized repairs |
+| Plan a collection launch | [DTC launch marketing](skills/dtc-launch-marketing/SKILL.md) | Readiness, assets, channels and measurement |
+| Turn product facts into social content | [DTC social content](skills/dtc-social-content/SKILL.md) | Finished scripts and factual asset requirements |
 
-## Install
+## Install a skill
 
-With an Agent Skills-compatible client and Node.js available:
+With Node.js and an Agent Skills-compatible client:
 
 ```sh
-# Discover the available skills
 npx skills add ai-project-official/shopchief-commerce-skills --list
-
-# Select a single task
 npx skills add ai-project-official/shopchief-commerce-skills --skill profit-margin-analyzer
-
-# Open the interactive skill/client selector
-npx skills add ai-project-official/shopchief-commerce-skills
 ```
 
-Choose the client you actually use, such as Codex or Claude Code. These are standard `SKILL.md` packages; the repository does not install accounts, APIs, background jobs or paid subscriptions. See [runtime and compatibility](docs/runtime.md) for the verification boundary.
+Choose your client in the installer. Each folder includes its references and license. There are 40 English entrypoints and 33 Chinese companion instructions. Using these skills does not require a ShopChief account.
 
-Example prompt after installation:
+## Get your first result
 
-> Analyze the sample order table and calculate pre-ad contribution, post-ad contribution and break-even CPA. Identify missing costs. Do not change any prices or advertising budgets.
+The profit and product-page examples are included in their individual skill packages. After installing the profit skill, ask your agent:
 
-## What is included
+> Use profit-margin-analyzer. Locate its installed folder, run scripts/profit_report.py --demo from that folder, and explain the contribution waterfall and missing costs. Compare with assets/worked-example.md. Do not change prices or budgets.
 
-- 40 independently installable skills for DTC and independent ecommerce sellers.
-- 40 English entrypoints and 33 Chinese companion instructions.
-- Supporting references, input examples and a reproducible sample profit report.
-
-The workflows cover product selection, suppliers, merchant context, copy, product imagery, Shopify drafts and themes, CRO, SEO/GEO, unit economics and campaign planning.
-
-## Try it without a store connection
+For a **Codex project installation**, this complete terminal example works from your project directory with Python 3.10+:
 
 ```sh
-python3 scripts/profit_report.py examples/profit-check/orders.csv
-python3 scripts/validate.py
+npx skills add ai-project-official/shopchief-commerce-skills --skill profit-margin-analyzer --agent codex -y --copy
+python3 .agents/skills/profit-margin-analyzer/scripts/profit_report.py --demo
 ```
 
-The sample is synthetic, not a customer result. Other [example prompts](examples/README.md) show page review, content planning and launch preparation. No skill execution is measured as a revenue benchmark.
+Expected post-ad contribution: USD 150 for DEMO-POUCH and USD 80 for DEMO-BOTTLE. These are synthetic inputs, not customer performance. The script resolves its bundled CSV automatically. Other clients may use a different installation path; ask the agent to locate the skill folder.
 
-## Data and tools
+For the page review, install `shopify-product-page-cro` and ask:
 
-Start with merchant-provided files and public sources. Live Shopify operations need an authorized connector or CLI; paid research needs the user's provider account and budget; image generation needs an available image tool. None are bundled. Missing data remains unknown.
+> Read assets/source-page.md and assets/product-facts.md in this skill's installed folder. Produce findings and finished replacement copy, then compare with assets/worked-review.md. Do not modify a store.
 
-Theme Studio supports local theme work and authorized draft uploads. It does not reproduce ShopChief's hosted project-state service. A prepared file, uploaded draft and published change are different outcomes.
+## Continue with ShopChief
 
-Skills never grant permission to send messages, spend money, publish a page, change a price or alter checkout. Follow the user's actual scope and the host's authorization rules. Keep credentials and customer data out of Git.
+Use the [profit calculator](https://shopchief.ai/tools/profit-margin-calculator?utm_source=github&utm_medium=opensource&utm_campaign=commerce_skills&utm_content=profit_example) to explore your cost assumptions, or the [product-copy workflow](https://shopchief.ai/solutions/shopify-product-descriptions?utm_source=github&utm_medium=opensource&utm_campaign=commerce_skills&utm_content=product_page_example) to prepare verified Shopify copy. Installed skills and local examples work independently.
 
-## About ShopChief
+## Tools and permissions
 
-Built and maintained by [ShopChief](https://shopchief.ai/?utm_source=github&utm_medium=opensource&utm_campaign=commerce_skills&utm_content=about), an AI workspace for ecommerce operations. These open-source packages can be used independently. The website is an optional way to explore the product; using these files does not require a ShopChief account.
+Merchant files and public evidence support basic analysis. Live Shopify operations need an authorized connector or CLI; paid research and image generation need their respective tools. If unavailable, deliver local files or a complete review and identify missing evidence. Skills do not grant permission to publish, send messages, spend money or change a store. See [runtime requirements](docs/runtime.md) and [validation](VALIDATION.md).
 
 ## Contribute
 
-Useful contributions include a reproducible failure, clearer merchant inputs, better source attribution, or an improvement to a specific task. Read [CONTRIBUTING.md](CONTRIBUTING.md). The [distribution plan](docs/distribution.md) describes the acquisition experiment and measurement boundaries. Please use synthetic/redacted examples and describe what was actually verified.
+Share a reproducible failure, clearer merchant input or an improvement to a specific workflow. Use synthetic or authorized redacted examples. Read [CONTRIBUTING.md](CONTRIBUTING.md).
+
+To work on the full repository:
+
+```sh
+git clone https://github.com/ai-project-official/shopchief-commerce-skills.git
+cd shopchief-commerce-skills
+python3 scripts/validate.py
+```
 
 ## License
 
-[MIT](LICENSE). Third-party adaptations retain Corey Haines' copyright and MIT notice. See [NOTICE.md](NOTICE.md). Product names and logos identify their respective owners and do not imply endorsement.
+[MIT](LICENSE). Third-party copyright and license notices are preserved in [NOTICE.md](NOTICE.md) and the affected skill folders.

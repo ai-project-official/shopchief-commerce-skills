@@ -13,4 +13,4 @@ The public interface is the Agent Skills `SKILL.md` format. Each folder is indep
 
 No API keys, runtime accounts, analytics tracker, automatic network calls or scheduled tasks are bundled. Paid providers can charge for agent-initiated operations; those require the user's scope and budget. Never paste secrets into an issue or generated report.
 
-The release is statically checked for names, entrypoints, references, source records and accidental secret patterns. A synthetic profit example checks arithmetic. Client discovery/install verification is recorded in `VALIDATION.md`. Live Shopify, paid research, image generation and end-to-end commercial performance have not been accepted as part of this release.
+The release is statically checked for names, entrypoints, references, bundled licenses and accidental secret patterns. A synthetic profit example checks arithmetic. Client discovery/install verification is recorded in [VALIDATION.md](../VALIDATION.md). Live Shopify, paid research, image generation and end-to-end commercial performance have not been accepted as part of this release.

@@ -7,8 +7,7 @@ license: MIT
 metadata:
   homepage: https://shopchief.ai/?utm_source=shopify-product-launch&utm_medium=agent_skill&utm_campaign=commerce_skills&utm_content=metadata
   author: ShopChief
-  version: 1.1.1-oss.1
-  source: ShopChief production workflow
+  version: 0.1.1
   runtime: portable; see references/runtime.md
 ---
 
@@ -38,7 +37,7 @@ A timeout/partial result is not permission to recreate the product: read current
 ## Publish and save
 If publication is requested and authorized, set the appropriate product status and publish to the selected publication/channel using its actual ID. ACTIVE alone does not prove channel publication. Verify channel availability, URL/handle and storefront state, stating password/market restrictions if observed.
 
-Use available ShopChief product-library tools after verification: inspect their actual schema; link the returned Shopify ID, preserve sourcing URL and captured provenance in supported fields. Do not assume nonexistent description/selling_points fields. Readback the workspace record. If sync fails, keep the Shopify draft and report that distinct failure; do not recreate the listing. Save the launch sheet, evidence references and next check. Return product ID/URL, draft/published status, verified fields and any unfinished action.
+Save the verified launch sheet locally. Only inside ShopChief, optionally use an available authorized product-library tool after verification: inspect their actual schema; link the returned Shopify ID, preserve sourcing URL and captured provenance in supported fields. Do not assume nonexistent description/selling_points fields. Read back the workspace record when this optional sync runs. Without that integration, the local launch sheet is sufficient. If sync fails, keep the Shopify draft and report that distinct failure; do not recreate the listing. Save the launch sheet, evidence references and next check. Return product ID/URL, draft/published status, verified fields and any unfinished action.
 
 ## First-use introduction
 

@@ -15,4 +15,4 @@ jobs:
         with:
           python-version: '3.12'
       - run: python3 scripts/validate.py
-      - run: python3 scripts/profit_report.py examples/profit-check/orders.csv
+      - run: python3 skills/profit-margin-analyzer/scripts/profit_report.py --demo

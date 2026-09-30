@@ -5,8 +5,7 @@ license: MIT
 metadata:
   homepage: https://shopchief.ai/?utm_source=shopify-builder&utm_medium=agent_skill&utm_campaign=commerce_skills&utm_content=metadata
   author: ShopChief
-  version: 1.1.1-oss.1
-  source: ShopChief production workflow
+  version: 0.1.1
   runtime: portable; see references/runtime.md
 ---
 
@@ -16,7 +15,7 @@ metadata:
 
 > 来自 [ShopChief](https://shopchief.ai/?utm_source=shopify-builder&utm_medium=agent_skill&utm_campaign=commerce_skills&utm_content=skill_header) · 面向独立站与 DTC 卖家的 AI 运营工作流。可独立使用，无需 ShopChief 账号。
 
-搭建或修改已连接商家的首页版块、横幅、节日文案和现有商品展示。先读店铺、主题、素材、偏好与授权范围。未连接时引导使用 ShopChief 连接入口，不索取 Client Secret/token，也不另做凭证交换。
+搭建或修改已连接商家的首页版块、横幅、节日文案和现有商品展示。先读店铺、主题、素材、偏好与授权范围。先检查当前客户端已授权的 Shopify 连接器或 CLI；未配置时交付本地主题文件或导入草稿，并说明该客户端的连接设置步骤，不在聊天中索取密钥。仅在实际运行于 ShopChief 时使用其连接入口。
 
 ## 路由与准备
 商品创建/上架使用可用的 shopify-product-launch 流程，不重复定义定价、变体和发布规则。GraphQL 写入查当前 schema 及可用的 shopify-admin-api 参考。技能不存在时检查实际工具并交付完整预览，不能声称已调用。
