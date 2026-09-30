@@ -22,12 +22,6 @@ npx skills add ai-project-official/shopchief-commerce-skills --skill profit-marg
 - 新品营销计划：`dtc-launch-marketing`。
 - 社交内容脚本：`dtc-social-content`。
 
-## 内容来源
-
-34 个技能来自 ShopChief 生产工作流，保留参考资料并调整为独立安装包；另外 6 个 DTC 营销技能基于 Corey Haines 的 MIT 开源项目改编，保留许可和来源版本。
-
-审查过的 144 个本地技能都有[选用记录](docs/selection-audit.md)。授权不明的 Accio 本地内容没有复制进公开仓库。新增内容围绕 DTC 卖家的具体任务改写，不把 SaaS 发布模板、虚构增长数字或固定行业阈值当作通用答案。
-
 ## 运行条件
 
 本仓库提供方法、执行边界与交付要求，不附带 API 账号或连接器。商家文件和公开资料可支持基础分析；Shopify 写入、付费查询、图片生成分别需要相应工具和授权。缺少工具时交付可完成的文件或方案，不能声称已经修改店铺。
