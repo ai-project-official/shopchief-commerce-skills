@@ -22,7 +22,6 @@ npx skills add ai-project-official/shopchief-commerce-skills --skill profit-marg
 - 新品营销计划：`dtc-launch-marketing`。
 - 社交内容脚本：`dtc-social-content`。
 
-
 ## 运行条件
 
 本仓库提供方法、执行边界与交付要求，不附带 API 账号或连接器。商家文件和公开资料可支持基础分析；Shopify 写入、付费查询、图片生成分别需要相应工具和授权。缺少工具时交付可完成的文件或方案，不能声称已经修改店铺。

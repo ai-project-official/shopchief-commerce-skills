@@ -38,11 +38,11 @@ Example prompt after installation:
 
 ## What is included
 
-- **6 DTC marketing adaptations** based on Corey Haines' MIT-licensed Marketing Skills, with source commits and attribution.
-- 40 English entrypoints, 33 Chinese companion instructions, input examples and one deterministic sample profit report.
-- [Third-party notices](NOTICE.md).
+- 40 independently installable skills for DTC and independent ecommerce sellers.
+- 40 English entrypoints and 33 Chinese companion instructions.
+- Supporting references, input examples and a reproducible sample profit report.
 
-The workflows cover product selection, suppliers, merchant context, copy, product imagery, Shopify drafts and themes, CRO, SEO/GEO, unit economics and campaign planning. They avoid fabricated demand, customer proof and revenue claims.
+The workflows cover product selection, suppliers, merchant context, copy, product imagery, Shopify drafts and themes, CRO, SEO/GEO, unit economics and campaign planning.
 
 ## Try it without a store connection
 
