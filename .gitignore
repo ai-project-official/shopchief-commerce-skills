@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+.DS_Store
+node_modules/
+production-export/
+*production-skills*.json
+merchant-data/
+outputs/

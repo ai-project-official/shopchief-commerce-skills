@@ -1,0 +1,504 @@
+{
+  "release": "0.1.0",
+  "production_observed_at": "2026-09-30T08:01:27.164661+00:00",
+  "skills": [
+    {
+      "name": "competitor-deep-analysis",
+      "source_type": "shopchief-production",
+      "source_version": "1.2.4",
+      "source_revision": "ca0a99c0ab75cf09da709a8b5572ec7204de425c6ecab8bc4c50cd00a1b06015",
+      "license": "MIT",
+      "adaptations": [
+        "Portable runtime capability mapping",
+        "Agent Skills metadata normalization",
+        "Provider-neutral search/image instructions where applicable"
+      ]
+    },
+    {
+      "name": "copywriting",
+      "source_type": "shopchief-production",
+      "source_version": "1.3.5",
+      "source_revision": "5289e07489eda01b569f9b3d50577fc7dab7cc85fc8b26b866d37b30449242df",
+      "license": "MIT",
+      "adaptations": [
+        "Portable runtime capability mapping",
+        "Agent Skills metadata normalization",
+        "Provider-neutral search/image instructions where applicable"
+      ]
+    },
+    {
+      "name": "marketing-roas-analyzer",
+      "source_type": "shopchief-production",
+      "source_version": "1.1.1",
+      "source_revision": "5168eafd8558544f9244ed8051ed64ede031d626a1f0aa9d68986096ed7d5a77",
+      "license": "MIT",
+      "adaptations": [
+        "Portable runtime capability mapping",
+        "Agent Skills metadata normalization",
+        "Provider-neutral search/image instructions where applicable"
+      ]
+    },
+    {
+      "name": "product-marketing-context",
+      "source_type": "shopchief-production",
+      "source_version": "1.1.1",
+      "source_revision": "0935411992098b8ede13b1399bc083fe984380ce8053c2ed42233f934b13358c",
+      "license": "MIT",
+      "adaptations": [
+        "Portable runtime capability mapping",
+        "Agent Skills metadata normalization",
+        "Provider-neutral search/image instructions where applicable"
+      ]
+    },
+    {
+      "name": "image-prompt-guide",
+      "source_type": "shopchief-production",
+      "source_version": "1.2.1",
+      "source_revision": "0dd0023a6fac800df9ea4b1ba65a23d70f815bb64ad7298311efeda86cd398b0",
+      "license": "MIT",
+      "adaptations": [
+        "Portable runtime capability mapping",
+        "Agent Skills metadata normalization",
+        "Provider-neutral search/image instructions where applicable"
+      ]
+    },
+    {
+      "name": "shopify-builder",
+      "source_type": "shopchief-production",
+      "source_version": "1.1.1",
+      "source_revision": "5f16cc175cc44fbcf451b23ea947adcbc2debbebbdbb32752bc875e2d85051c6",
+      "license": "MIT",
+      "adaptations": [
+        "Portable runtime capability mapping",
+        "Agent Skills metadata normalization",
+        "Provider-neutral search/image instructions where applicable"
+      ]
+    },
+    {
+      "name": "cart-abandonment-recovery",
+      "source_type": "shopchief-production",
+      "source_version": "1.2.1",
+      "source_revision": "c0fd915250a016e5e6dede64421a5841db534d9c130058140a72728fec200134",
+      "license": "MIT",
+      "adaptations": [
+        "Portable runtime capability mapping",
+        "Agent Skills metadata normalization",
+        "Provider-neutral search/image instructions where applicable"
+      ]
+    },
+    {
+      "name": "product-opportunity-research",
+      "source_type": "shopchief-production",
+      "source_version": "1.4.1",
+      "source_revision": "e129a55c442884df623fc185de040f50ebf41d6b1966ac823549dce5b25c18fd",
+      "license": "MIT",
+      "adaptations": [
+        "Portable runtime capability mapping",
+        "Agent Skills metadata normalization",
+        "Provider-neutral search/image instructions where applicable"
+      ]
+    },
+    {
+      "name": "seo-content-research",
+      "source_type": "shopchief-production",
+      "source_version": "1.3.4",
+      "source_revision": "d3d35ec7c9eed2c5ec8877777662ed4298abc6278cb89c66a2f4600c9a681b2f",
+      "license": "MIT",
+      "adaptations": [
+        "Portable runtime capability mapping",
+        "Agent Skills metadata normalization",
+        "Provider-neutral search/image instructions where applicable"
+      ]
+    },
+    {
+      "name": "keyword-analysis",
+      "source_type": "shopchief-production",
+      "source_version": "1.2.4",
+      "source_revision": "7e9a096021b45d70de17c57e5930cc86bf8a050e20087ca9477cca838ee3adfe",
+      "license": "MIT",
+      "adaptations": [
+        "Portable runtime capability mapping",
+        "Agent Skills metadata normalization",
+        "Provider-neutral search/image instructions where applicable"
+      ]
+    },
+    {
+      "name": "site-seo-audit",
+      "source_type": "shopchief-production",
+      "source_version": "1.2.3",
+      "source_revision": "894f88d0c9ef30b6b589ef62d7f2b14871604d5411134ee8f9305b47283d4dc2",
+      "license": "MIT",
+      "adaptations": [
+        "Portable runtime capability mapping",
+        "Agent Skills metadata normalization",
+        "Provider-neutral search/image instructions where applicable"
+      ]
+    },
+    {
+      "name": "shopify-product-launch",
+      "source_type": "shopchief-production",
+      "source_version": "1.1.1",
+      "source_revision": "55c5826b3f16f3f92fb78fb0f6592a0f525a82cb002b1952439e99fbfd7645cc",
+      "license": "MIT",
+      "adaptations": [
+        "Portable runtime capability mapping",
+        "Agent Skills metadata normalization",
+        "Provider-neutral search/image instructions where applicable"
+      ]
+    },
+    {
+      "name": "shopify-product-page-cro",
+      "source_type": "shopchief-production",
+      "source_version": "1.2.3",
+      "source_revision": "a19263d54e28fce773cd0697680455e2d91972f06ebbfa9365cde29f9df45958",
+      "license": "MIT",
+      "adaptations": [
+        "Portable runtime capability mapping",
+        "Agent Skills metadata normalization",
+        "Provider-neutral search/image instructions where applicable"
+      ]
+    },
+    {
+      "name": "shopify-upsell-cross-sell",
+      "source_type": "shopchief-production",
+      "source_version": "1.2.1",
+      "source_revision": "6f145ee01cca023c7c11a6803116989298477da56632533265d1fd33b10315f9",
+      "license": "MIT",
+      "adaptations": [
+        "Portable runtime capability mapping",
+        "Agent Skills metadata normalization",
+        "Provider-neutral search/image instructions where applicable"
+      ]
+    },
+    {
+      "name": "profit-margin-analyzer",
+      "source_type": "shopchief-production",
+      "source_version": "1.1.1",
+      "source_revision": "627a4cec340ab411e0f2b0bd3ab4be7c8c1fb856c1869af3fa7962cc5d115318",
+      "license": "MIT",
+      "adaptations": [
+        "Portable runtime capability mapping",
+        "Agent Skills metadata normalization",
+        "Provider-neutral search/image instructions where applicable"
+      ]
+    },
+    {
+      "name": "trend-stage-timing-analyzer",
+      "source_type": "shopchief-production",
+      "source_version": "1.1.1",
+      "source_revision": "05d8db374a9eabe260af20ecea6b66aa52347979ef537652f9b167ce218e3b3c",
+      "license": "MIT",
+      "adaptations": [
+        "Portable runtime capability mapping",
+        "Agent Skills metadata normalization",
+        "Provider-neutral search/image instructions where applicable"
+      ]
+    },
+    {
+      "name": "shopify-admin-api",
+      "source_type": "shopchief-production",
+      "source_version": "1.1.1",
+      "source_revision": "0d2629824445ef24ff57636c7871f22630cbeaa88233dd6466c51cf7a293412b",
+      "license": "MIT",
+      "adaptations": [
+        "Portable runtime capability mapping",
+        "Agent Skills metadata normalization",
+        "Provider-neutral search/image instructions where applicable"
+      ]
+    },
+    {
+      "name": "collection-page-seo",
+      "source_type": "shopchief-production",
+      "source_version": "1.2.4",
+      "source_revision": "e812338fefcf441771c0979e4809b7106df768f6ebe7f288388d3147be27a4c1",
+      "license": "MIT",
+      "adaptations": [
+        "Portable runtime capability mapping",
+        "Agent Skills metadata normalization",
+        "Provider-neutral search/image instructions where applicable"
+      ]
+    },
+    {
+      "name": "product-page-seo",
+      "source_type": "shopchief-production",
+      "source_version": "1.2.4",
+      "source_revision": "403b6334aa0555d1dac807e6eba0a2ca27cac1f3159246e45a9aa5f8d9d85230",
+      "license": "MIT",
+      "adaptations": [
+        "Portable runtime capability mapping",
+        "Agent Skills metadata normalization",
+        "Provider-neutral search/image instructions where applicable"
+      ]
+    },
+    {
+      "name": "international-seo-audit",
+      "source_type": "shopchief-production",
+      "source_version": "1.2.4",
+      "source_revision": "747ad5aac78948b2f0919311f17f859ccd47fff38744cec27110838f61ac30c1",
+      "license": "MIT",
+      "adaptations": [
+        "Portable runtime capability mapping",
+        "Agent Skills metadata normalization",
+        "Provider-neutral search/image instructions where applicable"
+      ]
+    },
+    {
+      "name": "crawl-index-audit",
+      "source_type": "shopchief-production",
+      "source_version": "1.1.4",
+      "source_revision": "77811bfe741964f9ffcdc9f950d8e332699255a56c884226f104bbb9ffe14a79",
+      "license": "MIT",
+      "adaptations": [
+        "Portable runtime capability mapping",
+        "Agent Skills metadata normalization",
+        "Provider-neutral search/image instructions where applicable"
+      ]
+    },
+    {
+      "name": "cwv-performance-audit",
+      "source_type": "shopchief-production",
+      "source_version": "1.2.4",
+      "source_revision": "e7c5433318c51c54bc0ef760bf7206ae5fdf9b3c43bac3e7bc36e27c17367fc1",
+      "license": "MIT",
+      "adaptations": [
+        "Portable runtime capability mapping",
+        "Agent Skills metadata normalization",
+        "Provider-neutral search/image instructions where applicable"
+      ]
+    },
+    {
+      "name": "schema-markup-designer",
+      "source_type": "shopchief-production",
+      "source_version": "1.2.4",
+      "source_revision": "676a97363af909d43ce862e93f2ef6115976d34b935197a7f31c8a96b526381e",
+      "license": "MIT",
+      "adaptations": [
+        "Portable runtime capability mapping",
+        "Agent Skills metadata normalization",
+        "Provider-neutral search/image instructions where applicable"
+      ]
+    },
+    {
+      "name": "site-migration-seo",
+      "source_type": "shopchief-production",
+      "source_version": "1.1.4",
+      "source_revision": "f1bd291eb793384a4ce19fbdc2e2e3f1c58a8cb3e509e46198a500f2fac04a76",
+      "license": "MIT",
+      "adaptations": [
+        "Portable runtime capability mapping",
+        "Agent Skills metadata normalization",
+        "Provider-neutral search/image instructions where applicable"
+      ]
+    },
+    {
+      "name": "programmatic-seo-planner",
+      "source_type": "shopchief-production",
+      "source_version": "1.1.4",
+      "source_revision": "d932747bca9312c7a5ad95f592e5d4517f7d5cdfc321085a06a93dad084061cf",
+      "license": "MIT",
+      "adaptations": [
+        "Portable runtime capability mapping",
+        "Agent Skills metadata normalization",
+        "Provider-neutral search/image instructions where applicable"
+      ]
+    },
+    {
+      "name": "content-decay-diagnosis",
+      "source_type": "shopchief-production",
+      "source_version": "1.1.4",
+      "source_revision": "8a6df42a4779d4957f9a150111c38934528b94910b5cbafd55f81884e1d7cdc8",
+      "license": "MIT",
+      "adaptations": [
+        "Portable runtime capability mapping",
+        "Agent Skills metadata normalization",
+        "Provider-neutral search/image instructions where applicable"
+      ]
+    },
+    {
+      "name": "keyword-cannibalization",
+      "source_type": "shopchief-production",
+      "source_version": "1.1.4",
+      "source_revision": "c1b33f6f4311c88adb0d444fb79fa82df81e63ec7360e3df4b0a5fc7940cb667",
+      "license": "MIT",
+      "adaptations": [
+        "Portable runtime capability mapping",
+        "Agent Skills metadata normalization",
+        "Provider-neutral search/image instructions where applicable"
+      ]
+    },
+    {
+      "name": "internal-link-audit",
+      "source_type": "shopchief-production",
+      "source_version": "1.1.4",
+      "source_revision": "5ae9fbc15fd781143d8c16fce2ffbc677af79667f830c638dbf31beec50a2f6e",
+      "license": "MIT",
+      "adaptations": [
+        "Portable runtime capability mapping",
+        "Agent Skills metadata normalization",
+        "Provider-neutral search/image instructions where applicable"
+      ]
+    },
+    {
+      "name": "product-keyword-research",
+      "source_type": "shopchief-production",
+      "source_version": "1.2.1",
+      "source_revision": "9f55fa48759e47e74179edddeb109c3e034c6bef3c4580e04862cb0fde4553c7",
+      "license": "MIT",
+      "adaptations": [
+        "Portable runtime capability mapping",
+        "Agent Skills metadata normalization",
+        "Provider-neutral search/image instructions where applicable"
+      ]
+    },
+    {
+      "name": "blog-keyword-research",
+      "source_type": "shopchief-production",
+      "source_version": "1.1.4",
+      "source_revision": "cb791b05e359b6f2d3ae8d94e7b62ce6edf9c29b070c77a8672b9492ff4d39c5",
+      "license": "MIT",
+      "adaptations": [
+        "Portable runtime capability mapping",
+        "Agent Skills metadata normalization",
+        "Provider-neutral search/image instructions where applicable"
+      ]
+    },
+    {
+      "name": "blog-article-writer",
+      "source_type": "shopchief-production",
+      "source_version": "1.1.4",
+      "source_revision": "017d10c83c05269a7fe9ecb01528b75e8113ea42e6c063f73e6ddb03bbc31a65",
+      "license": "MIT",
+      "adaptations": [
+        "Portable runtime capability mapping",
+        "Agent Skills metadata normalization",
+        "Provider-neutral search/image instructions where applicable"
+      ]
+    },
+    {
+      "name": "gmc-misrepresentation-audit",
+      "source_type": "shopchief-production",
+      "source_version": "1.0.1",
+      "source_revision": "0e69af2ad147468278061ebfcc983f8da883f8382c4b80952e90256fd39948b9",
+      "license": "MIT",
+      "adaptations": [
+        "Portable runtime capability mapping",
+        "Agent Skills metadata normalization",
+        "Provider-neutral search/image instructions where applicable"
+      ]
+    },
+    {
+      "name": "supplier-finder",
+      "source_type": "shopchief-production",
+      "source_version": "1.0.1",
+      "source_revision": "bcd0e17886b621f0fcc820214a11484f0720b4e404ec8709508f775ea6973814",
+      "license": "MIT",
+      "adaptations": [
+        "Portable runtime capability mapping",
+        "Agent Skills metadata normalization",
+        "Provider-neutral search/image instructions where applicable"
+      ]
+    },
+    {
+      "name": "theme-studio",
+      "source_type": "shopchief-production",
+      "source_version": "1.0.4",
+      "source_revision": "9c1f1939703e266f8c65f31af53336b66f3967b9a0a610bfc5229cc424081c63",
+      "license": "MIT",
+      "adaptations": [
+        "Portable runtime capability mapping",
+        "Agent Skills metadata normalization",
+        "Provider-neutral search/image instructions where applicable"
+      ]
+    },
+    {
+      "name": "dtc-ab-testing",
+      "source_type": "licensed-upstream-adaptation",
+      "local_candidate": "ab-test-setup",
+      "upstream_repo": "coreyhaines31/marketingskills",
+      "upstream_commit": "5b2c0007766c6a1cf1d53fd8fc73e979e0821022",
+      "upstream_path": "skills/ab-testing/SKILL.md",
+      "upstream_sha256": "1fd229160f6014f3f2d7c92cc7d2f991fbf8dc9ed68aac9793c71b408a6d1144",
+      "license": "MIT",
+      "adaptations": [
+        "Rewritten for physical-goods DTC sellers",
+        "Removed SaaS-specific routing and unsupported universal benchmarks",
+        "Self-contained workflow without unbundled tool dependencies"
+      ]
+    },
+    {
+      "name": "dtc-content-strategy",
+      "source_type": "licensed-upstream-adaptation",
+      "local_candidate": "content-strategy",
+      "upstream_repo": "coreyhaines31/marketingskills",
+      "upstream_commit": "5b2c0007766c6a1cf1d53fd8fc73e979e0821022",
+      "upstream_path": "skills/content-strategy/SKILL.md",
+      "upstream_sha256": "0ad572d607884c561668810f77cd21bbe3e0508c64090f2997661a728360f946",
+      "license": "MIT",
+      "adaptations": [
+        "Rewritten for physical-goods DTC sellers",
+        "Removed SaaS-specific routing and unsupported universal benchmarks",
+        "Self-contained workflow without unbundled tool dependencies"
+      ]
+    },
+    {
+      "name": "dtc-launch-marketing",
+      "source_type": "licensed-upstream-adaptation",
+      "local_candidate": "launch-strategy",
+      "upstream_repo": "coreyhaines31/marketingskills",
+      "upstream_commit": "5b2c0007766c6a1cf1d53fd8fc73e979e0821022",
+      "upstream_path": "skills/launch/SKILL.md",
+      "upstream_sha256": "1d5f5e6a4caaa5b62604a8df324b060eb99da567e65e9fc5a69b9999c61325b2",
+      "license": "MIT",
+      "adaptations": [
+        "Rewritten for physical-goods DTC sellers",
+        "Removed SaaS-specific routing and unsupported universal benchmarks",
+        "Self-contained workflow without unbundled tool dependencies"
+      ]
+    },
+    {
+      "name": "dtc-social-content",
+      "source_type": "licensed-upstream-adaptation",
+      "local_candidate": "social-content",
+      "upstream_repo": "coreyhaines31/marketingskills",
+      "upstream_commit": "5b2c0007766c6a1cf1d53fd8fc73e979e0821022",
+      "upstream_path": "skills/social/SKILL.md",
+      "upstream_sha256": "8cc93d9b361622cdb640e87969747b85603bed2d268e923179f8dfb4799ec8c7",
+      "license": "MIT",
+      "adaptations": [
+        "Rewritten for physical-goods DTC sellers",
+        "Removed SaaS-specific routing and unsupported universal benchmarks",
+        "Self-contained workflow without unbundled tool dependencies"
+      ]
+    },
+    {
+      "name": "dtc-buyer-psychology",
+      "source_type": "licensed-upstream-adaptation",
+      "local_candidate": "marketing-psychology",
+      "upstream_repo": "coreyhaines31/marketingskills",
+      "upstream_commit": "5b2c0007766c6a1cf1d53fd8fc73e979e0821022",
+      "upstream_path": "skills/marketing-psychology/SKILL.md",
+      "upstream_sha256": "573bbe4f6e300e7fb75299e314f56e26382d284782caa2ae0e0f33eb2e646548",
+      "license": "MIT",
+      "adaptations": [
+        "Rewritten for physical-goods DTC sellers",
+        "Removed SaaS-specific routing and unsupported universal benchmarks",
+        "Self-contained workflow without unbundled tool dependencies"
+      ]
+    },
+    {
+      "name": "dtc-growth-experiments",
+      "source_type": "licensed-upstream-adaptation",
+      "local_candidate": "marketing-ideas",
+      "upstream_repo": "coreyhaines31/marketingskills",
+      "upstream_commit": "5b2c0007766c6a1cf1d53fd8fc73e979e0821022",
+      "upstream_path": "skills/marketing-ideas/SKILL.md",
+      "upstream_sha256": "d5ea46d2d2eb2fb039494e8b545550a6bd5b5b9aedc5e65a228ac514deb018ff",
+      "license": "MIT",
+      "adaptations": [
+        "Rewritten for physical-goods DTC sellers",
+        "Removed SaaS-specific routing and unsupported universal benchmarks",
+        "Self-contained workflow without unbundled tool dependencies"
+      ]
+    }
+  ]
+}
