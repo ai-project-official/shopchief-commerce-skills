@@ -1,0 +1,10 @@
+{
+  "name": "shopchief-commerce-skills",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Static Agent Skills packages; no npm runtime dependencies.",
+  "license": "MIT",
+  "scripts": {
+    "validate": "python3 scripts/validate.py"
+  }
+}
