@@ -1,6 +1,6 @@
 # ShopChief Commerce Skills
 
-**100+ open-source AI skills for independent ecommerce and DTC sellers.** Research products, improve your storefront, plan campaigns, retain customers and manage inventory with evidence and clear deliverables.
+**300+ open-source AI skills for independent ecommerce and DTC sellers.** Research products, improve your storefront, plan campaigns, retain customers and manage inventory with evidence and clear deliverables.
 
 [中文说明](README.zh-CN.md) · [Browse by task](docs/catalog.md) · [Workflow recipes](docs/playbooks.md) · [Worked examples](examples/README.md) · [ShopChief](https://shopchief.ai/?utm_source=github&utm_medium=opensource&utm_campaign=commerce_skills&utm_content=readme)
 
@@ -19,6 +19,9 @@
 | Build a useful welcome sequence | [Email welcome series](skills/email-welcome-series/SKILL.md) | Trigger, exclusions, finished messages and a QA plan |
 | Diagnose missing purchase events | [GA4 ecommerce measurement](skills/ga4-ecommerce-measurement/SKILL.md) | Event contract, duplicate checks and a verification plan |
 | Understand why customers return products | [Returns analysis](skills/returns-reason-analysis/SKILL.md) | Comparable reason rates and actions tied to source evidence |
+| Prepare a safe catalog import | [Catalog import preflight](skills/catalog-import-change-preflight/SKILL.md) | [Change rows, conflict checks and preserved fields](skills/catalog-import-change-preflight/assets/worked-example.md) |
+| Explain a payout difference | [Payment reconciliation](skills/payment-payout-reconciliation/SKILL.md) | [Signed transactions, deposit and unresolved order links](skills/payment-payout-reconciliation/assets/worked-example.md) |
+| Check whether creator content can run as an ad | [Creator paid amplification](skills/creator-paid-amplification/SKILL.md) | [Rights, dates, offer consistency and activation decision](skills/creator-paid-amplification/assets/worked-example.md) |
 
 The [task catalog](docs/catalog.md) groups skills into research, storefront conversion, search and feeds, content, advertising, retention, measurement, and operations. Choose a focused workflow; you do not need to install the whole library.
 
@@ -78,4 +81,4 @@ For catalog changes, update `scripts/catalog-groups.json`, run `python3 scripts/
 
 ## License
 
-ShopChief's original contributions use [MIT](LICENSE). Adapted packages retain their applicable licenses; the product-feed packages use Apache-2.0. See [NOTICE.md](NOTICE.md) and each installed package's `LICENSE` for exact terms and attribution.
+ShopChief's original contributions use [MIT](LICENSE). Adapted packages retain their applicable licenses and notices. See [NOTICE.md](NOTICE.md) and each installed package's `LICENSE` for exact terms and attribution.
