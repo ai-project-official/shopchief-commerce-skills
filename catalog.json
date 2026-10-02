@@ -1,242 +1,730 @@
 [
   {
+    "name": "ad-budget-pacing",
+    "description": "Reconcile DTC media spend against a dated cap and produce a feasible remaining-period pacing plan. Use for overspend risk, underdelivery or planned promotion weighting.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Advertising and partnerships"
+  },
+  {
+    "name": "ad-landing-page-message-match",
+    "description": "Audit whether a paid ad promise survives the destination, variant selection and offer conditions. Use when clicks arrive but the DTC landing page changes the product, price or expectation.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Advertising and partnerships"
+  },
+  {
+    "name": "affiliate-program-design",
+    "description": "Design a DTC affiliate program with contribution-aware commissions, attribution precedence and refund holds. Use for creator/publisher partners rather than customer refer-a-friend rewards.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Advertising and partnerships"
+  },
+  {
+    "name": "ai-search-visibility-audit",
+    "description": "Measure brand mentions, recommendations and citations across a fixed set of buyer questions and repeated AI-search observations. Use for an AI visibility baseline or before/after study; site-wide technical SEO and schema implementation are separate tasks.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Search visibility and product feeds"
+  },
+  {
+    "name": "back-in-stock-campaign",
+    "description": "Plan variant-specific restock notifications that respect waitlist requests, inventory and purchase exits. Use when a DTC product becomes sellable again.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Email and retention"
+  },
+  {
     "name": "blog-article-writer",
     "description": "Write complete ecommerce SEO/GEO articles from selected keywords or briefs, using verified product facts, merchant images and internal links. Deliver final copy or an authorized unpublished store draft; keyword discovery belongs to blog-keyword-research.",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Content and creative"
   },
   {
     "name": "blog-keyword-research",
     "description": "Independently research blog keywords, intent clusters, topic priorities and handoff briefs. Planning only: no article writing, final image selection or Shopify writes.",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Search visibility and product feeds"
+  },
+  {
+    "name": "bundle-pricing",
+    "description": "Cost and price a DTC product bundle using component quantities, stock constraints and order economics. Use for fixed packs or complementary bundles before configuring products or promotions.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Measurement and unit economics"
   },
   {
     "name": "cart-abandonment-recovery",
     "description": "Trigger: Set up automated email and SMS sequences to win back shoppers who abandon their items during checkout.",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Email and retention"
+  },
+  {
+    "name": "cash-flow-inventory-planning",
+    "description": "Build a dated DTC cash plan for inventory commitments, supplier deposits, receipts and operating outflows. Use to expose funding gaps even when an order or business appears profitable.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "chargeback-evidence-preparation",
+    "description": "Prepare a reason-specific DTC chargeback evidence packet from actual transaction, fulfillment and customer records. Use before a provider deadline; submission is a separate authorized action and success is never guaranteed.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "checkout-friction-audit",
+    "description": "Trace a store checkout journey for delivery, payment, validation and cost surprises using safe test paths and evidence. Use from cart to order confirmation; product-page persuasion and cart-recovery campaigns are separate.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Storefront and conversion"
+  },
+  {
+    "name": "cohort-retention-analysis",
+    "description": "Build repeat-purchase cohorts with explicit observation windows, stable customer identity and censoring. Use for customer return behavior over time; subscription churn and projected lifetime value require separate models.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "collection-merchandising",
+    "description": "Plan assortment ordering, filtering and product-card decisions for a store collection using relevance, stock and contribution constraints. Use for shopping discovery; collection SEO metadata and schema belong to separate workflows.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Storefront and conversion"
   },
   {
     "name": "collection-page-seo",
     "description": "Audit and optimize e-commerce collection (category) pages: metadata, H1 and intro copy, FAQ, product cards, pagination and infinite-scroll discoverability, Product + ItemList + BreadcrumbList schema, and faceted navigation rules. Use when the user gives collection URLs (an exploratory sample of 10) and asks why category pages do not rank, how to handle filter parameters, or wants per-page Title/Description/H1/copy/link recommendations. Product detail pages use product-page-seo; whole-site technical health uses site-seo-audit; conversion and trust optimization of product pages uses shopify-product-page-cro — this skill covers only the collection-page layer.",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Search visibility and product feeds"
   },
   {
     "name": "competitor-deep-analysis",
     "description": "Identify market gaps and strategic advantages through systematic multi-layer intelligence gathering and review mining, localized for DTC and Shopify storefronts: competitor Shopify stores, Amazon listings, TikTok/Meta ad creative libraries, and independent-site pricing pages. Use for competitor commercial intelligence: positioning, product depth, pricing, marketing channels, and customer sentiment. Optional DataForSEO quantitative intelligence (traffic surface, keyword gap) is available under contract. Do not use for domain or technical health checks, backlinks, or AI visibility audits (use site-seo-audit), for keyword metric lookups (use keyword-analysis), or for content editorial planning (use seo-content-research).",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Research and positioning"
   },
   {
     "name": "content-decay-diagnosis",
     "description": "Use when a store money page — a collection page, product page, or key landing page — shows search-performance decay (falling clicks, impressions, or rankings over time) and the user wants the cause and a fix. GSC and GA4 data are connected data or supplied files (the input contract specifies the CSV formats; they are optional — without them only a shallow \"potential decay\" diagnosis is possible and must be labeled). Live page state (status, canonical, Title, H1, content) is checked with DataForSEO OnPage Instant Pages. Update briefs cover new Title/Description/H1, page module and merchandising edits, and Schema; consolidation covers collection merges with a 301 map. Do not use for site-wide technical problems (use site-seo-audit) or for multiple URLs competing for the same query (use keyword-cannibalization).",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Search visibility and product feeds"
   },
   {
     "name": "copywriting",
     "description": "Use when writing, rewriting, or improving marketing copy, product listing copy, product titles, product descriptions, bullet points, SEO descriptions, landing-page copy, ad copy text, or CTA text. Do not use for image generation or social publishing strategy. Long-form keyword-based merchant blogs use available blog-article-writer guidance for article SEO/GEO, merchant images and internal links. Keep product, landing-page, ad and email copy here.",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Content and creative"
   },
   {
     "name": "crawl-index-audit",
     "description": "Diagnose why pages are not discovered, not rendered, not eligible for indexing, or not actually indexed. Judges the four states separately instead of conflating them, and checks robots conflicts, sitemap quality, noindex, parameter/pagination/filter URLs, host and trailing-slash variants, soft 404s, redirect chains, orphan pages, and JS-render discoverability. Crawl and render evidence comes from DataForSEO on_page tools on a bounded URL sample; index status comes from actual GSC evidence; logs establish crawl activity, not indexation, and is marked N/A without them. Use when the user asks why pages are not indexed, reports crawl or sitemap problems, or suspects wasted crawl budget on faceted or paginated URLs. Do not use for page speed or Core Web Vitals (use cwv-performance-audit) or for duplicate-content and keyword cannibalization analysis (use keyword-cannibalization).",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Search visibility and product feeds"
+  },
+  {
+    "name": "creative-fatigue-diagnosis",
+    "description": "Determine whether DTC paid-social deterioration is consistent with creative fatigue or another funnel change. Use before replacing assets or changing audience budgets.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Advertising and partnerships"
+  },
+  {
+    "name": "customer-lifetime-value",
+    "description": "Calculate observed customer revenue or contribution at a fixed horizon and clearly separated future-value scenarios. Use for customer economics; SKU margin analysis and recurring-subscription churn formulas are different scopes.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "customer-segmentation-rfm",
+    "description": "Compute auditable recency, frequency and monetary segments for a DTC customer file, including ties, refunds and contact eligibility. Use before assigning retention actions.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Email and retention"
+  },
+  {
+    "name": "customer-support-triage",
+    "description": "Classify DTC support cases by verified order context, urgency and operational next step, then prepare concise responses. Use for a case queue or routing rules, without automatically messaging customers or issuing refunds.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Inventory fulfillment and support"
   },
   {
     "name": "cwv-performance-audit",
     "description": "Mobile-first Core Web Vitals audit: measure LCP, INP, and CLS on representative templates (home, collection, product, article) with live Lighthouse runs, then trace each failing metric to a root cause — TTFB, images, fonts, critical CSS, third-party scripts, hydration cost, DOM size — and split fixes into frontend, backend, and design workstreams. Every metric is labeled lab or field, with tool, device, and test conditions recorded; missing CrUX field data is marked N/A, never estimated. Use when the user reports slow pages, poor PageSpeed scores, or wants a performance budget. Do not use for indexability, canonical, or structured-data checks (use site-seo-audit) or crawl and sitemap diagnostics (use crawl-index-audit).",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Search visibility and product feeds"
+  },
+  {
+    "name": "demand-forecasting",
+    "description": "Build and back-check short-horizon DTC unit-demand forecasts from sales, availability and events. Use for forecast ranges and uncertainty, not a purchase quantity or guaranteed revenue prediction.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "discount-profitability",
+    "description": "Calculate contribution and break-even volume for a DTC promotion, including eligible baskets, seller funding and discount stacking. Use to evaluate an offer before creating discount rules.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Measurement and unit economics"
   },
   {
     "name": "dtc-ab-testing",
     "description": "Plan and review storefront A/B experiments for DTC purchase conversion or contribution per visitor. Use for a defined hypothesis, variant design, measurement plan or experiment readout; avoid declaring a winner from a before/after anecdote.",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Measurement and unit economics"
   },
   {
     "name": "dtc-buyer-psychology",
     "description": "Translate observed DTC buyer hesitation into truthful merchandising and copy improvements using behavioral hypotheses. Use for product choice, risk perception, trust, price framing or checkout friction; never fabricate scarcity or social proof.",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Content and creative"
   },
   {
     "name": "dtc-content-strategy",
     "description": "Build a DTC editorial plan around buyer questions, product use, comparisons and care, connecting useful content to relevant store pages. Use for topic selection, content audits and a feasible publishing/distribution calendar.",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Content and creative"
   },
   {
     "name": "dtc-growth-experiments",
     "description": "Choose feasible acquisition and retention experiments for an independent DTC store using its product, margin, audience and resources. Use when the seller needs a prioritized growth backlog rather than a generic SaaS marketing list.",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Measurement and unit economics"
   },
   {
     "name": "dtc-launch-marketing",
     "description": "Plan marketing for a physical DTC product launch, collection drop or restock, including readiness, owned channels, creator distribution and measurement. Store product creation and publication are separate tasks.",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Content and creative"
   },
   {
     "name": "dtc-social-content",
     "description": "Create native DTC social posts, carousels and short-video scripts from verified product facts and merchant assets. Use for finished content and feasible distribution plans; posting or creator outreach requires separate authorized scope.",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Content and creative"
+  },
+  {
+    "name": "email-deliverability-audit",
+    "description": "Diagnose DTC email authentication, rejection and recipient-quality evidence without confusing delivery with inbox placement. Use when sends bounce, land in spam or behave differently by mailbox provider.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Email and retention"
+  },
+  {
+    "name": "email-welcome-series",
+    "description": "Build a consent-aware subscriber welcome flow with complete email drafts and purchase exits. Use after an email signup; an order confirmation is a different trigger.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Email and retention"
+  },
+  {
+    "name": "fulfillment-carrier-comparison",
+    "description": "Compare DTC fulfillment and carrier offers using actual parcel mix, invoice terms and service evidence. Use for a costed shortlist and pilot plan rather than an unsupported cheapest-provider claim.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "ga4-ecommerce-measurement",
+    "description": "Specify and audit GA4 ecommerce events, item payloads and revenue reconciliation for a DTC store. Use for measurement correctness; GTM deployment mechanics and marketing-credit attribution are separate workflows.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Measurement and unit economics"
   },
   {
     "name": "gmc-misrepresentation-audit",
     "description": "Audit storefront and product evidence for Google Merchant Center misrepresentation risks before launch, after account issues, or after fixes. Cross-check GMC data when available and deliver evidence, prioritized remediation and recheck results.",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Search visibility and product feeds"
+  },
+  {
+    "name": "google-shopping-campaign-audit",
+    "description": "Diagnose Shopping and Performance Max product-serving and contribution problems for a DTC catalog. Use when eligible products do not serve or revenue ROAS hides poor SKU economics.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Advertising and partnerships"
+  },
+  {
+    "name": "gtm-event-tracking-plan",
+    "description": "Prepare a Google Tag Manager event implementation plan with data-layer contracts, triggers, consent states and preview checks. Use for tag deployment design; ecommerce financial definitions and attribution models are separate.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Measurement and unit economics"
   },
   {
     "name": "image-prompt-guide",
     "description": "Prompt engineering and tool routing for AI image generation and editing. Use for: creative generation, product photo editing, e-commerce platform image sets, and specialized scenes (white background, authorized watermark/element cleanup, HD upscale, scene swap, model showcase, selling point, logo design, tech pack, etc.). Do NOT use for: full product development workflows (use available product-planning capabilities), or non-AI operations like resize/crop/compress/format-convert (use native tools).",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Content and creative"
+  },
+  {
+    "name": "influencer-campaign-measurement",
+    "description": "Reconcile creator costs, tracked orders and reused assets without double-counting attribution. Use for a DTC campaign readout or renewal decision.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Advertising and partnerships"
+  },
+  {
+    "name": "influencer-partner-selection",
+    "description": "Build an evidence-backed shortlist of creators whose audience, content and commercial terms fit a DTC campaign. Use before outreach or contracting.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Advertising and partnerships"
   },
   {
     "name": "internal-link-audit",
     "description": "Use when the user wants an internal-link audit of a store site: crawl internal links with OnPage Content Parsing (initial sample up to 100 pages, suited to Shopify stores), report click depth, broken links, redirect chains and loops, find orphan pages with an explicit statement of which discovery channels were used, grade anchor text (descriptive / vague / mismatched), and deliver a concrete new-link table with source, location, target, recommended anchor, and semantic reason. Declared limitation: this skill does not compute or fabricate PageRank-like values. Do not use for page indexability problems (use site-seo-audit) or for designing the internal-link structure of a new topic-cluster plan (use seo-content-research).",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Search visibility and product feeds"
   },
   {
     "name": "international-seo-audit",
     "description": "Audit international / multi-language stores: ccTLD vs subdomain vs subdirectory architecture and its cost; hreflang bidirectional return links, x-default, self-referencing tags, and invalid codes; canonicals wrongly pointing at the primary language; auto IP/language redirects that block crawlers; and currency, units, address, regulatory, and local search-intent localization. Use when the user runs one store in several countries or languages and asks why the German/JP/other market page does not rank, how to structure markets, or whether hreflang is correct. Multi-currency checkout configuration requires actually connected store capabilities; single-market SEO uses site-seo-audit — this skill covers the cross-market layer only.",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Search visibility and product feeds"
+  },
+  {
+    "name": "inventory-aging-clearance",
+    "description": "Identify aging DTC inventory by receipt lot and compare retain, markdown, bundle, return-to-vendor and disposal options using recoverable cash and remaining costs.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "inventory-replenishment-planning",
+    "description": "Calculate a time-phased reorder proposal for a DTC SKU using available inventory, demand, inbound dates, supplier lead time and pack constraints. Use for purchase quantities and stockout exposure, not an automatic purchase order.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Inventory fulfillment and support"
   },
   {
     "name": "keyword-analysis",
     "description": "Look up keyword metrics for a specific keyword set: monthly search volume, 12-month trend, keyword difficulty, CPC, paid competition, and search intent. Use when the user gives keywords (or a short list) and asks for volume, difficulty, CPC, competition, intent, or trend direction. Do not use for content topic selection or editorial planning (use seo-content-research), for discovering which keywords competitor domains rank for (use competitor-deep-analysis), or for go/no-go product validation (use product-opportunity-research). Metric-only requests end here. Product-selection keyword discovery/comparison uses product-keyword-research; article keyword plans use blog-keyword-research; finished articles from keywords use blog-article-writer. Reuse this evidence and use only available skills.",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Search visibility and product feeds"
   },
   {
     "name": "keyword-cannibalization",
     "description": "Use when several URLs on a store may be competing for the same query or search intent and the user wants a diagnosis and fix. Grades each group as confirmed (ranking-swap evidence in the uploaded GSC pages-x-queries export) or potential (structural similarity without swap evidence); selects the primary page; decides keep-separated / re-target / merge+301 / canonical / noindex per URL; outputs a URL action map and a 2/4/8-week monitoring plan. Candidate pages are verified live with OnPage Instant Pages. Shopify hotspots (tag pages, filter pages, variant URLs) are covered. Do not use for site-wide indexability (use site-seo-audit) or for keyword metrics (use keyword-analysis).",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Search visibility and product feeds"
+  },
+  {
+    "name": "landed-cost-model",
+    "description": "Allocate confirmed inbound costs to DTC SKU lots and distinguish landed cost, import cash outlay and outbound fulfillment. Use for quote-to-receipt costing with explicit duty and tax assumptions.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "landing-page-cro",
+    "description": "Review a DTC campaign landing page for traffic-message match, offer comprehension and purchase-path friction. Use for campaign-specific pages; individual product-detail-page audits belong to shopify-product-page-cro.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Storefront and conversion"
+  },
+  {
+    "name": "loyalty-program-economics",
+    "description": "Model points, rewards and tier benefits against DTC contribution and redemption obligations. Use before launching or changing a loyalty program.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Email and retention"
+  },
+  {
+    "name": "marketing-attribution-audit",
+    "description": "Reconcile store orders with advertising and analytics credit rules to explain conflicting channel reports. Use for model/window/identity differences; event implementation and automatic budget reallocation are outside this audit.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Measurement and unit economics"
   },
   {
     "name": "marketing-roas-analyzer",
     "description": "Diagnose marketing performance, build evidence-backed search acquisition deliverables, and run a dated operating review using connected account data plus relevant DataForSEO evidence.",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "merchant-review-mining",
+    "description": "Code merchant-supplied or publicly accessible product reviews into evidence-backed fit, quality, delivery and expectation themes. Use for research synthesis, not review solicitation or writing final marketing claims.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Research and positioning"
+  },
+  {
+    "name": "meta-ad-account-audit",
+    "description": "Audit a DTC Meta ad account using reconciled purchase data, delivery settings and creative evidence. Use for account diagnosis, not automatic campaign restructuring.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Advertising and partnerships"
+  },
+  {
+    "name": "mobile-store-ux-audit",
+    "description": "Inspect mobile shopping interactions across navigation, search, variants, cart and overlays. Use for touch, viewport and accessibility friction; lab performance metrics and product-page persuasion are separate audits.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Storefront and conversion"
+  },
+  {
+    "name": "multi-location-stock-allocation",
+    "description": "Plan DTC stock transfers and location allocations against local demand, shipping reach, reservations and transfer lead time. Use for a reviewable allocation sheet, not silently synchronizing inventories.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "negative-keyword-planning",
+    "description": "Draft a scope-aware negative-keyword change set from observed DTC search queries and test it for valuable-query collisions. Use when irrelevant traffic needs containment.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Advertising and partnerships"
+  },
+  {
+    "name": "onsite-search-optimization",
+    "description": "Improve a store internal search experience using query logs, result relevance and catalog facts. Use for zero-result queries, synonyms and ranking rules; external search-engine SEO is outside this workflow.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Storefront and conversion"
+  },
+  {
+    "name": "paid-search-query-mining",
+    "description": "Classify disclosed paid-search queries into evidence-backed expansion, landing-page and investigation opportunities for a DTC store. Use with an actual search-terms export.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Advertising and partnerships"
+  },
+  {
+    "name": "paid-social-creative-brief",
+    "description": "Turn merchant evidence into distinct paid social concepts, hook matrices and a production brief. Use before commissioning or refreshing DTC ad assets.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Advertising and partnerships"
+  },
+  {
+    "name": "post-purchase-email-flow",
+    "description": "Design delivery-aware DTC post-purchase communication with service and promotional branches. Use to help customers use products and prepare relevant repeat-purchase offers.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Email and retention"
+  },
+  {
+    "name": "price-test-planning",
+    "description": "Design a controlled DTC price experiment with contribution guardrails, stable assignment and a stopping plan. Use to learn price response rather than implement automatic repricing or claim an optimal price.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "product-comparison-page",
+    "description": "Draft a fair buyer-facing comparison of physical products with dated evidence and use-case recommendations. Use for versus or alternatives pages; broader competitor research and ordinary product-page copy are separate tasks.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Storefront and conversion"
+  },
+  {
+    "name": "product-feed-optimization",
+    "description": "Audit and prepare item-level Shopping/catalog feed changes from merchant exports and verified catalog facts. Use for title, identifier, variant and attribute quality; resolving specific disapproval diagnostics has a separate workflow.",
+    "license": "Apache-2.0",
+    "version": "0.2.0",
+    "category": "Search visibility and product feeds"
+  },
+  {
+    "name": "product-image-shot-list",
+    "description": "Plan a physical-product photo set with exact shot purpose, truthful detail and asset requirements. Use for photographer briefs and coverage gaps; image generation prompts and paid ad concepts are separate tasks.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Content and creative"
   },
   {
     "name": "product-keyword-research",
     "description": "Find Shopify product opportunities from a category or keywords using available keyword connectors and public product reports. Keep measured keyword metrics separate from product-sales estimates.",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Research and positioning"
   },
   {
     "name": "product-marketing-context",
     "description": "Build and maintain the current merchant’s store, product, audience, market, brand and operating context from workspace and connected data.",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Research and positioning"
   },
   {
     "name": "product-opportunity-research",
     "description": "Research Shopify product opportunities from scratch, validate products, mine niches, assess rising products or expand adjacent lines using available connectors and public evidence. No connector required for a basic screen.",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Research and positioning"
   },
   {
     "name": "product-page-seo",
     "description": "Audit and optimize e-commerce product detail pages: metadata, unique descriptions, specs, images, FAQ and trust information; Product / Offer / AggregateRating schema consistency with visible page content; variant URLs and canonicals; and the full out-of-stock and delisting lifecycle (404, 410, 301, substitutes — never redirect everything to the homepage). Use when the user gives product URLs (an exploratory sample of 10 representative pages) and asks why product pages do not rank, how to handle variants, or what to do when a product goes out of stock or is discontinued. Conversion and trust optimization uses shopify-product-page-cro; deep structured-data design uses schema-markup-designer; collection pages use collection-page-seo — this skill covers the PDP template and its lifecycle only.",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Search visibility and product feeds"
+  },
+  {
+    "name": "product-video-storyboard",
+    "description": "Create a filmable physical-product demo storyboard with timing, proof shots, narration and edit instructions. Use for demonstration production; social channel calendars and ad campaign strategy are separate.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Content and creative"
   },
   {
     "name": "profit-margin-analyzer",
     "description": "Analyze gross and net profit margins across products, channels, and segments. Implement cost attribution models to calculate contribution margin and identify profitability drivers. For ad-effect diagnosis and budget reallocation use marketing-roas-analyzer; for marketing strategy use the corresponding marketing skills.",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Measurement and unit economics"
   },
   {
     "name": "programmatic-seo-planner",
     "description": "Use when a store owner wants to assess a programmatic SEO play built on e-commerce page patterns — product x attribute pages, brand x category collection pages, use-case / scenario landing pages, comparison pages (product A vs product B), and buyer guides — and, if viable, design the page template set: validate the keyword pattern and combination count against the product catalog, audit the catalog/attribute dataset, decide per URL class generate / consolidate / noindex / canonical, and produce URL, Title, H1, body module, FAQ, and Schema templates plus pilot, scale, and stop conditions with explicit quality-gate assertions. Evidence uses low-cost DataForSEO keyword data (Labs keyword ideas, bulk keyword difficulty) on at most 20 sampled combinations. Do not use for deep editorial research on one topic (use seo-content-research) or for technical issues on already published pages (use site-seo-audit).",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Search visibility and product feeds"
+  },
+  {
+    "name": "purchase-order-review",
+    "description": "Reconcile a draft DTC purchase order against an approved quote, variants, commercial terms and delivery plan before sending or accepting changes.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "referral-program-design",
+    "description": "Design a DTC refer-a-friend loop with two-sided reward economics, qualified-order gates and abuse review. Use for existing customers recommending the store to friends.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Email and retention"
+  },
+  {
+    "name": "returns-exchange-workflow",
+    "description": "Design or carry out an authorized DTC return or exchange using actual order, policy, payment and inventory states. Use for an auditable case workflow, keeping approval, receipt, refund and restock separate.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "returns-reason-analysis",
+    "description": "Analyze DTC returns by delivered cohort, SKU and verified reason to prioritize fixable product, fit, content or fulfillment problems. Use for root-cause hypotheses rather than refund-total reporting.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "review-request-workflow",
+    "description": "Design a neutral post-purchase review request and suppression workflow using delivery status, permission and existing reviews. Use for collection operations; it does not mine existing reviews or generate customer testimonials.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Email and retention"
   },
   {
     "name": "schema-markup-designer",
     "description": "Two jobs in one skill: (1) audit the structured data already on sampled pages by reading source JSON-LD, checking type coverage, @id entity reuse, required/recommended properties, and consistency with visible content; (2) design complete, deployable JSON-LD for the missing types. Hard rule: markup may only restate what the page visibly shows — no invented ratings, prices, or reviews. Every template is validated against the official schema.org / Google Rich Results guidelines with tool and date recorded; unknown optional values are omitted; missing required facts block deployment. On Shopify the focus is Product/Offer agreeing with the visible price and stock state. Use when the user asks for rich results, Product/Organization schema, or a structured-data audit. Page-level SEO basics (titles, meta, headings) use site-seo-audit; product page copy structure uses product-page-seo.",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Search visibility and product feeds"
+  },
+  {
+    "name": "seasonal-promotion-calendar",
+    "description": "Build a market-specific retail promotion calendar backward from stock, delivery cutoffs and contribution limits. Use for seasonal trading plans; a new-product launch strategy or generic social posting calendar is separate.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Content and creative"
   },
   {
     "name": "seo-content-research",
     "description": "Use for an already-listed or already-selling product when the user needs SEO content direction, topic and outline research, programmatic keyword matrices, UGC/category content angles, keyword-to-page mapping, briefs, or prioritization. Evidence is collected directly with built-in DataForSEO tools and public web research under this skill's data contract. Keyword metric lookups (volume, KD, CPC, intent for a given list) use the keyword-analysis skill. Domain health and technical audits use site-seo-audit. Do not produce a Go, Test, or No-go product opportunity decision. Blog-specific keywords and article briefs use blog-keyword-research; complete article writing from a keyword/brief uses blog-article-writer. This skill retains cross-page content strategy and non-blog planning. Pass existing evidence; if a specialist is unavailable complete the requested supported deliverable here.",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Search visibility and product feeds"
+  },
+  {
+    "name": "shipping-threshold-analysis",
+    "description": "Evaluate a DTC free-shipping threshold using actual basket distribution, contribution and delivery costs. Use to compare candidate thresholds without assuming an AOV increase is profit.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Measurement and unit economics"
   },
   {
     "name": "shopify-admin-api",
     "description": "Verified catalog of Shopify Admin GraphQL mutations and input types for the pinned API version (2026-07): products, media, variants, inventory, and store operations. Use before writing ANY GraphQL mutation against a connected Shopify store — never guess mutation or input type names. Execution always goes through the store's connected Shopify tools; store building flows belong to shopify-builder, single-product listing SOP to shopify-product-launch. This skill is the pre-write signature dictionary and introspection guide only.",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Storefront and conversion"
   },
   {
     "name": "shopify-builder",
     "description": "Build and adjust the connected Shopify storefront with scoped previews and verification; route product listing to the product-launch workflow.",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Storefront and conversion"
   },
   {
     "name": "shopify-product-launch",
     "description": "Prepare, create and verify Shopify product drafts from merchant facts and keyword evidence; preserve store conventions and publish only within explicit authorization.",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Storefront and conversion"
   },
   {
     "name": "shopify-product-page-cro",
     "description": "Diagnose actual product-page conversion friction and deliver specific copy, asset and layout improvements using connected evidence.",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Storefront and conversion"
   },
   {
     "name": "shopify-upsell-cross-sell",
     "description": "Design relevant product bundles and recommendations using real catalog, margin, inventory and supported storefront capabilities.",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Storefront and conversion"
+  },
+  {
+    "name": "shopping-feed-disapproval-triage",
+    "description": "Investigate current item-level Merchant Center disapprovals and prepare evidence-backed remediation and readback steps. Use for diagnostic codes and affected offers; account-wide misrepresentation and general feed copy optimization are separate.",
+    "license": "Apache-2.0",
+    "version": "0.2.0",
+    "category": "Search visibility and product feeds"
   },
   {
     "name": "site-migration-seo",
     "description": "Produces the review and implementation package for a site migration — replatforming, redesign, domain change, CMS move, or URL restructuring — so no URL equity is lost. Core is a one-to-one 301 mapping table where each old URL goes to the new URL with the closest matching intent and content (blanket redirects to the homepage are refused), plus a conflict table for many-to-one, one-to-many, unmatched, chained, and circular cases, an old/new template equivalence check, Nginx/Apache/Cloudflare rule examples, pre-launch / launch-day / post-launch-1-90-day checklists, GSC Change of Address guidance, and rollback triggers. The skill does not execute the launch or DNS changes — it only produces files for human review and implementation. Shopify focus: URL structure differences (/collections/.../products) and Shopify-compatible redirect implementation via admin URL Redirects and CSV import. Use before or during a migration; the new site's content health audit afterward uses site-seo-audit, and product URL.",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Search visibility and product feeds"
   },
   {
     "name": "site-seo-audit",
     "description": "Use for store-wide search audits, coordinating page and content specialists, search competitor gaps, single AI mention checks, backlinks and brand facts, and normal post-optimization reviews. Diagnostic requests stay read-only; optimization continues into reviewable changes within actual authorization. Reuse one evidence ledger and baseline; demonstrated decline uses content-decay-diagnosis.",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Search visibility and product feeds"
+  },
+  {
+    "name": "sku-portfolio-rationalization",
+    "description": "Review DTC assortment for keep, replenish, repair, seasonal hold or retirement using contribution, inventory investment and customer role. Use when deciding which SKUs deserve resources, not just sorting revenue.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "sms-campaign-planning",
+    "description": "Prepare a consent-scoped DTC SMS campaign with segment-cost estimates, quiet-hour handling and purchase exits. Use for a specific timely merchant offer or requested restock alert.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Email and retention"
+  },
+  {
+    "name": "subscription-retention",
+    "description": "Diagnose voluntary and payment-related churn in a DTC replenishment subscription and design appropriate save paths. Use for skip, pause, cancel and failed-payment recovery workflows.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Email and retention"
+  },
+  {
+    "name": "subscription-unit-economics",
+    "description": "Calculate observed cohort contribution and acquisition payback for physical DTC subscriptions, separating paid shipments, skips, cancellations and failed renewals.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Measurement and unit economics"
   },
   {
     "name": "supplier-finder",
     "description": "Find supplier candidates, compare evidenced procurement conditions and prepare sample checks using authorized Sorftime or public sources.",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Research and positioning"
+  },
+  {
+    "name": "supplier-quality-inspection-plan",
+    "description": "Prepare a lot-specific quality inspection plan for DTC goods from approved specifications, defect definitions and sampling requirements. Use before shipment or receiving; do not claim product certification or an invented AQL pass.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "supplier-quote-comparison",
+    "description": "Normalize supplier quotes for a DTC purchase by specification, quantity, delivery responsibility and landed-cost scope. Use to compare actual offers, excluding supplier contact or order placement unless requested.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "support-knowledge-base",
+    "description": "Create or repair a DTC support knowledge base from approved product and policy evidence, including article scope, source ownership and escalation. Use to answer repeat questions without inventing warranty or return promises.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Inventory fulfillment and support"
   },
   {
     "name": "theme-studio",
     "description": "Build or renovate a Shopify theme from a merchant brief, reference page or screenshot. Use when the user wants actual Liquid/JSON/CSS changes, campaign templates or an unpublished theme preview; use copywriting for copy-only requests.",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Storefront and conversion"
   },
   {
     "name": "trend-stage-timing-analyzer",
     "description": "Assess product entry timing from dated demand, seasonality, competition and merchant economics; deliver a qualified test decision.",
     "license": "MIT",
-    "version": "0.1.1"
+    "version": "0.1.1",
+    "category": "Research and positioning"
+  },
+  {
+    "name": "ugc-creator-brief",
+    "description": "Commission a reviewable product-demo content brief with shot lists, claims, rights and deliverables. Use for paid creator production rather than selecting influencers for audience reach.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "voice-of-customer-messaging",
+    "description": "Turn supplied interviews, reviews and support language into a DTC message hierarchy with traceable proof. Use after research exists; this does not replace broad review mining or generate unsupported testimonials.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Research and positioning"
+  },
+  {
+    "name": "weekly-store-performance-review",
+    "description": "Prepare a DTC operating review that reconciles sales, contribution, inventory, fulfillment and customer issues into specific decisions. Use for weekly management actions, not a dashboard of unrelated KPIs.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "winback-email-flow",
+    "description": "Design a lapsed-buyer reactivation flow using actual repurchase cycles, consent and contribution limits. Use for prior customers, not unconverted subscribers or failed-payment retries.",
+    "license": "MIT",
+    "version": "0.2.0",
+    "category": "Email and retention"
   }
 ]
