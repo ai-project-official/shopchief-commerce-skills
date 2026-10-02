@@ -54,3 +54,35 @@ Handoff: aged-stock register, offer economics, proposed purchase quantities and 
 4. [Support knowledge base](../skills/support-knowledge-base/SKILL.md): write accurate, versioned help articles from approved policy.
 
 Handoff: triage queue, evidence-backed root causes, replacement copy and help drafts. Customer complaints are evidence to investigate, not proof of a defect or permission to refund.
+
+## Prepare a catalog update
+
+1. [SKU and option identity](../skills/sku-and-option-identity-audit/SKILL.md): resolve identifiers and option collisions before editing variants.
+2. [Product attribute schema](../skills/product-attribute-schema-audit/SKILL.md): check owner, type, units and controlled values against the actual destination.
+3. [Catalog import preflight](../skills/catalog-import-change-preflight/SKILL.md): create a minimal change file, before/after manifest and reconciliation plan.
+
+Handoff: stable record IDs, reviewed field mappings and an import proposal. Omitted fields, explicit values and clearing a field have different meanings; verify the actual importer before execution.
+
+## Reconcile cash before closing the month
+
+1. [Payment and payout reconciliation](../skills/payment-payout-reconciliation/SKILL.md): trace settlement transaction IDs to payouts, bank deposits and order references.
+2. [Bank and ledger reconciliation](../skills/merchant-bank-ledger-reconciliation/SKILL.md): separate timing items from supported proposed bookkeeping corrections.
+3. [Month-end close packet](../skills/merchant-month-end-close-pack/SKILL.md): assemble reconciliations, inventory evidence, pending adjustments and reviewer decisions.
+
+Handoff: control totals, evidence-linked exceptions and a close packet. Matching a payout amount does not prove every order link, and preparing the packet does not close or lock the books.
+
+## Turn shopper research into product information
+
+1. [Consumer interview planning](../skills/consumer-interview-planning/SKILL.md): prepare neutral questions about actual purchase episodes.
+2. [Qualitative synthesis](../skills/qualitative-research-synthesis/SKILL.md): connect themes to participant evidence and contrary cases.
+3. [Brand proof library](../skills/brand-proof-library/SKILL.md): preserve claim scope, source, permission and approved variants before using a finding in copy.
+
+Handoff: a discussion guide, source-linked findings and verified proof units. An unfielded guide has no findings; a small interview sample does not establish market prevalence.
+
+## Prepare creator content for paid use
+
+1. [Creator rights review](../skills/creator-rights-review/SKILL.md): reconcile asset, placement, territory, dates and permitted edits.
+2. [Creator content acceptance](../skills/creator-content-acceptance/SKILL.md): compare the actual version with product facts and the agreed brief.
+3. [Creator paid amplification](../skills/creator-paid-amplification/SKILL.md): prepare an eligible asset plan with a matching destination, capped test and rights expiry.
+
+Handoff: a rights schedule, accepted asset version and activation proposal. An organic repost grant does not establish paid or creator-identity advertising rights.

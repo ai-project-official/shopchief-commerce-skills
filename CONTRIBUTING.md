@@ -4,7 +4,7 @@ Describe the merchant task, observed failure and expected useful outcome. Use sy
 
 Keep skills independently installable: `SKILL.md` with accurate name/description, supporting files only when useful, and no dependencies on an unavailable runtime. Preserve the user's scope and do not fabricate facts or claim unperformed writes. Any new API constraints or benchmark claims need dated primary sources.
 
-For third-party material, include its exact source version, applicable license and notices. By submitting original contributions you agree they may be distributed under this repository's MIT license; you must have the right to contribute them.
+For third-party material, include its exact source version, applicable license and notices. Keep a linked `references/source.md` with the fixed upstream file URL, original SHA-256, adaptation date and specific changes. Preserve the complete upstream license, including copyright holders, inside the installed package; the root license does not replace it. By submitting original contributions you agree they may be distributed under this repository's MIT license; you must have the right to contribute them.
 
 Before adding a skill, identify the merchant decision it owns and explain how its deliverable differs from the closest existing skill. A different channel name, persona or output language alone does not justify another package. Include concrete inputs, task-specific reasoning or calculations, required tools and an export-only path when possible. Avoid universal performance targets or fabricated customer results.
 

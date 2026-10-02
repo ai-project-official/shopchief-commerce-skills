@@ -1,6 +1,6 @@
 # ShopChief Commerce Skills
 
-面向独立站和 DTC 卖家的 **100+ 开源 AI 技能**。从选品、建站、搜索与广告，到客户留存、利润、库存和售后，把具体经营任务变成有依据、可审核的交付物。
+面向独立站和 DTC 卖家的 **300+ 开源 AI 技能**。从选品、建站、搜索与广告，到客户留存、利润、库存和售后，把具体经营任务变成有依据、可审核的交付物。
 
 [English](README.md) · [按任务查找](docs/catalog.md) · [组合工作流](docs/playbooks.md) · [完整案例](examples/README.md) · [ShopChief 官网](https://shopchief.ai/?utm_source=github&utm_medium=opensource&utm_campaign=commerce_skills&utm_content=readme_zh)
 
@@ -18,6 +18,9 @@
 | 准备新订阅者欢迎邮件 | [欢迎邮件流程](skills/email-welcome-series/SKILL.md) | 触发条件、排除条件、邮件稿与核对项 |
 | 排查购买事件漏记 | [GA4 电商衡量](skills/ga4-ecommerce-measurement/SKILL.md) | 事件契约、重复检查和验证步骤 |
 | 找出退货原因 | [退货原因分析](skills/returns-reason-analysis/SKILL.md) | 可比较的退货原因占比与证据对应的改进项 |
+| 核对商品批量导入 | [商品导入预检](skills/catalog-import-change-preflight/SKILL.md) | [变更行、状态冲突与保留字段](skills/catalog-import-change-preflight/assets/worked-example.md) |
+| 解释支付结算差额 | [支付到账核对](skills/payment-payout-reconciliation/SKILL.md) | [交易明细、到账金额与未确认关联](skills/payment-payout-reconciliation/assets/worked-example.md) |
+| 判断达人素材能否投广告 | [达人素材付费投放](skills/creator-paid-amplification/SKILL.md) | [使用授权、日期、活动条件与投放判断](skills/creator-paid-amplification/assets/worked-example.md) |
 
 目录按研究定位、店铺转化、搜索与 Feed、内容创意、广告合作、邮件留存、经营衡量和库存售后分组。按当前任务安装即可。
 
@@ -59,7 +62,7 @@ python3 .agents/skills/profit-margin-analyzer/scripts/profit_report.py --demo
 
 ## 贡献与许可
 
-欢迎提交可复现问题和具体任务改进，请使用虚构或已授权脱敏资料。ShopChief 原创贡献采用 [MIT](LICENSE)，改编包保留适用的上游许可，商品 Feed 相关包采用 Apache-2.0。各包 `LICENSE` 和 [NOTICE](NOTICE.md) 列明许可与必要署名。
+欢迎提交可复现问题和具体任务改进，请使用虚构或已授权脱敏资料。ShopChief 原创贡献采用 [MIT](LICENSE)，改编包保留适用的上游许可与声明。各包 `LICENSE` 和 [NOTICE](NOTICE.md) 列明许可与必要署名。
 
 维护完整仓库时执行：
 

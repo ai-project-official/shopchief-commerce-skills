@@ -13,7 +13,7 @@ These are synthetic worked examples. The profit output is reproducible arithmeti
 
 ## Campaigns, retention and store operations
 
-Every new v0.2.0 package contains `assets/worked-example.md`: synthetic input, an expected result and two acceptance scenarios, including missing or conflicting evidence. The [task catalog](../docs/catalog.md) links each available example.
+Every package added in v0.2.0 or v0.3.0 contains `assets/worked-example.md`: synthetic input, an expected result and two acceptance scenarios, including missing or conflicting evidence. The [task catalog](../docs/catalog.md) links each available example.
 
 | Task | Completed example |
 |---|---|
@@ -31,6 +31,10 @@ Every new v0.2.0 package contains `assets/worked-example.md`: synthetic input, a
 | Write a help article | [Approved care instructions and a completed article](../skills/support-knowledge-base/assets/worked-example.md) |
 
 Try a case before supplying your own data: ask the agent to read the skill and the example's inputs, produce its answer, then compare it with the worked result. A good answer preserves denominators and source facts, identifies unknowns and proposes the next merchant decision. Matching a synthetic result does not establish live tool compatibility or a sales lift.
+
+## Independent fresh-input cases
+
+[Nine v0.3.0 review cases](release-v0.3/README.md) include new inputs and captured agent outputs for catalog changes, payouts, consent, creator rights, contribution values, comparison panels and shopper research. The reviewers used the skills without seeing their worked examples. These selected offline cases complement the package checks; they do not establish live-store compatibility.
 
 ## Additional prompts
 

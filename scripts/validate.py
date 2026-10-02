@@ -47,10 +47,23 @@ def main():
         try:
             if scalar(pieces[1], "description") != desc:
                 errors.append(f"{folder.name}: entrypoint and catalog descriptions differ")
-            if scalar(pieces[1], "version", 2) == "0.2.0":
+            version = scalar(pieces[1], "version", 2)
+            if not re.fullmatch(r"\d+\.\d+\.\d+", version):
+                errors.append(f"{folder.name}: invalid package version")
+            elif tuple(map(int, version.split("."))) >= (0, 2, 0):
                 example = folder / "assets/worked-example.md"
                 if not example.is_file() or "assets/worked-example.md" not in text:
                     errors.append(f"{folder.name}: new package must link its bundled worked example")
+            if version == "0.3.0":
+                source = folder / "references/source.md"
+                if not source.is_file() or "references/source.md" not in text:
+                    errors.append(f"{folder.name}: adaptation must link its bundled source record")
+                else:
+                    attribution = source.read_text()
+                    if not re.search(r"https://github\.com/[^/\s]+/[^/\s]+/blob/[a-f0-9]{40}/", attribution):
+                        errors.append(f"{folder.name}: source record lacks a fixed upstream file revision")
+                    if not re.search(r"\b[a-f0-9]{64}\b", attribution):
+                        errors.append(f"{folder.name}: source record lacks an upstream SHA-256")
         except (ValueError, IndexError) as error:
             errors.append(f"{folder.name}: {error}")
     for entry in ROOT.glob("skills/*/SKILL*.md"):
@@ -64,9 +77,12 @@ def main():
     secret_patterns = [r"gh[pousr]_[A-Za-z0-9]{20,}", r"github_pat_[A-Za-z0-9_]{20,}", r"sk_(?:live|test)_[A-Za-z0-9]{16,}", r"AKIA[A-Z0-9]{16}", r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----", r"mongodb(?:\+srv)?://[^\s/]+:[^\s/]+@"]
     checked = 0
     for path in ROOT.rglob("*"):
+        if path.is_symlink() and "skills" == path.relative_to(ROOT).parts[0]:
+            errors.append(f"{path.relative_to(ROOT)}: installed packages must not depend on symlinks")
+            continue
         if not path.is_file() or any(part in {".git", "node_modules", "__pycache__"} for part in path.relative_to(ROOT).parts):
             continue
-        if path.suffix not in {".md", ".json", ".csv", ".py", ".yml", ".txt"} and path.name != "LICENSE":
+        if path.suffix not in {".md", ".json", ".csv", ".py", ".yml", ".yaml", ".txt", ".html", ".js", ".ts"} and path.name not in {"LICENSE", "NOTICE"} and "licenses" not in path.parts:
             continue
         text = path.read_text()
         checked += 1

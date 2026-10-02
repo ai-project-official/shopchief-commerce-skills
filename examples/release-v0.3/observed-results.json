@@ -1,0 +1,153 @@
+[
+  {
+    "id": "catalog-edit-conflict",
+    "skill": "catalog-import-change-preflight",
+    "checked_on": "2026-10-02",
+    "setting": "Independent offline agent use; synthetic merchant input; worked examples withheld; no live account access.",
+    "answer": "The proposed four-column file is blocked: empty Description cells would erase both product descriptions. Omit Description entirely. Do not apply the P101 price proposal because its fresh price is USD 21.00, conflicting with the USD 20.00 backup used for approval; a 10% increase is USD 22.00 from the backup or USD 23.10 from fresh state. The intended base must be resolved, not silently rebased.\n\nA limited proposal for the nonconflicted price row is:\n```csv\nID,Price\nP102,27.50\n```\nCalculation: 25.00 × 1.10 = 27.50 USD. This file omits Tags and Description so both are preserved under the supplied importer semantics. No import has run. Recheck ID existence and unchanged price before any authorized import because missing IDs can create products.\n\nChange manifest:\n| ID | Field | Backup | Fresh | Intended after | Status | Rollback |\n| P101 | Price | 20.00 | 21.00 | Unresolved: 22.00 or 23.10 | Hold: base conflict | Capture immediate pre-write price when conflict resolved |\n| P101 | Tags | summer, linen | summer, linen | linen, clearance | Set operation verified; file encoding unverified | summer, linen |\n| P102 | Price | 25.00 | 25.00 | 27.50 | Nonconflicted proposal | 25.00 |\n\nP101 tag set = (existing − {summer}) ∪ {clearance}; preserve linen. Keep this tag proposal separate from the price file because a blank Tags cell for P102 would clear its tags. The exact importer tag-list serialization has not been supplied, so no import-ready tag CSV is asserted. Descriptions remain untouched by omission.",
+    "missing_inputs": [
+      "Agreed price base or revised approval for P101 after the 20.00 → 21.00 conflict.",
+      "Actual tag-list serialization and importer template for the P101 tag update.",
+      "A fresh authoritative existence/state check immediately before any future import; no connection was permitted."
+    ],
+    "actions_performed": [
+      "Read supplied tables and SKILL.md.",
+      "Computed one nonconflicted price proposal and explicit tag set operation.",
+      "Produced textual CSV and conflict manifest; no store connection or external write."
+    ]
+  },
+  {
+    "id": "payout-linkage",
+    "skill": "payment-payout-reconciliation",
+    "checked_on": "2026-10-02",
+    "setting": "Independent offline agent use; synthetic merchant input; worked examples withheld; no live account access.",
+    "answer": "P42 reconciles to the supplied settlement rows and posted bank deposit, in USD. Order linkage remains incomplete.\n\n| Payout | Transaction | Order linkage | Signed gross | Signed fee | Net |\n| P42 | T1 charge | Unknown | 1,000.00 | -30.00 | 970.00 |\n| P42 | T2 refund | Unknown | -90.00 | 0.00 | -90.00 |\n\nSettlement control: 970.00 − 90.00 = 880.00; reported payout 880.00; difference 0.00 USD.\nBank control: payout 880.00 versus posted bank reference P42 amount 880.00; difference 0.00 USD.\nProcessor-to-order control: unresolved; neither T1 nor T2 has a supplied processor/order reference. O7 total 200.00 on Sep 29 has no payout ID. Its date near the Sep 30 issue date does not establish P42 membership, and its amount must not be added to or subtracted from this payout.\n\nException register:\n| Item | Status | Required evidence | Proposed owner |\n| T1 | Missing order linkage | Processor charge ID and order payment event mapping | Finance/order operations |\n| T2 | Missing refund/order linkage | Refund reference, original charge and order refund ledger | Finance/order operations |\n| O7 | Payout membership unknown | Payment capture and settlement transaction references | Finance/order operations |\n\nNo balancing journal or overpayment/underpayment claim is justified. Results cover only the supplied records; bank posting date and full export coverage are not supplied.",
+    "missing_inputs": [
+      "Processor charge/refund-to-order references for T1/T2 and payment ledger for O7.",
+      "Full settlement export coverage, report timezone and bank posting date for period-level completeness."
+    ],
+    "actions_performed": [
+      "Read supplied records and SKILL.md.",
+      "Normalized the positive fee magnitude once to a negative component.",
+      "Calculated settlement/payout and payout/bank controls and produced an exception report; no external operations."
+    ]
+  },
+  {
+    "id": "contact-consent-conflict",
+    "skill": "customer-identity-and-consent-audit",
+    "checked_on": "2026-10-02",
+    "setting": "Independent offline agent use; synthetic merchant input; worked examples withheld; no live account access.",
+    "answer": "Do not merge any records. Contact ownership is unverified and no merge is approved.\n\n| Candidate group | Evidence | Conflict | Proposed decision |\n| C1/C2 | Same email comparison key | Ana versus Sam; ownership unverified; subscribed CSV versus later ESP suppression | Review only; no survivor or field precedence selected |\n| C1/C3 | Same name and shared address | Different email; household address does not prove one person | Keep separate unless stronger identity evidence emerges |\n\nMarketing export: include none of the supplied contacts. Keep buyer@… suppressed for this proposed export because an explicit later ESP unsubscribe exists; do not restore it from C1’s older CSV. The identity conflict remains open even while suppressing the shared destination. C3 another@… has unknown permission; four orders do not establish marketing consent.\n\nCounts at destination level: 2 unique supplied email destinations; 0 eligible, 1 suppressed for the export, 1 unknown/withheld. Counts at record level: 3 records; C1 and C2 both withheld at their shared suppressed email destination, C3 withheld for missing consent. No records were merged, erased or exported.\n\nNext checks: verify contact ownership and tenant/store context; retrieve channel/purpose-specific consent events and the merchant’s merge policy. Only then propose survivor IDs and field/history transfer rules, with a pre-merge snapshot and separate authorization.",
+    "missing_inputs": [
+      "Verified contact ownership and stronger identity evidence.",
+      "Channel/purpose-specific authoritative consent history for C1/C2 and any consent evidence for C3.",
+      "Store/tenant scope, jurisdiction context and approved merge policy."
+    ],
+    "actions_performed": [
+      "Read supplied records and SKILL.md.",
+      "Prepared identity conflict and marketing eligibility decisions with masked summary contacts.",
+      "No merge, export, messaging or external access."
+    ]
+  },
+  {
+    "id": "creator-amplification-eligibility",
+    "skill": "creator-paid-amplification",
+    "checked_on": "2026-10-02",
+    "setting": "Independent offline agent use; synthetic merchant input; worked examples withheld; no live account access.",
+    "answer": "As of 2026-10-02, no supplied asset is ready for the requested October 3–12 paid campaign. Asset A: exclude from paid consideration; 12,000 organic views do not extend its organic brand-Instagram repost license to advertising or creator-identity use. Asset B: conditionally eligible for unchanged brand-account US Instagram paid use only October 3–5 inclusive, within its October 1–5 grant. It is not eligible October 6–12 or for creator-identity ads. B's 20% off all refills promise conflicts with the landing page's 10% off selected refills; hold spend until an authorized, commercially valid offer alignment is documented. Changing B's edit is outside the unchanged-only grant. Proposed gated test: B only, permitted US Instagram placements and brand identity; merchant-reviewed total budget and test-loss cap no greater than USD300; scheduled end no later than October5 in the agreed rights timezone, expiry logged. No daily pace or success claim is justified from organic views alone. Review actual contribution after ad cost and returns, landing-page offer consistency, and delivered spend; stop at the supplied loss cap or rights expiry. Keep October6–12 unallocated pending new rights/assets. Source/version mapping: B → unchanged original B; no derivative or creator-identity version approved.",
+    "missing_inputs": [
+      "Actual asset B and exact rights document/version, rights timezone and account details",
+      "Approved resolution of offer mismatch and relevant SKU margin evidence",
+      "Target audience, conversion measurement and contribution review rules",
+      "New paid rights or different asset for October6–12 if still desired"
+    ],
+    "actions_performed": [
+      "Offline rights/date/placement eligibility analysis",
+      "Drafted gated budget and loss-cap proposal",
+      "No ads activated, uploads, page edits or creator contact"
+    ]
+  },
+  {
+    "id": "conversion-value-lineage",
+    "skill": "conversion-value-design",
+    "checked_on": "2026-10-02",
+    "setting": "Independent offline agent use; synthetic merchant input; worked examples withheld; no live account access.",
+    "answer": "Value basis: USD contribution before advertising = net revenue excluding tax minus dated COGS minus fulfillment minus payment fee. Keep order transaction ID and formula version; do not substitute revenue when costs are unknown. O1 =120−40−10−4=USD66. O2 has missing COGS: value unknown, not69; known upper subtotal before COGS is80−8−3=69. Hold O2 from a contribution-valued payload pending cost evidence or explicitly approved separate fallback. Purchase is the actual outcome; email_signup is a secondary proxy. Cohort signup conversion is5/50=10%, implying6 USD per qualified signup from0.10×60, only if the cohort is compatible, mature and the known-order mean is representative. Do not add signup6 and later purchase contribution for the same eventual order in an additive primary optimization total. The provider primary/secondary implementation remains a proposal, not a live change. Refund for O1: revenue adjustment−120 reduces provisional contribution66 to−54 before unknown COGS recovery/fee reversal or additional return costs. Final revised contribution =−54 + supported inventory-cost recovery + supported fee reversal − additional return costs. Inventory recovery and fee reversal are unknown, so final value/adjustment remains unresolved, rather than automatically restating to0 or subtracting120 from an unrelated revenue metric. Reconcile original66, refund event, every recovered-cost event and final contribution using O1 identity; check provider support for negative values/restatements before any eventual implementation.",
+    "missing_inputs": [
+      "O2 dated COGS",
+      "Whether net revenue fields already net the supplied refund event",
+      "O1 returned inventory disposition/cost recovery, fee reversal and additional return costs",
+      "Signup cohort maturation/coverage, representativeness and deduplication linkage",
+      "Current conversion payload/provider adjustment support"
+    ],
+    "actions_performed": [
+      "Calculated O1 contribution and identified O2 missing-cost exclusion",
+      "Calculated conditional signup proxy",
+      "Prepared refund lineage and value specification",
+      "No configuration changes or value uploads"
+    ]
+  },
+  {
+    "id": "voice-panel-change",
+    "skill": "share-of-voice-measurement",
+    "checked_on": "2026-10-02",
+    "setting": "Independent offline agent use; synthetic merchant input; worked examples withheld; no live account access.",
+    "answer": "Forum mention share for the original fixed panel Harbor/RivalA/RivalB: week1 Harbor30/(30+50+20)=30%; week2 the same30/100=30%. Comparable share is unchanged, and Harbor mention count remains30. Expanding the week2 panel with NewRival100 produces30/200=15%; the apparent15 percentage-point decline versus week1 is a panel break, not evidence that Harbor lost voice. Week3 original-panel and expanded-panel shares are both unavailable because RivalB is missing, not zero. A separate consistently observed two-brand subpanel Harbor/RivalA gives30/80=37.5% in each of weeks1–3, but must be labeled this restricted panel and cannot replace the main result. For the expanded-panel week2 to week3 comparison, NewRival goes100→90 and Harbor/RivalA remain30/50; missing RivalB prevents a full share comparison. Management readout: no loss of observed Harbor volume or original-panel share through week2; week3 collection gap requires repair before publishing the main trend. Report refers only to supplied forum counts, not market share or sales, and assumes equal windows/deduplicated counts pending confirmation.",
+    "missing_inputs": [
+      "Week3 RivalB count or documented reason for missingness",
+      "Equal window and deduplication confirmation",
+      "NewRival week1 collection if a retrospectively expanded panel is desired"
+    ],
+    "actions_performed": [
+      "Calculated fixed-panel and expanded-panel shares separately",
+      "Marked week2 panel break and week3 missing-data gap",
+      "Prepared offline management readout; no external collection or publication"
+    ]
+  },
+  {
+    "id": "qualitative-evidence-counts",
+    "skill": "qualitative-research-synthesis",
+    "checked_on": "2026-10-02",
+    "setting": "Independent offline agent use; synthetic merchant input; worked examples withheld; no live account access.",
+    "answer": "Decision memo — product dimensions on bag PDP\nEvidence scope: three volunteers from a repeat-buyer email list, interviewed Sep 28. Only P1 and P2 were asked the laptop-fit question. Findings describe this convenience sample, not all shoppers.\n\nObservation ledger\nP1 01:20 | verbatim | “I used my laptop measurements.” | measurement-based fit check\nP1 03:40 | verbatim | “The dimensions were hard to find.” | dimension discoverability difficulty\nP1 06:10 | verbatim | “I checked the dimensions again before buying.” | repeated verification\nP2 02:10 | verbatim | “The size table was enough. I found it straight away.” | adequate information and easy discovery; negative case for difficulty\nP3 03:10 | observer note | Seemed confused at the cart. | observer interpretation; no direct evidence about fit or dimensions\n\nCodebook: FIT_CHECK = reported use of measurements/size table; DISCOVERY_FRICTION = explicitly reported difficulty finding dimension information; RECHECK = repeated consultation; CART_UNCLEAR = observer impression requiring clarification, not a causal diagnosis.\n\nTheme table\nDimension information supports fit verification | 2/2 asked participants | P1 measurement/checking quotes and P2 size-table quote | Both use dimension information but differ on ease | Preserve accurate dimensions and size table.\nDiscoverability differs | 1/2 asked participants reports difficulty | P1 03:40 | P2 directly contradicts a universal problem | Test a more visible dimensions anchor rather than assume a missing table.\nRepeated verification | 1/2 asked participants | P1 06:10 | No repeat-check report from P2 | Consider making measurements accessible near the decision controls; mechanism is a hypothesis.\nCart uncertainty | 1/3 total notes | P3 observer note | Fit was not asked; confusion has no verified cause | Do not count as dimension friction.\n\nDecision: prototype a clearer dimensions link near the laptop-fit information while retaining the current size table. In a reversible usability check, ask first-time shoppers to determine fit for their own laptop and observe findability, interpretation and errors. This recommendation is grounded in P1's difficulty and preserves P2's successful path. Do not claim three independent complaints: P1's three quotes come from one person.\nOpen questions: Where did P1 look? Which device/page version did each see? Were interior versus exterior dimensions clear? What caused P3's cart hesitation? How do first-time/non-buyers behave? No interviews, edits or publication were performed.",
+    "missing_inputs": [
+      "Reuse permission for public quotations; this memo is internal.",
+      "PDP version/device and dimensions context for follow-up."
+    ],
+    "actions_performed": [
+      "Read assigned SKILL.md only; did not read worked examples.",
+      "Synthesized supplied synthetic notes offline; no external actions."
+    ]
+  },
+  {
+    "id": "interview-unfielded-guide",
+    "skill": "consumer-interview-planning",
+    "checked_on": "2026-10-02",
+    "setting": "Independent offline agent use; synthetic merchant input; worked examples withheld; no live account access.",
+    "answer": "Unfielded 15-minute discussion guide — first-time bottle size choice\nStatus: zero completed interviews; no findings. Repeat-buyer volunteers do not cover the stated population. Recruit first-time purchasers and shoppers who considered buying but did not; existing repeat buyers can be a separately labelled pilot to improve the guide, not evidence for the primary decision.\n\nRecruitment screener:\n1. Have you previously purchased a bottle from this brand? If yes before the relevant episode, classify repeat-buyer pilot only.\n2. Did you recently buy your first bottle from us, or consider one and decide not to buy?\n3. Can you describe the specific occasion, sizes considered and outcome? Ask date/context; do not screen for dissatisfaction or desire for medium size.\n\nConsent opening (0–2 min): “We are learning how people choose a bottle size. Participation is voluntary; you can skip a question or stop at any time. We will take de-identified notes for product decisions. We are not recording. There is no incentive. Is that okay?” Confirm note-use permission before continuing. Do not request or start recording unless separately permitted.\n\nTimed guide:\n2–4 min | must cover: concrete episode | “Tell me about the last time you considered buying this bottle. What was happening that made you look?” | probes: When? What did you need to carry it for?\n4–8 min | must cover: actual comparison | “Walk me through how you chose among sizes.” | probes one at a time: What did you compare? Where did you find that information? What happened next? If available, what dimensions/capacity mattered?\n8–11 min | must cover: outcome/constraint | “Which option did you choose, or what did you do instead?” | probes: What drove that decision? Was anything unclear? For a non-buyer, what happened after leaving?\n11–13 min | optional, after unprimed account: concept | “If there were another size between the current options, how would you evaluate it?” | ask what information they need; label answers hypothetical, not purchase predictions. Do not imply it exists.\n13–15 min | close | “What have I missed about choosing a bottle size?” Thank them; explain note use. Drop the concept question first if the actual episode needs more time.\n\nResearcher-only hypothesis: a medium size may attract more buyers. Keep this separate from the participant script. Evidence required would include an unmet occasion/constraint and eventual behavioral testing; positive concept reactions alone are insufficient.\n\nBias review: Replace “How frustrating was our lack of a medium size?” with the neutral sequence above. The old question assumes frustration, frames the missing option as a defect and suggests the desired answer. Avoid asking multiple constraints in one question or praising preference for medium.\n\nNotes columns: participant ID | time | purchase/consideration episode | verbatim/paraphrase | recalled/observed/hypothetical | comparison/constraint/outcome code | researcher inference separately. No recruitment messages were sent; no session occurred.",
+    "missing_inputs": [
+      "Relevant episode recency window and available recruitment channels.",
+      "Participant consent to de-identified note use.",
+      "Actual current bottle sizes, for accurate concept wording after the unprimed account."
+    ],
+    "actions_performed": [
+      "Read assigned SKILL.md only; did not read worked examples.",
+      "Prepared offline screener, consent script, timed guide and bias review; no recording or contact."
+    ]
+  },
+  {
+    "id": "archetype-assumptions",
+    "skill": "evidence-based-shopper-archetypes",
+    "checked_on": "2026-10-02",
+    "setting": "Independent offline agent use; synthetic merchant input; worked examples withheld; no live account access.",
+    "answer": "Behavioral archetype set — bag page information, Sep 2026\nScope: three convenience interviews. Inputs are summarized notes, not verbatim quotations. No demographic data or population estimate exists.\n\nEvidence matrix:\nP1 | compared internal compartment dimensions with own laptop | fit verification situation | self-reported/summarized research evidence\nP2 | needed arrival before a flight; read delivery terms | deadline-constrained purchase | self-reported/summarized evidence\nP3 | compared laptop fit for weekday commuting; later prioritized arrival before departure | both situations at different times | do not force into one permanent persona\n\nCard 1 — Fit-verifying shopper\nContext: carrying a particular laptop for daily use.\nEvidence: P1 and P3 (2/3 participants in this small sample; not 67% of customers).\nGoal/constraint: determine whether the device fits the actual internal compartment.\nDesign implication: emphasize internal usable dimensions, measuring instructions and a clear difference between exterior bag size and compartment size; avoid universal laptop compatibility claims.\nAssumptions: confidence in interpreting measurements is not directly established; test it. No age, wealth, parenthood or other demographics inferred.\nContrary/overlap case: P2's supplied episode centers on timing; P3 also occupies the deadline situation.\n\nCard 2 — Departure-deadline shopper\nContext: buying before a specific trip.\nEvidence: P2 and P3 (2/3 sample, overlapping Card 1).\nGoal/constraint: assess whether delivery can happen before departure.\nDesign implication: emphasize destination-specific dispatch/delivery estimates, stock and cutoff conditions, while separating estimates from guarantees.\nAssumptions: the notes do not establish willingness to pay for expedited delivery or actual promised arrival performance.\nContrary/overlap case: P1's episode emphasizes fit; P3 changes priority by situation.\n\nDecision: support both fit certainty and timing certainty on the PDP. Put an understandable internal-dimensions route near fit information and a delivery-estimate route near purchase controls. These three interviews cannot justify declaring either need predominant. Test both routes with first-time and abandoned-purchase shoppers, who are not characterized in this convenience sample.\nReject the proposed “wealthy 35-year-old mom, 70% of buyers” wording: none of those attributes or prevalence estimates is supported. Do not convert these cards to personal targeting records.\nRevalidate when bag dimensions, delivery markets/promises or recruitment coverage change.",
+    "missing_inputs": [
+      "Original notes/transcript locations and reuse permission for deeper traceability.",
+      "Broader recruitment/behavioral data if prioritization by prevalence is required."
+    ],
+    "actions_performed": [
+      "Read assigned SKILL.md only; did not read worked examples.",
+      "Created evidence matrix and two overlapping situational cards offline; no publication or targeting."
+    ]
+  }
+]

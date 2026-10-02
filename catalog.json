@@ -7,10 +7,24 @@
     "category": "Advertising and partnerships"
   },
   {
+    "name": "ad-html-creative-draft",
+    "description": "Build a standalone HTML ad creative from approved copy and authorized assets, with exact canvas dimensions and export QA.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
     "name": "ad-landing-page-message-match",
     "description": "Audit whether a paid ad promise survives the destination, variant selection and offer conditions. Use when clicks arrive but the DTC landing page changes the product, price or expectation.",
     "license": "MIT",
     "version": "0.2.0",
+    "category": "Advertising and partnerships"
+  },
+  {
+    "name": "ad-placement-review",
+    "description": "Assess ad placements using comparable spend, outcomes and context, then propose scoped exclusions or controlled tests.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
     "category": "Advertising and partnerships"
   },
   {
@@ -21,6 +35,20 @@
     "category": "Advertising and partnerships"
   },
   {
+    "name": "agent-shopping-readiness",
+    "description": "Audit whether product facts and shopping steps are understandable to agents, with authoritative data and purchase authorization boundaries.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Storefront and conversion"
+  },
+  {
+    "name": "ai-referral-measurement",
+    "description": "Measure observable AI referral traffic and landing outcomes while separating referrers, citations and incremental sales.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
     "name": "ai-search-visibility-audit",
     "description": "Measure brand mentions, recommendations and citations across a fixed set of buyer questions and repeated AI-search observations. Use for an AI visibility baseline or before/after study; site-wide technical SEO and schema implementation are separate tasks.",
     "license": "MIT",
@@ -28,11 +56,39 @@
     "category": "Search visibility and product feeds"
   },
   {
+    "name": "arabic-rtl-artifact-review",
+    "description": "Prepare and verify Arabic or bilingual merchant artifacts using logical Unicode, native RTL structure and target-application checks.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "assortment-demand-gap-review",
+    "description": "Use when a DTC merchant needs an evidence-based assortment gap and launch-cohort sell-through review.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Research and positioning"
+  },
+  {
     "name": "back-in-stock-campaign",
     "description": "Plan variant-specific restock notifications that respect waitlist requests, inventory and purchase exits. Use when a DTC product becomes sellable again.",
     "license": "MIT",
     "version": "0.2.0",
     "category": "Email and retention"
+  },
+  {
+    "name": "backlink-evidence-review",
+    "description": "Assess backlink opportunities and risks from actual referring pages, editorial relevance and link evidence.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Search visibility and product feeds"
+  },
+  {
+    "name": "bid-strategy-change-plan",
+    "description": "Plan a bidding change using conversion signal quality, economics, constraints and an explicit evaluation window.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Advertising and partnerships"
   },
   {
     "name": "blog-article-writer",
@@ -49,11 +105,102 @@
     "category": "Search visibility and product feeds"
   },
   {
+    "name": "brand-entity-consistency",
+    "description": "Reconcile public brand identities and facts across owned pages, structured data and external references.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Search visibility and product feeds"
+  },
+  {
+    "name": "brand-extension-review",
+    "description": "Evaluate a proposed brand extension against shopper permission, evidence, product economics and operational constraints.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Research and positioning"
+  },
+  {
+    "name": "brand-impersonation-evidence",
+    "description": "Document suspected brand impersonation with dated identity, page and transaction evidence for authorized review or reporting.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Research and positioning"
+  },
+  {
+    "name": "brand-message-house",
+    "description": "Build a positioning and messaging framework from shopper needs, competitive alternatives and substantiated product proof.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Research and positioning"
+  },
+  {
+    "name": "brand-name-market-review",
+    "description": "Generate and screen brand names against customer comprehension, pronunciation, market ambiguity and preliminary availability evidence.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Research and positioning"
+  },
+  {
+    "name": "brand-narrative-change-audit",
+    "description": "Audit changes to brand messaging across channels, distinguishing intentional evolution from unsupported or contradictory claims.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "brand-podcast-recording-plan",
+    "description": "Plan a merchant brand interview or podcast recording with narrative structure, remote-track reliability and consent.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "brand-proof-library",
+    "description": "Organize customer and product evidence into a reusable proof library with permissions, scope and claim limitations.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "brand-voice-system",
+    "description": "Build and apply a brand voice guide from owned writing samples, with concrete rules, counterexamples and reviewable rewrites.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "bundle-component-availability",
+    "description": "Use when a DTC merchant needs a sellable bundle capacity and component-reservation review.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
     "name": "bundle-pricing",
     "description": "Cost and price a DTC product bundle using component quantities, stock constraints and order economics. Use for fixed packs or complementary bundles before configuring products or promotions.",
     "license": "MIT",
     "version": "0.2.0",
     "category": "Measurement and unit economics"
+  },
+  {
+    "name": "campaign-landing-page-concept-brief",
+    "description": "Use when a DTC merchant needs a ranked set of campaign landing-page concepts before building pages.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Storefront and conversion"
+  },
+  {
+    "name": "campaign-utm-governance",
+    "description": "Define and audit campaign URL parameters with consistent naming, destination checks and traceable reporting ownership.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "carrier-rate-and-service-review",
+    "description": "Use when a DTC merchant needs a lane-level carrier rate, invoice and service review for inbound stock or outbound parcels.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
   },
   {
     "name": "cart-abandonment-recovery",
@@ -66,7 +213,49 @@
     "name": "cash-flow-inventory-planning",
     "description": "Build a dated DTC cash plan for inventory commitments, supplier deposits, receipts and operating outflows. Use to expose funding gaps even when an order or business appears profitable.",
     "license": "MIT",
-    "version": "0.2.0",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "catalog-collection-and-vendor-hygiene",
+    "description": "Reconcile collection membership and supplier/vendor labels without breaking automated merchandising rules. Use after imports or supplier-name consolidation.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Storefront and conversion"
+  },
+  {
+    "name": "catalog-defect-triage",
+    "description": "Find and verify catalog defects using a compact full-catalog index followed by targeted review. Use before a sale or after an import; report coverage instead of declaring the whole catalog clean.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Storefront and conversion"
+  },
+  {
+    "name": "catalog-image-alt-text-review",
+    "description": "Use when a DTC merchant needs a review and proposed backfill of catalog image text alternatives.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Storefront and conversion"
+  },
+  {
+    "name": "catalog-import-change-preflight",
+    "description": "Prepare and reconcile a minimal catalog update file with a reversible before/after manifest. Use for bulk price, tag or field edits, imports and migrations where blank cells or repeated rows could overwrite data.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Storefront and conversion"
+  },
+  {
+    "name": "catalog-publication-retirement-control",
+    "description": "Review channel visibility and safely plan publication, archival or retirement of catalog records. Use when products are unexpectedly missing, obsolete drafts accumulate or a catalog cleanup is requested.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Storefront and conversion"
+  },
+  {
+    "name": "category-revenue-driver-bridge",
+    "description": "Use when a DTC merchant needs an explainable revenue-change bridge for a category or content-to-purchase funnel.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
     "category": "Measurement and unit economics"
   },
   {
@@ -82,6 +271,13 @@
     "license": "MIT",
     "version": "0.2.0",
     "category": "Storefront and conversion"
+  },
+  {
+    "name": "co-marketing-campaign-plan",
+    "description": "Plan a joint merchant campaign with a complementary partner, defining audience value, responsibilities, data access and measurement.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Advertising and partnerships"
   },
   {
     "name": "cohort-retention-analysis",
@@ -105,11 +301,88 @@
     "category": "Search visibility and product feeds"
   },
   {
+    "name": "commerce-integration-sync-review",
+    "description": "Use when a DTC merchant needs an export-based diagnosis of order, stock or customer sync discrepancies.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "commerce-report-reconciliation",
+    "description": "Use when a DTC merchant needs a reconciliation of conflicting channel, location, discount, cancellation or operating reports.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "community-message-payload",
+    "description": "Prepare a reviewable Discord, Telegram, Slack or Feishu message payload with exact destination, formatting and delivery boundaries.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "community-program-design",
+    "description": "Design a merchant community around a useful member purpose, participation rules, operating capacity and evidence of value.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "competitor-ad-evidence",
+    "description": "Collect and classify competitor ad evidence without inferring profitability or sales from ad-library visibility.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Advertising and partnerships"
+  },
+  {
     "name": "competitor-deep-analysis",
     "description": "Identify market gaps and strategic advantages through systematic multi-layer intelligence gathering and review mining, localized for DTC and Shopify storefronts: competitor Shopify stores, Amazon listings, TikTok/Meta ad creative libraries, and independent-site pricing pages. Use for competitor commercial intelligence: positioning, product depth, pricing, marketing channels, and customer sentiment. Optional DataForSEO quantitative intelligence (traffic surface, keyword gap) is available under contract. Do not use for domain or technical health checks, backlinks, or AI visibility audits (use site-seo-audit), for keyword metric lookups (use keyword-analysis), or for content editorial planning (use seo-content-research).",
     "license": "MIT",
     "version": "0.1.1",
     "category": "Research and positioning"
+  },
+  {
+    "name": "complaint-theme-and-csat-analysis",
+    "description": "Use when a DTC merchant needs an explanation of complaint themes or CSAT movement.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "computed-product-knowledge",
+    "description": "Turn verified product data into useful computed answers, with transparent formulas, units and missing-data behavior.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Search visibility and product feeds"
+  },
+  {
+    "name": "consumer-interview-planning",
+    "description": "Prepare a neutral, consent-aware discussion guide about a real DTC purchase or product-use episode; use before customer discovery interviews.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Research and positioning"
+  },
+  {
+    "name": "consumer-lead-magnet",
+    "description": "Design a useful shopper resource and consent-based acquisition path that fits a real product purchase decision.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Email and retention"
+  },
+  {
+    "name": "consumer-market-sizing",
+    "description": "Estimate and reconcile consumer market size using top-down and bottom-up evidence, reachable demand and capacity constraints.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Research and positioning"
+  },
+  {
+    "name": "consumer-workshop-plan",
+    "description": "Plan a useful customer workshop with learning outcomes, demonstration requirements, attendance handling and follow-up boundaries.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
   },
   {
     "name": "content-decay-diagnosis",
@@ -119,11 +392,25 @@
     "category": "Search visibility and product feeds"
   },
   {
+    "name": "conversion-value-design",
+    "description": "Define conversion values from merchant economics and event evidence before changing bidding or measurement settings.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
     "name": "copywriting",
     "description": "Use when writing, rewriting, or improving marketing copy, product listing copy, product titles, product descriptions, bullet points, SEO descriptions, landing-page copy, ad copy text, or CTA text. Do not use for image generation or social publishing strategy. Long-form keyword-based merchant blogs use available blog-article-writer guidance for article SEO/GEO, merchant images and internal links. Keep product, landing-page, ad and email copy here.",
     "license": "MIT",
     "version": "0.1.1",
     "category": "Content and creative"
+  },
+  {
+    "name": "coupon-rule-and-code-control",
+    "description": "Validate promotion eligibility, stacking and code lifecycle before generating or retiring coupon codes. Use for one-time campaigns, bulk codes and stale-rule cleanup.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Storefront and conversion"
   },
   {
     "name": "crawl-index-audit",
@@ -140,6 +427,62 @@
     "category": "Advertising and partnerships"
   },
   {
+    "name": "creator-campaign-budget",
+    "description": "Build a creator campaign budget that separates fees, production, usage rights, products, amplification and contribution assumptions.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Advertising and partnerships"
+  },
+  {
+    "name": "creator-content-acceptance",
+    "description": "Accept or request revisions to commissioned creator assets against the brief, claims, rights and exact delivered version.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Advertising and partnerships"
+  },
+  {
+    "name": "creator-outreach-workflow",
+    "description": "Prepare qualified creator outreach with a specific collaboration proposal, clear compensation assumptions and a follow-up record.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Advertising and partnerships"
+  },
+  {
+    "name": "creator-paid-amplification",
+    "description": "Plan paid use of creator content with verified asset rights, identity permissions, budget boundaries and attribution requirements.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Advertising and partnerships"
+  },
+  {
+    "name": "creator-rights-review",
+    "description": "Review creator or customer-content permissions by asset, placement, dates and edit scope before reuse or paid amplification.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Advertising and partnerships"
+  },
+  {
+    "name": "cross-dock-and-copacker-handoff",
+    "description": "Use when a DTC merchant needs a time-and-quantity handoff plan for supplier receipts, outsourced packing or direct cross-dock dispatch.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "customer-and-order-note-change-control",
+    "description": "Preview and reconcile scoped notes and tags on customer or order records while preserving existing content. Use for operational annotations, not automated risk judgments or customer messaging.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "customer-identity-and-consent-audit",
+    "description": "Investigate duplicate customer records and reconcile consent evidence before merging profiles or exporting contacts. Shared email or a past order alone does not prove identity or permission.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
     "name": "customer-lifetime-value",
     "description": "Calculate observed customer revenue or contribution at a fixed horizon and clearly separated future-value scenarios. Use for customer economics; SKU margin analysis and recurring-subscription churn formulas are different scopes.",
     "license": "MIT",
@@ -154,10 +497,38 @@
     "category": "Email and retention"
   },
   {
+    "name": "customer-support-response-drafting",
+    "description": "Draft complete policy-grounded responses to shopper tickets, verifying order and refund facts before making commitments.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
     "name": "customer-support-triage",
     "description": "Classify DTC support cases by verified order context, urgency and operational next step, then prepare concise responses. Use for a case queue or routing rules, without automatically messaging customers or issuing refunds.",
     "license": "MIT",
     "version": "0.2.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "customer-testimonial-production",
+    "description": "Plan and edit a customer testimonial with genuine experience evidence, specific reuse consent and accurate final wording.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "customer-use-story-production",
+    "description": "Build a permissioned customer use story from interview evidence, measured outcomes and attributable quotes.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "customs-document-consistency-review",
+    "description": "Use when a DTC merchant needs a customs broker handoff and shipment-document consistency review.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
     "category": "Inventory fulfillment and support"
   },
   {
@@ -166,6 +537,27 @@
     "license": "MIT",
     "version": "0.1.1",
     "category": "Search visibility and product feeds"
+  },
+  {
+    "name": "dark-social-measurement",
+    "description": "Investigate unattributed sharing with tagged links, declared-source responses and bounded evidence rather than invented channel credit.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "deferred-revenue-evidence-schedule",
+    "description": "Use when a DTC merchant needs a working schedule for prepaid goods or bundled service obligations under a finance-approved recognition policy.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "delivery-trigger-contact-eligibility",
+    "description": "Build a delivery-event-based survey eligibility file with explicit time windows, split-shipment completion, previous-contact suppression and channel permission checks.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Email and retention"
   },
   {
     "name": "demand-forecasting",
@@ -180,6 +572,27 @@
     "license": "MIT",
     "version": "0.2.0",
     "category": "Measurement and unit economics"
+  },
+  {
+    "name": "dispute-pattern-and-prevention-review",
+    "description": "Use when a DTC merchant needs a dispute-pattern and prevention review distinct from preparing one representment packet.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "domain-expert-interview-planning",
+    "description": "Design a supplier, category-practitioner or retail expert interview that tests a specific merchant decision without soliciting confidential information.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Research and positioning"
+  },
+  {
+    "name": "dropship-supplier-order-control",
+    "description": "Use when a DTC merchant needs a supplier-stock and order-routing control for dropship goods.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
   },
   {
     "name": "dtc-ab-testing",
@@ -217,6 +630,13 @@
     "category": "Content and creative"
   },
   {
+    "name": "dtc-marketing-resource-plan",
+    "description": "Prioritize merchant marketing work within actual budget, staffing, production and contribution constraints.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Research and positioning"
+  },
+  {
     "name": "dtc-social-content",
     "description": "Create native DTC social posts, carousels and short-video scripts from verified product facts and merchant assets. Use for finished content and feasible distribution plans; posting or creator outreach requires separate authorized scope.",
     "license": "MIT",
@@ -231,11 +651,95 @@
     "category": "Email and retention"
   },
   {
+    "name": "email-dynamic-content-rules",
+    "description": "Define email content branches, customer-data requirements and safe fallbacks, then inspect each reachable variant.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Email and retention"
+  },
+  {
+    "name": "email-frequency-preferences",
+    "description": "Design email frequency and preference rules that reconcile customer choices, message priority and overlapping campaigns.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Email and retention"
+  },
+  {
+    "name": "email-html-rendering",
+    "description": "Build reviewable email HTML and plain text from approved copy, with accessible structure and honest client-rendering QA.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Email and retention"
+  },
+  {
+    "name": "email-list-hygiene",
+    "description": "Review email-list provenance, suppression, engagement and reactivation options without treating opens as reliable individual intent.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Email and retention"
+  },
+  {
+    "name": "email-placement-investigation",
+    "description": "Investigate inbox placement using provider-level delivery, authentication and complaint evidence, separating clients from mailbox providers.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Email and retention"
+  },
+  {
+    "name": "email-send-quality-review",
+    "description": "Check an exact email send against audience, suppression, offer, links, personalization and deployment settings.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Email and retention"
+  },
+  {
+    "name": "email-subject-line-experiment",
+    "description": "Design a subject-line experiment with controlled content, eligible recipients, prespecified outcomes and valid stopping rules.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Email and retention"
+  },
+  {
     "name": "email-welcome-series",
     "description": "Build a consent-aware subscriber welcome flow with complete email drafts and purchase exits. Use after an email signup; an order confirmation is a different trigger.",
     "license": "MIT",
     "version": "0.2.0",
     "category": "Email and retention"
+  },
+  {
+    "name": "employee-advocacy-program",
+    "description": "Design a voluntary employee advocacy program with approved content, participation boundaries and measurable referral outcomes.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "evidence-based-shopper-archetypes",
+    "description": "Build behavioral shopper archetypes from traceable research for a concrete merchandising or storefront decision.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Research and positioning"
+  },
+  {
+    "name": "evidence-verified-research-brief",
+    "description": "Verify factual propositions and synthesize conflicting sources into a decision brief for a merchant.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Research and positioning"
+  },
+  {
+    "name": "financial-statement-linkage-review",
+    "description": "Assemble and check a merchant three-statement management package from an approved trial balance and movement schedules.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "fulfillment-backlog-and-tracking-review",
+    "description": "Use when a DTC merchant needs a fulfillment backlog and parcel-delay report.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
   },
   {
     "name": "fulfillment-carrier-comparison",
@@ -245,11 +749,32 @@
     "category": "Inventory fulfillment and support"
   },
   {
+    "name": "fulfillment-network-scenario-review",
+    "description": "Use when a DTC merchant needs a demand, capacity and fulfillment-network operating scenario decision.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
     "name": "ga4-ecommerce-measurement",
     "description": "Specify and audit GA4 ecommerce events, item payloads and revenue reconciliation for a DTC store. Use for measurement correctness; GTM deployment mechanics and marketing-credit attribution are separate workflows.",
     "license": "MIT",
     "version": "0.2.0",
     "category": "Measurement and unit economics"
+  },
+  {
+    "name": "gift-card-balance-control",
+    "description": "Use when a DTC merchant needs a masked gift-card balance and issuance control.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "gift-packing-instruction-extraction",
+    "description": "Use when a DTC merchant needs a warehouse gift-packing instruction sheet.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
   },
   {
     "name": "gmc-misrepresentation-audit",
@@ -278,6 +803,13 @@
     "license": "MIT",
     "version": "0.1.1",
     "category": "Content and creative"
+  },
+  {
+    "name": "indexnow-change-notification",
+    "description": "Prepare and verify an IndexNow URL-change notification, including host ownership, payload scope and acceptance status.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Search visibility and product feeds"
   },
   {
     "name": "influencer-campaign-measurement",
@@ -312,6 +844,34 @@
     "description": "Identify aging DTC inventory by receipt lot and compare retain, markdown, bundle, return-to-vendor and disposal options using recoverable cash and remaining costs.",
     "license": "MIT",
     "version": "0.2.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "inventory-cost-and-valuation-audit",
+    "description": "Use when a DTC merchant needs an inventory cost-coverage and valuation review.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "inventory-cycle-count-control",
+    "description": "Use when a DTC merchant needs a cycle-count plan and discrepancy investigation.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "inventory-demand-exception-planning",
+    "description": "Use when a DTC merchant needs a time-phased inventory exception plan when recent sales, seasonal demand or inbound timing disagree.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "inventory-movement-change-control",
+    "description": "Use when a DTC merchant needs a stock correction or transfer change set.",
+    "license": "MIT",
+    "version": "0.3.0",
     "category": "Inventory fulfillment and support"
   },
   {
@@ -350,11 +910,53 @@
     "category": "Storefront and conversion"
   },
   {
+    "name": "launch-release-control",
+    "description": "Check launch readiness against stock, offers, assets and ownership, then prepare a staged release and rollback decision.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "launch-results-retrospective",
+    "description": "Reconcile launch targets, orders, refunds and campaign observations into a traceable retrospective and next decisions.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "local-delivery-route-and-slot-review",
+    "description": "Use when a DTC merchant needs a feasible local-delivery route and booking-slot plan.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "lot-expiry-and-cold-chain-review",
+    "description": "Use when a DTC merchant needs a lot-level freshness and cold-chain exception review for perishable DTC goods.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
     "name": "loyalty-program-economics",
     "description": "Model points, rewards and tier benefits against DTC contribution and redemption obligations. Use before launching or changing a loyalty program.",
     "license": "MIT",
     "version": "0.2.0",
     "category": "Email and retention"
+  },
+  {
+    "name": "market-basket-affinity-analysis",
+    "description": "Use when a DTC merchant needs a product-pair affinity analysis and evidence-based recommendation candidate list.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "market-expansion-operating-readiness",
+    "description": "Use when a DTC merchant needs a go/hold evidence review for entering a new selling market.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Research and positioning"
   },
   {
     "name": "marketing-attribution-audit",
@@ -364,10 +966,332 @@
     "category": "Measurement and unit economics"
   },
   {
+    "name": "marketing-localization-brief",
+    "description": "Adapt a marketing proposition to a target locale using local customer, language, offer and claims evidence.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
     "name": "marketing-roas-analyzer",
     "description": "Diagnose marketing performance, build evidence-backed search acquisition deliverables, and run a dated operating review using connected account data plus relevant DataForSEO evidence.",
     "license": "MIT",
     "version": "0.1.1",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "marketing-sop-governance",
+    "description": "Create maintainable marketing procedures with evidence inputs, owners, handoffs, exception paths and version control.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "media-flight-planning",
+    "description": "Allocate campaign spend across dates and channels using demand timing, stock, production capacity and measurement constraints.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Advertising and partnerships"
+  },
+  {
+    "name": "merchant-accounts-payable-review",
+    "description": "Review supplier bills, coding, receipts and credits, and prepare a payment proposal distinct from ledger entry approval.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "merchant-asset-folder-organization",
+    "description": "Organize merchant documents and creative files through a reversible mapping with duplicate and ownership checks.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "merchant-audio-finishing",
+    "description": "Prepare and quality-check merchant narration or podcast audio with an explicit edit log, intelligibility and export targets.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "merchant-automation-decision-brief",
+    "description": "Use when a DTC merchant needs a bounded automation opportunity decision for a recurring merchant operations problem.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "merchant-automation-workflow-specification",
+    "description": "Design a bounded merchant automation with trigger, state, idempotency, failure handling and approval boundaries before implementation.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "merchant-bank-ledger-reconciliation",
+    "description": "Reconcile bank statement balances to the bookkeeping ledger with explicit timing items and no balancing plugs.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "merchant-brand-palette-specification",
+    "description": "Create or audit a merchant palette with semantic roles, measured contrast and channel-specific use rules.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "merchant-brand-visual-review",
+    "description": "Review merchant creative against an approved visual identity and the actual viewing context, with evidence-limited findings.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "merchant-budget-variance-bridge",
+    "description": "Explain merchant budget versus actual results with a reconciled price-volume bridge and evidence-based timing classifications.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "merchant-bulk-creative-production",
+    "description": "Generate a traceable batch of product creatives from a verified template schema and merchant data rows.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "merchant-business-decision-brief",
+    "description": "Produce a concise merchant decision brief with evidence, alternatives, financial logic and an explicit decision request.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "merchant-caption-timing",
+    "description": "Create and validate time-aligned captions for merchant video while preserving spoken meaning and readable segmentation.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "merchant-chart-and-data-story",
+    "description": "Turn verified merchant data into an honest chart or table with a clear decision message, accessible encoding and source notes.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "merchant-customer-record-merge-plan",
+    "description": "Prepare a reversible review of customer-record duplicates, field conflicts and associations without merging live identities.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "merchant-dashboard-data-validation",
+    "description": "Specify and validate dashboard measures at the correct data grain, filter context and grand-total semantics.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "merchant-data-quality-controls",
+    "description": "Audit merchant analysis inputs and define actionable quality controls for completeness, keys, freshness, joins and metric interpretation.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "merchant-design-change-execution",
+    "description": "Apply a scoped set of merchant design revisions with element mapping, preview, conflict handling and verified saved state.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "merchant-design-export-repair",
+    "description": "Diagnose and repair a broken merchant deck or PDF export by comparing controlled renders while preserving the editable original.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "merchant-document-extraction",
+    "description": "Extract merchant tables or convert scanned documents while retaining source coordinates, uncertainty and layout-loss checks.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "merchant-document-template-system",
+    "description": "Build repeatable merchant document templates with a field schema, optional sections and validation before rendering.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "merchant-editable-document-production",
+    "description": "Create or revise editable merchant documents with structured styles, controlled changes and metadata checks before sharing.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "merchant-editorial-format-conversion",
+    "description": "Convert merchant Markdown or office content into a readable editorial format while preserving links, facts, hierarchy and accessibility structure.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "merchant-editorial-image-brief",
+    "description": "Plan article illustrations, covers or video thumbnails around a verified content promise and a coherent visual system.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "merchant-expense-evidence-review",
+    "description": "Match merchant expense receipts to statement rows, verify extracted amounts and prepare a policy-based review queue.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "merchant-export-merge-and-reconcile",
+    "description": "Combine merchant CSV or workbook exports with an explicit append/join contract, key preservation and row-level reconciliation.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "merchant-financial-scenario-review",
+    "description": "Analyze merchant profitability, working capital and cash scenarios, with optional assumption-based business valuation sensitivities.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "merchant-html-brief-production",
+    "description": "Convert approved merchant Markdown into a complete HTML reading brief or presentation deck with content-preservation and privacy checks.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "merchant-image-rights-register",
+    "description": "Select merchant visual assets and create a rights-and-fit register before using them in product or campaign work.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "merchant-inbox-triage-drafts",
+    "description": "Triage a bounded merchant inbox batch into reply drafts, action records and review queues without silently sending or deleting messages.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "merchant-infographic-production",
+    "description": "Turn verified merchant facts into an infographic with a matched information structure, legible hierarchy and source checks.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "merchant-logo-commission-brief",
+    "description": "Prepare a practical logo design brief with use cases, constraints, deliverables and review criteria for a DTC brand.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "merchant-meeting-decision-record",
+    "description": "Prepare a merchant meeting brief and turn supplied notes into a traceable decision and action record.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "merchant-month-end-close-pack",
+    "description": "Coordinate a merchant close checklist and evidence packet across ledger, inventory, payments and accruals, without silently posting or locking books.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "merchant-operating-procedure",
+    "description": "Turn an actual merchant process into a usable SOP with triggers, evidence, decision branches and acceptance checks.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "merchant-ordered-funnel-analysis",
+    "description": "Compute ordered merchant funnels from event-level data with explicit entry cohorts, windows, sequence checks and bounded interpretation.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "merchant-pdf-delivery",
+    "description": "Prepare a merchant PDF with explicit page order, compression or watermark requirements and rendered delivery checks.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "merchant-pdf-form-completion",
+    "description": "Fill a merchant-supplied PDF form from verified data with field mapping, required-value checks and signature boundaries.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "merchant-plain-language-edit",
+    "description": "Rewrite confusing merchant copy into clear customer language while preserving facts, qualifications and the intended brand voice.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "merchant-press-release-draft",
+    "description": "Write a fact-checked merchant announcement release with a clear news change, approved quotes, availability and contact details.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "merchant-print-artwork-preflight",
+    "description": "Prepare print-ready merchant artwork checks from the actual printer specification, including trim, bleed, color and physical-size proofing.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "merchant-push-notification-draft",
+    "description": "Draft event-specific merchant push notifications with exact destinations, eligibility, suppression and measurement definitions.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Email and retention"
+  },
+  {
+    "name": "merchant-receivables-and-invoice-review",
+    "description": "Use when a DTC merchant needs an invoice aging, payment allocation and credit-exposure review for wholesale sales alongside a DTC store.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "merchant-recurring-report-production",
+    "description": "Build and rerun a saved merchant report definition with reconciled period snapshots, a finished workbook or local dashboard and visible missing data.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
     "category": "Measurement and unit economics"
   },
   {
@@ -376,6 +1300,104 @@
     "license": "MIT",
     "version": "0.2.0",
     "category": "Research and positioning"
+  },
+  {
+    "name": "merchant-slide-production",
+    "description": "Create an editable merchant presentation with an evidence-linked narrative, template-safe assembly and rehearsed timing.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "merchant-social-carousel-production",
+    "description": "Write and lay out a merchant educational carousel with a coherent slide sequence, verified claims and platform-ready checks.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "merchant-sonic-identity-brief",
+    "description": "Create a sonic identity commission brief and evaluate short brand audio across actual merchant use cases.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "merchant-spreadsheet-formula-audit",
+    "description": "Review a merchant workbook’s formulas, dependencies, scenario behavior and controls without silently rewriting the model.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "merchant-spreadsheet-model-design",
+    "description": "Build an auditable merchant spreadsheet model with explicit assumptions, formula dependencies, scenarios and control checks.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "merchant-spreadsheet-question-answering",
+    "description": "Answer a specific merchant data question with a declared metric, reproducible filtering and an evidence trail to source rows.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "merchant-static-creative-resizing",
+    "description": "Adapt and compress a merchant image or design for specific placements while preserving product details, readable copy and source files.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "merchant-statistical-analysis-review",
+    "description": "Analyze merchant distributions and comparisons with explicit assumptions, uncertainty and limits beyond a simple significance label.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "merchant-team-capacity-plan",
+    "description": "Balance merchant-team commitments against actual role-specific available hours and compare hire, defer and rescope scenarios.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "merchant-translation-and-locale-review",
+    "description": "Translate merchant documents and storefront strings with terminology control, locale formatting and a traceable review of changed meaning.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "merchant-video-edit-plan",
+    "description": "Turn merchant footage and an approved script into a timecoded edit plan with deterministic asset, audio and export checks.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "merchant-video-output-review",
+    "description": "Review merchant video or animation exports for product truth, readability, motion, accessibility and placement fit.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "merchant-visual-direction-brief",
+    "description": "Develop an evidence-linked visual direction and moodboard for a merchant campaign or storefront commission.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "merchant-voiceover-production",
+    "description": "Prepare and verify a merchant voiceover with timed narration, pronunciation, consent and product-claim controls.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Content and creative"
   },
   {
     "name": "meta-ad-account-audit",
@@ -406,11 +1428,109 @@
     "category": "Advertising and partnerships"
   },
   {
+    "name": "newsletter-editorial-plan",
+    "description": "Create a newsletter issue plan and complete editorial draft with a clear reader promise, source-backed content and send evaluation.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Email and retention"
+  },
+  {
+    "name": "nps-followup-priority-planning",
+    "description": "Use when a DTC merchant needs an NPS distribution and follow-up plan.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Email and retention"
+  },
+  {
+    "name": "offline-activation-plan",
+    "description": "Plan a physical brand activation with logistics, stock, costs, customer experience and bounded online attribution.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Advertising and partnerships"
+  },
+  {
     "name": "onsite-search-optimization",
     "description": "Improve a store internal search experience using query logs, result relevance and catalog facts. Use for zero-result queries, synonyms and ranking rules; external search-engine SEO is outside this workflow.",
     "license": "MIT",
     "version": "0.2.0",
     "category": "Storefront and conversion"
+  },
+  {
+    "name": "operating-audit-evidence-index",
+    "description": "Use when a DTC merchant needs an evidence index and gap review for a named merchant operational or financial audit.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "operations-process-handoff-review",
+    "description": "Use when a DTC merchant needs a measured map of an order, return, purchasing or support workflow that is slow or losing handoffs.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "order-address-and-lookup-review",
+    "description": "Use when a DTC merchant needs an authenticated support order summary or address correction proposal.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "order-cost-allocation",
+    "description": "Use when a DTC merchant needs an order-level cost allocation schedule.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "order-risk-review-queue",
+    "description": "Use when a DTC merchant needs a human review queue for flagged orders or unusual refund/return patterns.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "order-state-change-control",
+    "description": "Use when a DTC merchant needs a scoped hold, release or cancellation review for named orders.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "packaging-label-proof-review",
+    "description": "Use when a DTC merchant needs a packaging artwork proof against an approved specification.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "packaging-marketing-brief",
+    "description": "Create a packaging communication brief that aligns shelf or unboxing hierarchy with substantiated claims and production constraints.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "paid-audience-seed-review",
+    "description": "Review customer audience seeds for provenance, consent, match suitability, exclusions and useful campaign segmentation.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Advertising and partnerships"
+  },
+  {
+    "name": "paid-campaign-architecture",
+    "description": "Map paid campaigns to distinct goals, products, markets and economic controls, then prepare a reversible account change plan.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Advertising and partnerships"
+  },
+  {
+    "name": "paid-change-readout",
+    "description": "Evaluate paid-campaign changes against comparable baselines, attribution windows and concurrent influences.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
   },
   {
     "name": "paid-search-query-mining",
@@ -427,6 +1547,20 @@
     "category": "Advertising and partnerships"
   },
   {
+    "name": "payment-payout-reconciliation",
+    "description": "Use when a DTC merchant needs a reconciliation of a named payout to its settlement transactions and bank deposit.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "popup-signup-design",
+    "description": "Design a storefront signup popup with a truthful value exchange, audience rules, suppression and conversion measurement.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Storefront and conversion"
+  },
+  {
     "name": "post-purchase-email-flow",
     "description": "Design delivery-aware DTC post-purchase communication with service and promotional branches. Use to help customers use products and prepare relevant repeat-purchase offers.",
     "license": "MIT",
@@ -434,11 +1568,60 @@
     "category": "Email and retention"
   },
   {
+    "name": "press-outreach-kit",
+    "description": "Draft a source-backed merchant news pitch, subject line, media targeting rationale and press fact sheet.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Advertising and partnerships"
+  },
+  {
+    "name": "price-position-and-change-review",
+    "description": "Use when a DTC merchant needs a comparable-price and proposed price-change decision.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
     "name": "price-test-planning",
     "description": "Design a controlled DTC price experiment with contribution guardrails, stable assignment and a stopping plan. Use to learn price response rather than implement automatic repricing or claim an optimal price.",
     "license": "MIT",
     "version": "0.2.0",
     "category": "Measurement and unit economics"
+  },
+  {
+    "name": "privacy-data-handling-review",
+    "description": "Use when a DTC merchant needs a field-level personal-data sharing, retention or customer-request evidence review.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "procurement-intake-specification",
+    "description": "Use when a DTC merchant needs a sourcing brief for a DTC operational purchase.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Research and positioning"
+  },
+  {
+    "name": "product-attribute-schema-audit",
+    "description": "Reconcile product attribute definitions and values against a typed catalog schema. Use for metafields, category attributes and PIM mappings before product filters or channel exports fail.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Storefront and conversion"
+  },
+  {
+    "name": "product-claim-evidence-review",
+    "description": "Use when a DTC merchant needs a claim-by-claim substantiation review for product pages, packaging or ads.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "product-claim-literature-review",
+    "description": "Review research relevant to a proposed product claim, separating study quality, applicability, uncertainty and commercial wording.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Research and positioning"
   },
   {
     "name": "product-comparison-page",
@@ -455,10 +1638,24 @@
     "category": "Search visibility and product feeds"
   },
   {
+    "name": "product-image-editing-workflow",
+    "description": "Create or edit a product image from authorized references while preserving actual product identity and a reviewable change record.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
     "name": "product-image-shot-list",
     "description": "Plan a physical-product photo set with exact shot purpose, truthful detail and asset requirements. Use for photographer briefs and coverage gaps; image generation prompts and paid ad concepts are separate tasks.",
     "license": "MIT",
     "version": "0.2.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "product-instruction-illustration",
+    "description": "Design a product how-to diagram or short instructional comic from verified actions, with clear sequence and explicit uncertainty.",
+    "license": "MIT",
+    "version": "0.3.0",
     "category": "Content and creative"
   },
   {
@@ -476,6 +1673,27 @@
     "category": "Research and positioning"
   },
   {
+    "name": "product-message-comprehension-test",
+    "description": "Design a shopper comprehension or recall test with fixed stimuli, neutral prompts and precommitted interpretation rules.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Research and positioning"
+  },
+  {
+    "name": "product-motion-generation-brief",
+    "description": "Plan and review generated product motion using approved identity references, anchor frames and continuity constraints.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "product-offer-review",
+    "description": "Review and rewrite a product offer using actual included value, contribution, availability and customer-facing conditions.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Storefront and conversion"
+  },
+  {
     "name": "product-opportunity-research",
     "description": "Research Shopify product opportunities from scratch, validate products, mine niches, assess rising products or expand adjacent lines using available connectors and public evidence. No connector required for a basic screen.",
     "license": "MIT",
@@ -490,11 +1708,32 @@
     "category": "Search visibility and product feeds"
   },
   {
+    "name": "product-prior-art-evidence-map",
+    "description": "Map product features to patent and technical documents for qualified review, preserving family, claim, date and status distinctions.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Research and positioning"
+  },
+  {
+    "name": "product-selector-tool-brief",
+    "description": "Specify a product selector or calculator with decision rules, product evidence, missing-input handling and a testable prototype brief.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Storefront and conversion"
+  },
+  {
     "name": "product-video-storyboard",
     "description": "Create a filmable physical-product demo storyboard with timing, proof shots, narration and edit instructions. Use for demonstration production; social channel calendars and ad campaign strategy are separate.",
     "license": "MIT",
     "version": "0.2.0",
     "category": "Content and creative"
+  },
+  {
+    "name": "production-capacity-and-sequencing",
+    "description": "Use when a DTC merchant needs a finite production schedule for a DTC brand or contract manufacturer.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
   },
   {
     "name": "profit-margin-analyzer",
@@ -511,10 +1750,45 @@
     "category": "Search visibility and product feeds"
   },
   {
+    "name": "promotion-incremental-economics-review",
+    "description": "Use when a DTC merchant needs a promotion or flash-sale economic and readiness review.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "public-creative-trend-scout",
+    "description": "Scout dated public creative formats and hooks with source coverage and metric limits, then propose a bounded merchant content test.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "public-review-response-drafting",
+    "description": "Prepare privacy-preserving public review replies and separate private follow-up drafts from verified merchant facts.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
     "name": "purchase-order-review",
     "description": "Reconcile a draft DTC purchase order against an approved quote, variants, commercial terms and delivery plan before sending or accepting changes.",
     "license": "MIT",
     "version": "0.2.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "qualitative-research-synthesis",
+    "description": "Turn shopper interview notes into traceable behavioral themes and a decision readout, preserving contradictory cases and sample limits.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Research and positioning"
+  },
+  {
+    "name": "quality-nonconformance-action-control",
+    "description": "Use when a DTC merchant needs a product nonconformance investigation and corrective-action register.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
     "category": "Inventory fulfillment and support"
   },
   {
@@ -523,6 +1797,62 @@
     "license": "MIT",
     "version": "0.2.0",
     "category": "Email and retention"
+  },
+  {
+    "name": "refund-and-replacement-control",
+    "description": "Use when a DTC merchant needs a line-level refund and replacement proposal.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "regulatory-change-action-register",
+    "description": "Use when a DTC merchant needs an operational impact register for a supplied regulatory change.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "retail-location-discovery",
+    "description": "Prepare accurate location pages and listing corrections for genuine customer-facing retail locations, with eligibility and measurement checks.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Search visibility and product feeds"
+  },
+  {
+    "name": "retail-market-structure-review",
+    "description": "Assess a retail category through evidence-based competitive forces, relevant macro changes and merchant-specific economic scenarios.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Research and positioning"
+  },
+  {
+    "name": "retail-media-economics",
+    "description": "Evaluate a retail-media proposal using channel-specific contribution, funding terms and attribution limitations.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Advertising and partnerships"
+  },
+  {
+    "name": "return-policy-economic-review",
+    "description": "Use when a DTC merchant needs a comparison of return-policy economics.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "return-receipt-and-resolution-control",
+    "description": "Use when a DTC merchant needs a return case register from request through physical disposition and resolution.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "returned-goods-recovery-planning",
+    "description": "Use when a DTC merchant needs a disposition and recovery plan for inspected returned goods.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
   },
   {
     "name": "returns-exchange-workflow",
@@ -536,6 +1866,13 @@
     "description": "Analyze DTC returns by delivered cohort, SKU and verified reason to prioritize fixable product, fit, content or fulfillment problems. Use for root-cause hypotheses rather than refund-total reporting.",
     "license": "MIT",
     "version": "0.2.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "review-informed-product-faq",
+    "description": "Turn shopper doubts in reviews and Q&A into product FAQ copy verified against specifications and current policies.",
+    "license": "MIT",
+    "version": "0.3.0",
     "category": "Inventory fulfillment and support"
   },
   {
@@ -553,6 +1890,27 @@
     "category": "Search visibility and product feeds"
   },
   {
+    "name": "search-content-evidence-audit",
+    "description": "Audit search content for substantiated claims, meaningful product expertise, source quality and concrete improvement actions.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Search visibility and product feeds"
+  },
+  {
+    "name": "search-metadata-release-check",
+    "description": "Prepare and verify a metadata release using exact URLs, proposed values, duplicate checks and post-change readback.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Search visibility and product feeds"
+  },
+  {
+    "name": "search-portfolio-performance",
+    "description": "Reconcile search performance across page and query groups before prioritizing changes or explaining a visibility shift.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Search visibility and product feeds"
+  },
+  {
     "name": "seasonal-promotion-calendar",
     "description": "Build a market-specific retail promotion calendar backward from stock, delivery cutoffs and contribution limits. Use for seasonal trading plans; a new-product launch strategy or generic social posting calendar is separate.",
     "license": "MIT",
@@ -565,6 +1923,41 @@
     "license": "MIT",
     "version": "0.1.1",
     "category": "Search visibility and product feeds"
+  },
+  {
+    "name": "share-of-voice-measurement",
+    "description": "Measure brand mention share within a declared source set and time window, preserving exclusions and sampling limits.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "shipment-exception-claim-preparation",
+    "description": "Use when a DTC merchant needs a delayed, lost, damaged or short shipment evidence and response file.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "shipment-load-feasibility-review",
+    "description": "Use when a DTC merchant needs a packing and load feasibility review before booking inbound stock or local delivery.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "shipment-split-routing-and-tracking-control",
+    "description": "Use when a DTC merchant needs a feasible shipment allocation and tracking change set.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "shipping-rate-and-zone-coverage-review",
+    "description": "Use when a DTC merchant needs a destination and basket test matrix for shipping rates.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
   },
   {
     "name": "shipping-threshold-analysis",
@@ -609,6 +2002,41 @@
     "category": "Storefront and conversion"
   },
   {
+    "name": "shopper-concept-validation-sprint",
+    "description": "Plan a bounded merchant concept test that isolates risky assumptions, prototypes only what is needed and records decision criteria before feedback.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Research and positioning"
+  },
+  {
+    "name": "shopper-opportunity-mapping",
+    "description": "Connect a merchant outcome to evidenced shopper needs, alternative solutions and small assumption tests.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Research and positioning"
+  },
+  {
+    "name": "shopper-survey-design",
+    "description": "Design a shopper questionnaire with construct mapping, balanced response options, skip logic and an explicit sampling and pilot plan.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Research and positioning"
+  },
+  {
+    "name": "shopper-switching-jobs-analysis",
+    "description": "Extract purchase and repeat-use jobs, switching forces and alternative solutions from shopper evidence.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Research and positioning"
+  },
+  {
+    "name": "shopper-usability-testing",
+    "description": "Plan and analyze task-based usability sessions for a DTC storefront or prototype, separating assisted completion from unassisted success.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Research and positioning"
+  },
+  {
     "name": "shopping-feed-disapproval-triage",
     "description": "Investigate current item-level Merchant Center disapprovals and prepare evidence-backed remediation and readback steps. Use for diagnostic codes and affected offers; account-wide misrepresentation and general feed copy optimization are separate.",
     "license": "Apache-2.0",
@@ -630,6 +2058,13 @@
     "category": "Search visibility and product feeds"
   },
   {
+    "name": "sku-and-option-identity-audit",
+    "description": "Detect conflicting SKU/barcode identities and inconsistent variant options before imports or channel sync. Produce a reviewed normalization map without merging products by guesswork.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Storefront and conversion"
+  },
+  {
     "name": "sku-portfolio-rationalization",
     "description": "Review DTC assortment for keep, replenish, repair, seasonal hold or retirement using contribution, inventory investment and customer role. Use when deciding which SKUs deserve resources, not just sorting revenue.",
     "license": "MIT",
@@ -641,6 +2076,167 @@
     "description": "Prepare a consent-scoped DTC SMS campaign with segment-cost estimates, quiet-hour handling and purchase exits. Use for a specific timely merchant offer or requested restock alert.",
     "license": "MIT",
     "version": "0.2.0",
+    "category": "Email and retention"
+  },
+  {
+    "name": "social-channel-capacity-plan",
+    "description": "Choose a sustainable social channel and publishing plan from audience evidence, production effort and staffing constraints.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "social-crisis-runbook",
+    "description": "Prepare an evidence-based social incident response, including holding statements, escalation roles and update conditions.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "social-inbox-moderation",
+    "description": "Triage social comments and messages into response, escalation and moderation actions with clear evidence and ownership.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "social-listening-query-plan",
+    "description": "Build brand-listening queries and a source-linked mention digest with comparable baselines, calibrated alerts and explicit coverage limits.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Research and positioning"
+  },
+  {
+    "name": "social-performance-review",
+    "description": "Compare social content results using consistent windows, formats and denominators, then propose evidence-linked content tests.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "social-preview-metadata",
+    "description": "Inspect and draft social link-preview metadata, images and fallback behavior for exact storefront URLs.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Search visibility and product feeds"
+  },
+  {
+    "name": "social-publication-qa",
+    "description": "Review an assembled social post for the exact account, timing, offer, permissions, format and destination before release.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "source-content-repurposing",
+    "description": "Turn a verified source asset into channel-appropriate content, preserving claims while producing complete hooks and captions.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "sourcing-impact-evidence-review",
+    "description": "Use when a DTC merchant needs a supplier environmental/social evidence and bounded activity-emissions comparison.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "statement-extraction-reconciliation",
+    "description": "Extract statement transactions with page-level provenance and verify balances, row counts and number formats before bookkeeping use.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "store-configuration-and-access-review",
+    "description": "Use when a DTC merchant needs a redacted store-settings, account-access and payment-mode review.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "store-incident-signal-review",
+    "description": "Use when a DTC merchant needs a diagnosis and actionable alert specification for a suspected store checkout or order-processing incident.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "store-policy-content-review",
+    "description": "Use when a DTC merchant needs a readability and consistency review of store policy and supporting pages.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Storefront and conversion"
+  },
+  {
+    "name": "store-resource-retirement-review",
+    "description": "Use when a DTC merchant needs a dependency-aware review of old draft orders or apparently unused store files.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Storefront and conversion"
+  },
+  {
+    "name": "storefront-access-gating-review",
+    "description": "Review account or content gates for shopper value, purchase friction, accessibility and measurable alternatives.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Storefront and conversion"
+  },
+  {
+    "name": "storefront-accessibility-audit",
+    "description": "Audit a defined shopper journey for accessibility barriers using manual interaction, available assistive technology and source evidence.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Storefront and conversion"
+  },
+  {
+    "name": "storefront-design-handoff",
+    "description": "Create an implementation-ready storefront design handoff with shopper flows, responsive states, tokens and observable acceptance criteria.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Storefront and conversion"
+  },
+  {
+    "name": "storefront-microcopy-state-review",
+    "description": "Write and audit shopper-facing UI text across normal, empty, loading, error and recovery states using verified product behavior.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Storefront and conversion"
+  },
+  {
+    "name": "storefront-navigation-research",
+    "description": "Test merchant category labels and navigation structure through card sorting and tree tasks tied to shopper findability.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Storefront and conversion"
+  },
+  {
+    "name": "storefront-path-and-eligibility-review",
+    "description": "Use when a DTC merchant needs a review of account, filter, currency, payment eligibility and cross-channel handoffs along a real shopping path.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Storefront and conversion"
+  },
+  {
+    "name": "storefront-typography-specification",
+    "description": "Specify merchant typography for readable product information across screen sizes, locales and content roles.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Storefront and conversion"
+  },
+  {
+    "name": "storefront-visual-design-review",
+    "description": "Review storefront visuals against shopper tasks and approved designs, separating observed defects from preference and untested behavior.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Storefront and conversion"
+  },
+  {
+    "name": "subscription-renewal-exception-review",
+    "description": "Use when a DTC merchant needs a renewal, payment and fulfillment exception queue.",
+    "license": "MIT",
+    "version": "0.3.0",
     "category": "Email and retention"
   },
   {
@@ -658,11 +2254,32 @@
     "category": "Measurement and unit economics"
   },
   {
+    "name": "supplier-collaboration-exceptions",
+    "description": "Use when a DTC merchant needs a po acknowledgement and receipt exception queue.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "supplier-contract-obligations",
+    "description": "Use when a DTC merchant needs an operational obligations register from supplier terms.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
     "name": "supplier-finder",
     "description": "Find supplier candidates, compare evidenced procurement conditions and prepare sample checks using authorized Sorftime or public sources.",
     "license": "MIT",
     "version": "0.1.1",
     "category": "Research and positioning"
+  },
+  {
+    "name": "supplier-performance-review",
+    "description": "Use when a DTC merchant needs a supplier performance and dependency review.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
   },
   {
     "name": "supplier-quality-inspection-plan",
@@ -679,6 +2296,27 @@
     "category": "Inventory fulfillment and support"
   },
   {
+    "name": "supplier-rfp-and-negotiation",
+    "description": "Use when a DTC merchant needs a comparable supplier proposal and negotiation pack.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "supplier-spend-analysis",
+    "description": "Use when a DTC merchant needs a supplier/category spend and consolidation review.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
+    "name": "support-escalation-evidence-pack",
+    "description": "Prepare an actionable internal escalation for a merchant support issue with timeline, observed impact, attempted remedies and a precise decision request.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
     "name": "support-knowledge-base",
     "description": "Create or repair a DTC support knowledge base from approved product and policy evidence, including article scope, source ownership and escalation. Use to answer repeat questions without inventing warranty or return promises.",
     "license": "MIT",
@@ -686,11 +2324,39 @@
     "category": "Inventory fulfillment and support"
   },
   {
+    "name": "support-macro-library-design",
+    "description": "Create a maintainable library of shopper support drafts with scenario eligibility, verified data tokens and policy ownership.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "support-workload-capacity-planning",
+    "description": "Use when a DTC merchant needs a support staffing and surge-capacity plan.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "tax-records-and-configuration-review",
+    "description": "Use when a DTC merchant needs a tax collection evidence schedule and configuration exception review.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Measurement and unit economics"
+  },
+  {
     "name": "theme-studio",
     "description": "Build or renovate a Shopify theme from a merchant brief, reference page or screenshot. Use when the user wants actual Liquid/JSON/CSS changes, campaign templates or an unpublished theme preview; use copywriting for copy-only requests.",
     "license": "MIT",
     "version": "0.1.1",
     "category": "Storefront and conversion"
+  },
+  {
+    "name": "transcript-derived-content-package",
+    "description": "Create a verified transcript and timestamp-linked episode summary, show notes and reusable content from merchant-owned audio or video.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Content and creative"
   },
   {
     "name": "trend-stage-timing-analyzer",
@@ -707,6 +2373,20 @@
     "category": "Content and creative"
   },
   {
+    "name": "variant-copy-consistency",
+    "description": "Scale product variant copy from a verified attribute matrix while preventing unsupported differences and cross-variant leakage.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Content and creative"
+  },
+  {
+    "name": "video-search-readiness",
+    "description": "Review video discovery assets, page context, metadata and accessible transcripts without promising search rankings.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Search visibility and product feeds"
+  },
+  {
     "name": "voice-of-customer-messaging",
     "description": "Turn supplied interviews, reviews and support language into a DTC message hierarchy with traceable proof. Use after research exists; this does not replace broad review mining or generate unsupported testimonials.",
     "license": "MIT",
@@ -714,11 +2394,39 @@
     "category": "Research and positioning"
   },
   {
+    "name": "warehouse-pick-and-wave-planning",
+    "description": "Use when a DTC merchant needs a feasible warehouse pick/wave plan.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
+    "name": "warehouse-slotting-capacity-review",
+    "description": "Use when a DTC merchant needs a sku-to-bin slotting and space-capacity proposal.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
+  },
+  {
     "name": "weekly-store-performance-review",
     "description": "Prepare a DTC operating review that reconciles sales, contribution, inventory, fulfillment and customer issues into specific decisions. Use for weekly management actions, not a dashboard of unrelated KPIs.",
     "license": "MIT",
     "version": "0.2.0",
     "category": "Measurement and unit economics"
+  },
+  {
+    "name": "wholesale-account-and-quote-review",
+    "description": "Use when a DTC merchant needs a wholesale company/location and quote-to-order readiness review for a DTC brand.",
+    "license": "MIT",
+    "version": "0.3.0",
+    "category": "Storefront and conversion"
+  },
+  {
+    "name": "wholesale-channel-terms-review",
+    "description": "Use when a DTC merchant needs a wholesale partner commercial review for a DTC brand selling through multiple channels.",
+    "license": "Apache-2.0",
+    "version": "0.3.0",
+    "category": "Inventory fulfillment and support"
   },
   {
     "name": "winback-email-flow",

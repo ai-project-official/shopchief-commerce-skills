@@ -1,0 +1,327 @@
+[
+  {
+    "id": "catalog-edit-conflict",
+    "skill": "catalog-import-change-preflight",
+    "request": "Prepare the import proposal for the approved changes using the supplied tables. Do not connect to a store. Give the resulting file or explain precisely what blocks it.",
+    "inputs": {
+      "request": {
+        "P101": {
+          "price_percentage_change": 10,
+          "add_tags": [
+            "clearance"
+          ],
+          "remove_tags": [
+            "summer"
+          ]
+        },
+        "P102": {
+          "price_percentage_change": 10
+        }
+      },
+      "backup": [
+        {
+          "id": "P101",
+          "sku": "LINEN-S",
+          "price": "20.00",
+          "tags": [
+            "summer",
+            "linen"
+          ],
+          "description": "100% linen",
+          "currency": "USD"
+        },
+        {
+          "id": "P102",
+          "sku": "LINEN-M",
+          "price": "25.00",
+          "tags": [
+            "linen"
+          ],
+          "description": "100% linen",
+          "currency": "USD"
+        }
+      ],
+      "fresh_records": [
+        {
+          "id": "P101",
+          "price": "21.00",
+          "tags": [
+            "summer",
+            "linen"
+          ]
+        },
+        {
+          "id": "P102",
+          "price": "25.00",
+          "tags": [
+            "linen"
+          ]
+        }
+      ],
+      "importer_note": "Columns present with empty values clear that field; omitted columns leave values unchanged. Existing ID is required; nonexistent IDs create products. Round prices to 2 decimals. Proposed CSV includes ID,Price,Tags,Description with empty Description cells."
+    }
+  },
+  {
+    "id": "payout-linkage",
+    "skill": "payment-payout-reconciliation",
+    "request": "Reconcile these payout records and write the exception report. Use only the supplied data.",
+    "inputs": {
+      "currency": "USD",
+      "payout_id": "P42",
+      "reported_payout": "880.00",
+      "settlement_rows": [
+        {
+          "transaction_id": "T1",
+          "payout_id": "P42",
+          "kind": "charge",
+          "signed_net": "970.00",
+          "gross": "1000.00",
+          "fee": "30.00"
+        },
+        {
+          "transaction_id": "T2",
+          "payout_id": "P42",
+          "kind": "refund",
+          "signed_net": "-90.00",
+          "gross": "-90.00",
+          "fee": "0.00"
+        }
+      ],
+      "bank": [
+        {
+          "reference": "P42",
+          "amount": "880.00",
+          "status": "posted"
+        }
+      ],
+      "orders": [
+        {
+          "id": "O7",
+          "date": "2026-09-29",
+          "total": "200.00",
+          "payout_id": null
+        }
+      ],
+      "payout_issue_date": "2026-09-30"
+    }
+  },
+  {
+    "id": "contact-consent-conflict",
+    "skill": "customer-identity-and-consent-audit",
+    "request": "Review these customer rows for deduplication and marketing export, and return the proposed decisions. We have not approved any merges.",
+    "inputs": {
+      "records": [
+        {
+          "id": "C1",
+          "email": "buyer@example.com",
+          "name": "Ana",
+          "consent": "subscribed",
+          "consent_date": "2026-09-01",
+          "consent_source": "old CSV"
+        },
+        {
+          "id": "C2",
+          "email": "buyer@example.com",
+          "name": "Sam",
+          "consent": "unsubscribed",
+          "consent_date": "2026-09-20",
+          "consent_source": "ESP suppression event"
+        },
+        {
+          "id": "C3",
+          "email": "another@example.com",
+          "name": "Ana",
+          "consent": null,
+          "order_count": 4
+        }
+      ],
+      "C1_C3_shared_address": true,
+      "contact_owner_verified": false
+    }
+  },
+  {
+    "id": "creator-amplification-eligibility",
+    "skill": "creator-paid-amplification",
+    "request": "Prepare a paid amplification proposal for the refill campaign from these assets. Do not activate ads or contact creators.",
+    "inputs": {
+      "as_of": "2026-10-02",
+      "desired_dates": [
+        "2026-10-03",
+        "2026-10-12"
+      ],
+      "budget_usd": 300,
+      "assets": [
+        {
+          "id": "A",
+          "views": 12000,
+          "rights": "Organic repost on brand Instagram only",
+          "creator_identity_ads": false
+        },
+        {
+          "id": "B",
+          "views": 3000,
+          "rights": "Brand-account paid ads in US, Instagram placements, Oct 1 through Oct 5 inclusive, unchanged edit only",
+          "creator_identity_ads": false
+        }
+      ],
+      "offer_in_B": "20% off all refills",
+      "landing_page_offer": "10% off selected refills",
+      "merchant_margin_test_loss_cap": 300
+    }
+  },
+  {
+    "id": "conversion-value-lineage",
+    "skill": "conversion-value-design",
+    "request": "Define the value specification and calculate values from this export. We want contribution before ads as the value basis, with no live configuration changes.",
+    "inputs": {
+      "currency": "USD",
+      "orders": [
+        {
+          "id": "O1",
+          "net_revenue_ex_tax": "120",
+          "cogs": "40",
+          "fulfillment": "10",
+          "payment_fee": "4"
+        },
+        {
+          "id": "O2",
+          "net_revenue_ex_tax": "80",
+          "cogs": null,
+          "fulfillment": "8",
+          "payment_fee": "3"
+        }
+      ],
+      "signup_cohort": {
+        "qualified_signups": 50,
+        "later_orders": 5,
+        "mean_known_order_contribution": 60
+      },
+      "existing_actions": [
+        "email_signup",
+        "purchase"
+      ],
+      "refund_event": {
+        "order_id": "O1",
+        "refund_amount": 120,
+        "inventory_recovered": null,
+        "fee_reversal": null
+      }
+    }
+  },
+  {
+    "id": "voice-panel-change",
+    "skill": "share-of-voice-measurement",
+    "request": "Compare our share of voice in the supplied forum counts and produce the management readout.",
+    "inputs": {
+      "week1": {
+        "Harbor": 30,
+        "RivalA": 50,
+        "RivalB": 20
+      },
+      "week2": {
+        "Harbor": 30,
+        "RivalA": 50,
+        "RivalB": 20,
+        "NewRival": 100
+      },
+      "week3": {
+        "Harbor": 30,
+        "RivalA": 50,
+        "RivalB": null,
+        "NewRival": 90
+      },
+      "collection_note": "Same query and forum for the original three brands; NewRival was first added to the panel in week2. No imputation supplied."
+    }
+  },
+  {
+    "id": "qualitative-evidence-counts",
+    "skill": "qualitative-research-synthesis",
+    "request": "Synthesize these synthetic interview notes into a decision memo about product dimensions on our bag PDP.",
+    "inputs": {
+      "recruitment": "Three volunteers from repeat-buyer email list, sessions on Sep 28",
+      "question": "How did you verify laptop fit?",
+      "notes": [
+        {
+          "participant": "P1",
+          "asked_fit_question": true,
+          "segments": [
+            {
+              "at": "01:20",
+              "kind": "verbatim",
+              "text": "I used my laptop measurements."
+            },
+            {
+              "at": "03:40",
+              "kind": "verbatim",
+              "text": "The dimensions were hard to find."
+            },
+            {
+              "at": "06:10",
+              "kind": "verbatim",
+              "text": "I checked the dimensions again before buying."
+            }
+          ]
+        },
+        {
+          "participant": "P2",
+          "asked_fit_question": true,
+          "segments": [
+            {
+              "at": "02:10",
+              "kind": "verbatim",
+              "text": "The size table was enough. I found it straight away."
+            }
+          ]
+        },
+        {
+          "participant": "P3",
+          "asked_fit_question": false,
+          "segments": [
+            {
+              "at": "03:10",
+              "kind": "observer note",
+              "text": "Seemed confused at the cart."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "interview-unfielded-guide",
+    "skill": "consumer-interview-planning",
+    "request": "Create the interview guide to learn why first-time bottle buyers choose a size. We have 15 minutes per person. Existing draft question: How frustrating was our lack of a medium size?",
+    "inputs": {
+      "merchant_hypothesis": "A new medium size would attract more buyers",
+      "recruitment": "Only repeat buyers have volunteered so far",
+      "participants_completed": 0,
+      "recording_permission": false,
+      "incentive": "None",
+      "target_population": "first-time buyers and considered-but-did-not-buy shoppers"
+    }
+  },
+  {
+    "id": "archetype-assumptions",
+    "skill": "evidence-based-shopper-archetypes",
+    "request": "Produce shopper archetype cards for deciding which information to emphasize on the bag page.",
+    "inputs": {
+      "synthetic_notes": [
+        {
+          "participant": "P1",
+          "evidence": "Compared internal compartment dimensions to own laptop."
+        },
+        {
+          "participant": "P2",
+          "evidence": "Needed arrival before a flight and read delivery terms."
+        },
+        {
+          "participant": "P3",
+          "evidence": "Compared laptop fit for weekday commuting; on a later trip prioritized arrival before departure."
+        }
+      ],
+      "merchant_suggestion": "Call the first persona a wealthy 35-year-old mom and say it is 70% of buyers.",
+      "demographic_data": null,
+      "recruitment": "3 convenience interviews, Sep 2026"
+    }
+  }
+]
