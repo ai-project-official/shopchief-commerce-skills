@@ -1,6 +1,6 @@
 {
   "name": "shopchief-commerce-skills",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "private": true,
   "description": "Static Agent Skills packages; no npm runtime dependencies.",
   "license": "MIT",

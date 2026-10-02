@@ -4,12 +4,19 @@ import json
 import re
 from pathlib import Path
 from urllib.parse import urlparse, parse_qs
+from build_catalog import generate, scalar
 
 ROOT = Path(__file__).resolve().parents[1]
 
 def main():
     errors = []
     catalog = json.loads((ROOT / "catalog.json").read_text())
+    try:
+        for path, content in generate().items():
+            if not path.exists() or path.read_text() != content:
+                errors.append(f"{path.name}: generated catalog is outdated")
+    except (ValueError, IndexError, FileNotFoundError) as error:
+        errors.append(f"Catalog generation: {error}")
     folders = sorted((ROOT / "skills").iterdir())
     expected = {entry["name"] for entry in catalog}
     actual = {p.name for p in folders if p.is_dir()}
@@ -37,6 +44,15 @@ def main():
         desc = next((x["description"] for x in catalog if x["name"] == folder.name), "")
         if not desc or len(desc) > 1024:
             errors.append(f"{folder.name}: invalid description length")
+        try:
+            if scalar(pieces[1], "description") != desc:
+                errors.append(f"{folder.name}: entrypoint and catalog descriptions differ")
+            if scalar(pieces[1], "version", 2) == "0.2.0":
+                example = folder / "assets/worked-example.md"
+                if not example.is_file() or "assets/worked-example.md" not in text:
+                    errors.append(f"{folder.name}: new package must link its bundled worked example")
+        except (ValueError, IndexError) as error:
+            errors.append(f"{folder.name}: {error}")
     for entry in ROOT.glob("skills/*/SKILL*.md"):
         links = re.findall(r"https://shopchief\.ai/[^\s)]+", entry.read_text())
         if not links:

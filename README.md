@@ -1,8 +1,8 @@
 # ShopChief Commerce Skills
 
-**40 open-source AI skills for independent ecommerce and DTC sellers.** Research products, improve Shopify pages, plan search content, understand contribution margin and prepare campaigns.
+**100+ open-source AI skills for independent ecommerce and DTC sellers.** Research products, improve your storefront, plan campaigns, retain customers and manage inventory with evidence and clear deliverables.
 
-[中文说明](README.zh-CN.md) · [All 40 skills](docs/catalog.md) · [Worked examples](examples/README.md) · [ShopChief](https://shopchief.ai/?utm_source=github&utm_medium=opensource&utm_campaign=commerce_skills&utm_content=readme)
+[中文说明](README.zh-CN.md) · [Browse by task](docs/catalog.md) · [Workflow recipes](docs/playbooks.md) · [Worked examples](examples/README.md) · [ShopChief](https://shopchief.ai/?utm_source=github&utm_medium=opensource&utm_campaign=commerce_skills&utm_content=readme)
 
 ## Start with a merchant task
 
@@ -14,6 +14,13 @@
 | Understand store search problems | [Site SEO audit](skills/site-seo-audit/SKILL.md) | Evidence and prioritized repairs |
 | Plan a collection launch | [DTC launch marketing](skills/dtc-launch-marketing/SKILL.md) | Readiness, assets, channels and measurement |
 | Turn product facts into social content | [DTC social content](skills/dtc-social-content/SKILL.md) | Finished scripts and factual asset requirements |
+| Stop discounts from destroying margin | [Discount profitability](skills/discount-profitability/SKILL.md) | Contribution per order and the volume needed to recover it |
+| Restock without tying up too much cash | [Inventory replenishment](skills/inventory-replenishment-planning/SKILL.md) | Stock position, lead-time demand and an order proposal |
+| Build a useful welcome sequence | [Email welcome series](skills/email-welcome-series/SKILL.md) | Trigger, exclusions, finished messages and a QA plan |
+| Diagnose missing purchase events | [GA4 ecommerce measurement](skills/ga4-ecommerce-measurement/SKILL.md) | Event contract, duplicate checks and a verification plan |
+| Understand why customers return products | [Returns analysis](skills/returns-reason-analysis/SKILL.md) | Comparable reason rates and actions tied to source evidence |
+
+The [task catalog](docs/catalog.md) groups skills into research, storefront conversion, search and feeds, content, advertising, retention, measurement, and operations. Choose a focused workflow; you do not need to install the whole library.
 
 ## Install a skill
 
@@ -24,7 +31,7 @@ npx skills add ai-project-official/shopchief-commerce-skills --list
 npx skills add ai-project-official/shopchief-commerce-skills --skill profit-margin-analyzer
 ```
 
-Choose your client in the installer. Each folder includes its references and license. There are 40 English entrypoints and 33 Chinese companion instructions. Using these skills does not require a ShopChief account.
+Choose your client in the installer. Each folder includes its references and license. Entry instructions are in English; some packages also include Chinese companion instructions. Ask for deliverables in your preferred language. Using these skills does not require a ShopChief account.
 
 ## Get your first result
 
@@ -47,6 +54,8 @@ For the page review, install `shopify-product-page-cro` and ask:
 
 ## Continue with ShopChief
 
+Local skills suit merchants and operators who already use an AI client and want to supply their own exports and tools. [ShopChief](https://shopchief.ai/?utm_source=github&utm_medium=opensource&utm_campaign=commerce_skills&utm_content=hosted_workflows) suits teams that want built-in commerce workflows, store context and supported connected actions in one workspace. The open-source library and the hosted skill catalog are separate releases; check the app for available workflows and integrations.
+
 Use the [profit calculator](https://shopchief.ai/tools/profit-margin-calculator?utm_source=github&utm_medium=opensource&utm_campaign=commerce_skills&utm_content=profit_example) to explore your cost assumptions, or the [product-copy workflow](https://shopchief.ai/solutions/shopify-product-descriptions?utm_source=github&utm_medium=opensource&utm_campaign=commerce_skills&utm_content=product_page_example) to prepare verified Shopify copy. Installed skills and local examples work independently.
 
 ## Tools and permissions
@@ -65,6 +74,8 @@ cd shopchief-commerce-skills
 python3 scripts/validate.py
 ```
 
+For catalog changes, update `scripts/catalog-groups.json`, run `python3 scripts/build_catalog.py`, then validate. A new skill needs a distinct merchant decision, concrete inputs and outputs, a worked example, failure cases, and appropriate permissions. See [the contribution guide](CONTRIBUTING.md).
+
 ## License
 
-[MIT](LICENSE). Third-party copyright and license notices are preserved in [NOTICE.md](NOTICE.md) and the affected skill folders.
+ShopChief's original contributions use [MIT](LICENSE). Adapted packages retain their applicable licenses; the product-feed packages use Apache-2.0. See [NOTICE.md](NOTICE.md) and each installed package's `LICENSE` for exact terms and attribution.

@@ -1,8 +1,8 @@
 # ShopChief Commerce Skills
 
-面向独立站和 DTC 卖家的 **40 个开源 AI 技能**，覆盖选品、商品页优化、SEO/GEO、利润分析、Shopify 运营和营销内容。
+面向独立站和 DTC 卖家的 **100+ 开源 AI 技能**。从选品、建站、搜索与广告，到客户留存、利润、库存和售后，把具体经营任务变成有依据、可审核的交付物。
 
-[English](README.md) · [完整目录](docs/catalog.md) · [完整案例](examples/README.md) · [ShopChief 官网](https://shopchief.ai/?utm_source=github&utm_medium=opensource&utm_campaign=commerce_skills&utm_content=readme_zh)
+[English](README.md) · [按任务查找](docs/catalog.md) · [组合工作流](docs/playbooks.md) · [完整案例](examples/README.md) · [ShopChief 官网](https://shopchief.ai/?utm_source=github&utm_medium=opensource&utm_campaign=commerce_skills&utm_content=readme_zh)
 
 ## 从具体任务开始
 
@@ -13,6 +13,13 @@
 | 验证选品机会 | [选品研究](skills/product-opportunity-research/SKILL.zh-CN.md) | 候选、证据与验证建议 |
 | 排查店铺搜索问题 | [全站 SEO 审查](skills/site-seo-audit/SKILL.zh-CN.md) | 问题证据与修复顺序 |
 | 筹备新品营销 | [DTC 发布计划](skills/dtc-launch-marketing/SKILL.md) | 准备事项、渠道、素材与衡量方法 |
+| 判断打折是否划算 | [折扣利润测算](skills/discount-profitability/SKILL.md) | 每单贡献与保住利润所需的订单增量 |
+| 减少缺货与库存占款 | [补货规划](skills/inventory-replenishment-planning/SKILL.md) | 库存位置、交期需求与采购建议 |
+| 准备新订阅者欢迎邮件 | [欢迎邮件流程](skills/email-welcome-series/SKILL.md) | 触发条件、排除条件、邮件稿与核对项 |
+| 排查购买事件漏记 | [GA4 电商衡量](skills/ga4-ecommerce-measurement/SKILL.md) | 事件契约、重复检查和验证步骤 |
+| 找出退货原因 | [退货原因分析](skills/returns-reason-analysis/SKILL.md) | 可比较的退货原因占比与证据对应的改进项 |
+
+目录按研究定位、店铺转化、搜索与 Feed、内容创意、广告合作、邮件留存、经营衡量和库存售后分组。按当前任务安装即可。
 
 ## 安装与首次运行
 
@@ -23,7 +30,7 @@ npx skills add ai-project-official/shopchief-commerce-skills --list
 npx skills add ai-project-official/shopchief-commerce-skills --skill profit-margin-analyzer
 ```
 
-按安装器提示选择客户端。技能包包含参考文件与许可证，共有 40 份英文入口、33 份中文说明。无需 ShopChief 账号。
+按安装器提示选择客户端。每个技能包包含参考文件与许可证。入口以英文为主，部分技能附中文说明；可直接要求代理用中文交付。无需 ShopChief 账号。
 
 利润与商品页案例会随对应技能一起安装。安装后可以直接对代理说：
 
@@ -42,6 +49,8 @@ python3 .agents/skills/profit-margin-analyzer/scripts/profit_report.py --demo
 
 ## 继续处理同一个任务
 
+已经使用 AI 客户端、愿意提供数据导出和配置工具的卖家，适合本地安装。希望在一个工作区里使用内置电商流程、店铺上下文和已支持连接操作的团队，可以使用 [ShopChief](https://shopchief.ai/?utm_source=github&utm_medium=opensource&utm_campaign=commerce_skills&utm_content=hosted_workflows_zh)。开源库与产品内技能目录分别发布，实际可用流程与连接器以产品内为准。
+
 可以使用 [ShopChief 利润计算器](https://shopchief.ai/tools/profit-margin-calculator?utm_source=github&utm_medium=opensource&utm_campaign=commerce_skills&utm_content=profit_example_zh)检查成本假设，或查看 [Shopify 商品文案工作流](https://shopchief.ai/solutions/shopify-product-descriptions?utm_source=github&utm_medium=opensource&utm_campaign=commerce_skills&utm_content=product_page_example_zh)。本地技能和案例仍可独立使用。
 
 ## 工具与授权
@@ -50,7 +59,7 @@ python3 .agents/skills/profit-margin-analyzer/scripts/profit_report.py --demo
 
 ## 贡献与许可
 
-欢迎提交可复现问题和具体任务改进，请使用虚构或已授权脱敏资料。采用 [MIT](LICENSE)，第三方署名与许可见 [NOTICE](NOTICE.md)。
+欢迎提交可复现问题和具体任务改进，请使用虚构或已授权脱敏资料。ShopChief 原创贡献采用 [MIT](LICENSE)，改编包保留适用的上游许可，商品 Feed 相关包采用 Apache-2.0。各包 `LICENSE` 和 [NOTICE](NOTICE.md) 列明许可与必要署名。
 
 维护完整仓库时执行：
 

@@ -10,6 +10,9 @@ The public interface is the Agent Skills `SKILL.md` format. Each folder is indep
 | Shopify mutations | Authorized store connector/CLI and current schema | Produce drafts/import sheets/local theme files |
 | Image generation/editing | An installed image provider tool and source assets | Produce prompts/asset briefs, not fabricated images |
 | Theme preview | Local preview or authorized unpublished Shopify theme | Report local-only files and unverified rendering |
+| Paid media and lifecycle messaging | Platform exports, or a connector with appropriate account scope | Produce analyses and campaign/flow drafts; no automatic budget changes or sends |
+| Inventory, pricing and fulfillment | Dated SKU, stock, lead-time, cost and policy exports | Produce order proposals and policy-aware worksheets; do not assume missing values are zero |
+| Analytics and cohorts | Event definitions, observation windows and appropriately minimized exports | Produce a measurement plan or partial analysis; do not invent causal attribution or lifetime outcomes |
 
 No API keys, runtime accounts, analytics tracker, automatic network calls or scheduled tasks are bundled. Paid providers can charge for agent-initiated operations; those require the user's scope and budget. Never paste secrets into an issue or generated report.
 
