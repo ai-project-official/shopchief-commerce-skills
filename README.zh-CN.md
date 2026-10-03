@@ -114,14 +114,6 @@ python3 .agents/skills/profit-margin-analyzer/scripts/profit_report.py --demo
 
 ## 贡献与许可
 
-欢迎提交可复现问题和具体任务改进，请使用虚构或已授权脱敏资料。ShopChief 原创贡献采用 [MIT](LICENSE)，改编包保留适用的上游许可与声明。各包 `LICENSE` 和 [NOTICE](NOTICE.md) 列明许可与必要署名。
+欢迎提交可复现问题和具体任务改进，请使用虚构或已授权脱敏资料。维护方法见[贡献指南](CONTRIBUTING.md)。
 
-维护完整仓库时执行：
-
-```sh
-git clone https://github.com/ai-project-official/shopchief-commerce-skills.git
-cd shopchief-commerce-skills
-python3 scripts/validate.py
-```
-
-新增或调整技能分类后，更新 `scripts/catalog-groups.json` 并运行 `python3 scripts/build_catalog.py`，会同步更新目录和中英 README 的分类数量；再运行验证。
+ShopChief 原创贡献采用 [MIT](LICENSE)，改编包保留适用的上游许可与声明。各包 `LICENSE` 和 [NOTICE](NOTICE.md) 列明许可与必要署名。
