@@ -2,7 +2,59 @@
 
 面向独立站和 DTC 卖家的 **300+ 开源 AI 技能**。从选品、建站、搜索与广告，到客户留存、利润、库存和售后，把具体经营任务变成有依据、可审核的交付物。
 
-[English](README.md) · [按任务查找](docs/catalog.md) · [组合工作流](docs/playbooks.md) · [完整案例](examples/README.md) · [ShopChief 官网](https://shopchief.ai/?utm_source=github&utm_medium=opensource&utm_campaign=commerce_skills&utm_content=readme_zh)
+[English](README.md) · [复制安装指令](#一键复制安装) · [按任务查找](docs/catalog.md) · [组合工作流](docs/playbooks.md) · [完整案例](examples/README.md) · [ShopChief 官网](https://shopchief.ai/?utm_source=github&utm_medium=opensource&utm_campaign=commerce_skills&utm_content=readme_zh)
+
+## 一键复制安装
+
+在当前项目中打开**能执行本地终端的 Codex 或 Claude Code**。点击对应代码块的复制按钮，把整段文字粘贴给 Agent 并发送，即可让它完成项目内安装。当前 [skills CLI](https://github.com/vercel-labs/skills) 需要 **Node.js 22.20+**、npm/npx 和 Git。
+
+**复制给 Codex：**
+
+```text
+请在当前项目中为 Codex 安装全部 ShopChief Commerce Skills。
+先检查 Node.js 22.20+、npx 和 Git，并读取仓库的技能列表。
+保留 .agents/skills 中已有的同名目录或链接。
+有同名项时，用明确的 --skill 名称列表只安装缺失技能，报告跳过的名称。
+如果没有缺失项，跳过安装并报告已全部存在。
+没有冲突时执行：
+npx --yes skills@latest add ai-project-official/shopchief-commerce-skills --agent codex --skill '*' --copy --yes
+安装后核对 SKILL.md 和随包参考文件，报告新增数、跳过数、目录和失败项。
+如需重新加载 Agent，请说明操作。此次只安装，不运行店铺任务。
+```
+
+**复制给 Claude Code：**
+
+```text
+请在当前项目中为 Claude Code 安装全部 ShopChief Commerce Skills。
+先检查 Node.js 22.20+、npx 和 Git，并读取仓库的技能列表。
+保留 .claude/skills 中已有的同名目录或链接。
+有同名项时，用明确的 --skill 名称列表只安装缺失技能，报告跳过的名称。
+如果没有缺失项，跳过安装并报告已全部存在。
+没有冲突时执行：
+npx --yes skills@latest add ai-project-official/shopchief-commerce-skills --agent claude-code --skill '*' --copy --yes
+安装后核对 SKILL.md 和随包参考文件，报告新增数、跳过数、目录和失败项。
+如需重新加载 Agent，请说明操作。此次只安装，不运行店铺任务。
+```
+
+以上默认安装整个技能库：Codex 安装到项目的 `.agents/skills/`，Claude Code 安装到 `.claude/skills/`。如只需要部分技能，把“全部”改成指定名称，并将 `--skill '*'` 改为例如 `--skill profit-margin-analyzer shopify-product-page-cro`。[完整目录](docs/catalog.md)列出了所有可安装名称。使用技能和随包案例无需 ShopChief 账号。
+
+<!-- skill-overview:start -->
+## 技能分类与数量
+
+**共 348 个技能，分为 8 类。** 每个技能包只计一次，中文说明和参考文件不重复计数。
+
+| 分类 | 数量 | 典型任务 |
+|---|---:|---|
+| [研究与定位](docs/catalog.md#research-and-positioning) | 32 | 选品机会、竞品分析、顾客研究与品牌定位 |
+| [店铺与转化](docs/catalog.md#storefront-and-conversion) | 36 | Shopify 建站、商品页、结账流程与商品目录质量 |
+| [SEO、GEO 与商品 Feed](docs/catalog.md#search-visibility-and-product-feeds) | 29 | SEO 审查、AI 搜索可见性、结构化数据与购物 Feed |
+| [内容与创意](docs/catalog.md#content-and-creative) | 73 | 商品文案、图片、视频、UGC 简报与本地化 |
+| [广告与合作](docs/catalog.md#advertising-and-partnerships) | 26 | 广告规划、预算进度、达人合作与联盟营销 |
+| [邮件与客户留存](docs/catalog.md#email-and-retention) | 25 | 欢迎邮件、弃购挽回、短信、会员与复购 |
+| [经营分析与利润](docs/catalog.md#measurement-and-unit-economics) | 58 | 利润、ROAS、归因、定价与财务对账 |
+| [库存、履约与客服](docs/catalog.md#inventory-fulfillment-and-support) | 69 | 补货、采购、物流、退换货与客户服务 |
+| **合计** | **348** | |
+<!-- skill-overview:end -->
 
 ## 从具体任务开始
 
@@ -26,7 +78,7 @@
 
 ## 安装与首次运行
 
-需要 Node.js 和支持 Agent Skills 的客户端：
+如需在终端按需安装（需要 Node.js 22.20+、npm/npx 和 Git）：
 
 ```sh
 npx skills add ai-project-official/shopchief-commerce-skills --list
@@ -71,3 +123,5 @@ git clone https://github.com/ai-project-official/shopchief-commerce-skills.git
 cd shopchief-commerce-skills
 python3 scripts/validate.py
 ```
+
+新增或调整技能分类后，更新 `scripts/catalog-groups.json` 并运行 `python3 scripts/build_catalog.py`，会同步更新目录和中英 README 的分类数量；再运行验证。
