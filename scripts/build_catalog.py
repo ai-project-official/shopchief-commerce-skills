@@ -7,6 +7,35 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
+CATEGORY_COPY = {
+    "Research and positioning": ("研究与定位", "Product opportunities, competitors, customer research and positioning", "选品机会、竞品分析、顾客研究与品牌定位"),
+    "Storefront and conversion": ("店铺与转化", "Shopify storefronts, product pages, checkout and catalog quality", "Shopify 建站、商品页、结账流程与商品目录质量"),
+    "Search visibility and product feeds": ("SEO、GEO 与商品 Feed", "SEO audits, AI search visibility, structured data and shopping feeds", "SEO 审查、AI 搜索可见性、结构化数据与购物 Feed"),
+    "Content and creative": ("内容与创意", "Product copy, images, video, UGC briefs and localization", "商品文案、图片、视频、UGC 简报与本地化"),
+    "Advertising and partnerships": ("广告与合作", "Ad planning, budget pacing, creators and affiliate programs", "广告规划、预算进度、达人合作与联盟营销"),
+    "Email and retention": ("邮件与客户留存", "Welcome flows, cart recovery, SMS, loyalty and repeat purchases", "欢迎邮件、弃购挽回、短信、会员与复购"),
+    "Measurement and unit economics": ("经营分析与利润", "Profit, ROAS, attribution, pricing and financial reconciliation", "利润、ROAS、归因、定价与财务对账"),
+    "Inventory fulfillment and support": ("库存、履约与客服", "Replenishment, purchasing, shipping, returns and customer support", "补货、采购、物流、退换货与客户服务"),
+}
+
+
+def readme_overview(groups, chinese=False):
+    total = sum(len(members) for members in groups.values())
+    lines = ["<!-- skill-overview:start -->",
+             "## 技能分类与数量" if chinese else "## Skills by category", "",
+             f"**共 {total} 个技能，分为 {len(groups)} 类。** 每个技能包只计一次，中文说明和参考文件不重复计数。" if chinese else
+             f"**{total} skills across {len(groups)} categories.** Each skill package is counted once; translations and reference files are not additional skills.", "",
+             "| 分类 | 数量 | 典型任务 |" if chinese else "| Category | Skills | Typical tasks |",
+             "|---|---:|---|"]
+    for group, members in groups.items():
+        title_zh, tasks_en, tasks_zh = CATEGORY_COPY[group]
+        anchor = re.sub(r"[^a-z0-9 -]", "", group.lower()).replace(" ", "-")
+        title, tasks = (title_zh, tasks_zh) if chinese else (group, tasks_en)
+        lines.append(f"| [{title}](docs/catalog.md#{anchor}) | {len(members)} | {tasks} |")
+    lines.extend([f"| **{'合计' if chinese else 'Total'}** | **{total}** | |",
+                  "<!-- skill-overview:end -->"])
+    return "\n".join(lines)
+
 
 def scalar(header, key, indent=0):
     """Read the plain/quoted/folded string fields used by these packages."""
@@ -62,8 +91,18 @@ def generate():
             sample = f"[Worked example](../skills/{name}/{example})" if example else "See skill instructions"
             description = entry["description"].replace("|", "\\|")
             lines.append(f"| [{name}](../skills/{name}/SKILL.md) | {description} | {sample} |")
-    return {ROOT / "catalog.json": json.dumps(sorted(catalog, key=lambda e: e["name"]), ensure_ascii=False, indent=2) + "\n",
-            ROOT / "docs/catalog.md": "\n".join(lines) + "\n"}
+    outputs = {ROOT / "catalog.json": json.dumps(sorted(catalog, key=lambda e: e["name"]), ensure_ascii=False, indent=2) + "\n",
+               ROOT / "docs/catalog.md": "\n".join(lines) + "\n"}
+    for filename, chinese in (("README.md", False), ("README.zh-CN.md", True)):
+        readme = ROOT / filename
+        content, replacements = re.subn(
+            r"<!-- skill-overview:start -->.*?<!-- skill-overview:end -->",
+            lambda _: readme_overview(groups, chinese), readme.read_text(), flags=re.S,
+        )
+        if replacements != 1:
+            raise ValueError(f"{filename}: expected one skill overview block")
+        outputs[readme] = content
+    return outputs
 
 
 def main():
