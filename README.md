@@ -121,16 +121,6 @@ Merchant files and public evidence support basic analysis. Live Shopify operatio
 
 Share a reproducible failure, clearer merchant input or an improvement to a specific workflow. Use synthetic or authorized redacted examples. Read [CONTRIBUTING.md](CONTRIBUTING.md).
 
-To work on the full repository:
-
-```sh
-git clone https://github.com/ai-project-official/shopchief-commerce-skills.git
-cd shopchief-commerce-skills
-python3 scripts/validate.py
-```
-
-For catalog changes, update `scripts/catalog-groups.json`, run `python3 scripts/build_catalog.py` to refresh the catalog and both README count tables, then validate. A new skill needs a distinct merchant decision, concrete inputs and outputs, a worked example, failure cases, and appropriate permissions. See [the contribution guide](CONTRIBUTING.md).
-
 ## License
 
 ShopChief's original contributions use [MIT](LICENSE). Adapted packages retain their applicable licenses and notices. See [NOTICE.md](NOTICE.md) and each installed package's `LICENSE` for exact terms and attribution.
