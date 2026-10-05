@@ -54,7 +54,7 @@ Composite the entire Logo from Image 2 onto the main product in Image 1, applyin
 
 ## Tool Invocation
 
-- Tool: `image_generate`
+- Tool: the available image-generation/editing tool
 - planning mode: `focused_edit`
 - Input: Two images — Image 1 (product photo) and Image 2 (Logo image)
 

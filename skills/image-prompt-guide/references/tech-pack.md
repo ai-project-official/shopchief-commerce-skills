@@ -147,9 +147,9 @@ Use these only as rough sanity-check ranges. Do not convert them into exact prod
 
 | Drawing Type | Tool | planning mode |
 |-------------|------|-----------|
-| Multi-view | `image_generate` | `structured_composition` |
-| Manufacturing process | `image_generate` | `structured_composition` |
-| Assembly exploded view | `image_generate` | `structured_composition` |
+| Multi-view | Available image tool | `structured_composition` |
+| Manufacturing process | Available image tool | `structured_composition` |
+| Assembly exploded view | Available image tool | `structured_composition` |
 
 > Tech Pack drawings contain multi-views + dense annotations, so `structured_composition` is normally appropriate even though product fidelity remains required.
 

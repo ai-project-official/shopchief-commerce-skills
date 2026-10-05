@@ -15,18 +15,19 @@ Enhance the resolution and sharpness of an existing image without modifying its 
 
 ## Apply Method
 
-Call `image_generate` with the exact source in `input_images` and a required concise prompt:
+Use the available enhancement/editing tool with the exact source through its supported reference mechanism and a concise preservation prompt:
 
 ```text
 Enhance clarity and detail only. Preserve content, composition, colors, text, layout, and identity exactly. Do not add, remove, or redesign anything.
 ```
 
-Use `size="2K"` when the user requests the highest currently supported output tier; otherwise
-leave `size="auto"`. `hd_upscale` is a planning label, not a tool argument.
+Select the requested output size from the current tool's documented capabilities. Do not
+assume a fixed maximum tier, a `size` argument or an `auto` value. `hd_upscale` is a planning
+label, not a tool name or argument.
 
 ## Content-Type Pre-Check
 
-Before calling `hd_upscale`, the Agent should assess the image content type:
+Before applying the upscale plan, the Agent should assess the image content type:
 
 | Content Type | Recommendation |
 |-------------|----------------|
@@ -38,9 +39,9 @@ Before calling `hd_upscale`, the Agent should assess the image content type:
 
 | User Request | Action |
 |--------------|--------|
-| "Make clearer / sharpen / restore" | `image_generate` with explicit `input_images` and the preservation prompt above. |
-| "Generate at 1K/2K" | Pass the requested value through `size`. |
-| "Generate at 4K" | Current route is limited to 2K. Use 2K plus a native upscaler if available; otherwise state the limitation. |
+| "Make clearer / sharpen / restore" | Use the available enhancement/editing tool with the exact supported source reference and preservation prompt above. |
+| "Generate at 1K/2K" | Map the requested dimensions to the selected tool's supported parameter values. |
+| "Generate at 4K" | Use native 4K output if supported. Otherwise disclose the route's actual limit and use an available authorized upscaler when suitable; label upscaled output. |
 
 ## Notes
 

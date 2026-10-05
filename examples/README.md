@@ -34,6 +34,8 @@ Try a case before supplying your own data: ask the agent to read the skill and t
 
 ## Independent fresh-input cases
 
+[Two v0.4.0 media cases](release-v0.4/README.md) exercise bundle item counts and scale, and German video localization with changed pricing and duration. They capture production specifications from fresh inputs, with no generated media or paid calls.
+
 [Nine v0.3.0 review cases](release-v0.3/README.md) include new inputs and captured agent outputs for catalog changes, payouts, consent, creator rights, contribution values, comparison panels and shopper research. The reviewers used the skills without seeing their worked examples. These selected offline cases complement the package checks; they do not establish live-store compatibility.
 
 ## Additional prompts

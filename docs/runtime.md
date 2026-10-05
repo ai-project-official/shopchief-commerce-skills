@@ -9,6 +9,8 @@ The public interface is the Agent Skills `SKILL.md` format. Each folder is indep
 | Search metrics | Merchant exports or an authorized provider client | Use qualitative public evidence; do not invent metrics |
 | Shopify mutations | Authorized store connector/CLI and current schema | Produce drafts/import sheets/local theme files |
 | Image generation/editing | An installed image provider tool and source assets | Produce prompts/asset briefs, not fabricated images |
+| Video generation | An authorized video provider, product references and output budget | Deliver shot requests with status `not_generated`; a script or storyboard is not a rendered clip |
+| Video editing/localization | A working editor/render tool, footage, authorized audio/voices and fonts | Deliver the timeline, copy and subtitle files with export status; do not claim a playable video |
 | Theme preview | Local preview or authorized unpublished Shopify theme | Report local-only files and unverified rendering |
 | Paid media and lifecycle messaging | Platform exports, or a connector with appropriate account scope | Produce analyses and campaign/flow drafts; no automatic budget changes or sends |
 | Inventory, pricing and fulfillment | Dated SKU, stock, lead-time, cost and policy exports | Produce order proposals and policy-aware worksheets; do not assume missing values are zero |

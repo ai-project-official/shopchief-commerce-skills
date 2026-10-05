@@ -515,7 +515,7 @@
     "description": "Plan and edit a customer testimonial with genuine experience evidence, specific reuse consent and accurate final wording.",
     "license": "MIT",
     "version": "0.3.0",
-    "category": "Content and creative"
+    "category": "Product video and animation"
   },
   {
     "name": "customer-use-story-production",
@@ -801,8 +801,8 @@
     "name": "image-prompt-guide",
     "description": "Prompt engineering and tool routing for AI image generation and editing. Use for: creative generation, product photo editing, e-commerce platform image sets, and specialized scenes (white background, authorized watermark/element cleanup, HD upscale, scene swap, model showcase, selling point, logo design, tech pack, etc.). Do NOT use for: full product development workflows (use available product-planning capabilities), or non-AI operations like resize/crop/compress/format-convert (use native tools).",
     "license": "MIT",
-    "version": "0.1.1",
-    "category": "Content and creative"
+    "version": "0.1.2",
+    "category": "Product images and design"
   },
   {
     "name": "indexnow-change-notification",
@@ -1075,7 +1075,7 @@
     "description": "Create and validate time-aligned captions for merchant video while preserving spoken meaning and readable segmentation.",
     "license": "MIT",
     "version": "0.3.0",
-    "category": "Content and creative"
+    "category": "Product video and animation"
   },
   {
     "name": "merchant-chart-and-data-story",
@@ -1152,7 +1152,7 @@
     "description": "Plan article illustrations, covers or video thumbnails around a verified content promise and a coherent visual system.",
     "license": "MIT",
     "version": "0.3.0",
-    "category": "Content and creative"
+    "category": "Product images and design"
   },
   {
     "name": "merchant-expense-evidence-review",
@@ -1201,7 +1201,7 @@
     "description": "Turn verified merchant facts into an infographic with a matched information structure, legible hierarchy and source checks.",
     "license": "MIT",
     "version": "0.3.0",
-    "category": "Content and creative"
+    "category": "Product images and design"
   },
   {
     "name": "merchant-logo-commission-brief",
@@ -1313,7 +1313,7 @@
     "description": "Write and lay out a merchant educational carousel with a coherent slide sequence, verified claims and platform-ready checks.",
     "license": "MIT",
     "version": "0.3.0",
-    "category": "Content and creative"
+    "category": "Product images and design"
   },
   {
     "name": "merchant-sonic-identity-brief",
@@ -1348,7 +1348,7 @@
     "description": "Adapt and compress a merchant image or design for specific placements while preserving product details, readable copy and source files.",
     "license": "Apache-2.0",
     "version": "0.3.0",
-    "category": "Content and creative"
+    "category": "Product images and design"
   },
   {
     "name": "merchant-statistical-analysis-review",
@@ -1376,14 +1376,14 @@
     "description": "Turn merchant footage and an approved script into a timecoded edit plan with deterministic asset, audio and export checks.",
     "license": "MIT",
     "version": "0.3.0",
-    "category": "Content and creative"
+    "category": "Product video and animation"
   },
   {
     "name": "merchant-video-output-review",
     "description": "Review merchant video or animation exports for product truth, readability, motion, accessibility and placement fit.",
     "license": "Apache-2.0",
     "version": "0.3.0",
-    "category": "Content and creative"
+    "category": "Product video and animation"
   },
   {
     "name": "merchant-visual-direction-brief",
@@ -1603,11 +1603,32 @@
     "category": "Research and positioning"
   },
   {
+    "name": "product-ad-key-visual-generation",
+    "description": "Generate a product advertising key visual with a protected product area, usable copy space and separately verified marketing text, delivering background and layout assets.",
+    "license": "MIT",
+    "version": "0.4.0",
+    "category": "Product images and design"
+  },
+  {
     "name": "product-attribute-schema-audit",
     "description": "Reconcile product attribute definitions and values against a typed catalog schema. Use for metafields, category attributes and PIM mappings before product filters or channel exports fail.",
     "license": "MIT",
     "version": "0.3.0",
     "category": "Storefront and conversion"
+  },
+  {
+    "name": "product-bundle-image-composition",
+    "description": "Compose product bundle images from an exact SKU quantity manifest, preserving per-item identity and scale while separating included products from decorative props.",
+    "license": "MIT",
+    "version": "0.4.0",
+    "category": "Product images and design"
+  },
+  {
+    "name": "product-campaign-visual-set",
+    "description": "Produce a coordinated campaign asset set for storefront banners, email and social placements using a shared product identity, approved offer and exact validity period.",
+    "license": "MIT",
+    "version": "0.4.0",
+    "category": "Product images and design"
   },
   {
     "name": "product-claim-evidence-review",
@@ -1631,6 +1652,20 @@
     "category": "Storefront and conversion"
   },
   {
+    "name": "product-demo-video-production",
+    "description": "Produce a product demonstration video from verified operating steps and footage, using generation only where it preserves the real mechanism and claims.",
+    "license": "MIT",
+    "version": "0.4.0",
+    "category": "Product video and animation"
+  },
+  {
+    "name": "product-detail-page-image-production",
+    "description": "Produce a coordinated product detail page image set with evidence-backed modules, exact copy, mobile-readable crops and an ordered asset manifest.",
+    "license": "MIT",
+    "version": "0.4.0",
+    "category": "Product images and design"
+  },
+  {
     "name": "product-feed-optimization",
     "description": "Audit and prepare item-level Shopping/catalog feed changes from merchant exports and verified catalog facts. Use for title, identifier, variant and attribute quality; resolving specific disapproval diagnostics has a separate workflow.",
     "license": "Apache-2.0",
@@ -1642,21 +1677,35 @@
     "description": "Create or edit a product image from authorized references while preserving actual product identity and a reviewable change record.",
     "license": "Apache-2.0",
     "version": "0.3.0",
-    "category": "Content and creative"
+    "category": "Product images and design"
+  },
+  {
+    "name": "product-image-localization",
+    "description": "Localize marketing text inside product images through a region and translation ledger, preserving product pixels, regulated label facts and exact numeric claims.",
+    "license": "MIT",
+    "version": "0.4.0",
+    "category": "Product images and design"
   },
   {
     "name": "product-image-shot-list",
     "description": "Plan a physical-product photo set with exact shot purpose, truthful detail and asset requirements. Use for photographer briefs and coverage gaps; image generation prompts and paid ad concepts are separate tasks.",
     "license": "MIT",
     "version": "0.2.0",
-    "category": "Content and creative"
+    "category": "Product images and design"
+  },
+  {
+    "name": "product-image-to-video",
+    "description": "Generate and verify a short product video from an approved product image, preserving visible identity and limiting motion to supported views.",
+    "license": "MIT",
+    "version": "0.4.0",
+    "category": "Product video and animation"
   },
   {
     "name": "product-instruction-illustration",
     "description": "Design a product how-to diagram or short instructional comic from verified actions, with clear sequence and explicit uncertainty.",
     "license": "MIT",
     "version": "0.3.0",
-    "category": "Content and creative"
+    "category": "Product images and design"
   },
   {
     "name": "product-keyword-research",
@@ -1664,6 +1713,20 @@
     "license": "MIT",
     "version": "0.1.1",
     "category": "Research and positioning"
+  },
+  {
+    "name": "product-lifestyle-scene-generation",
+    "description": "Generate reference-faithful product lifestyle images with a coherent support plane, physical scale, lighting and contact shadows, plus scene-level visual acceptance.",
+    "license": "MIT",
+    "version": "0.4.0",
+    "category": "Product images and design"
+  },
+  {
+    "name": "product-loop-video-generation",
+    "description": "Generate or compose a seamless product motion loop, verifying frame continuity, motion direction and speed, lighting and audio at the wrap point.",
+    "license": "MIT",
+    "version": "0.4.0",
+    "category": "Product video and animation"
   },
   {
     "name": "product-marketing-context",
@@ -1684,7 +1747,7 @@
     "description": "Plan and review generated product motion using approved identity references, anchor frames and continuity constraints.",
     "license": "MIT",
     "version": "0.3.0",
-    "category": "Content and creative"
+    "category": "Product video and animation"
   },
   {
     "name": "product-offer-review",
@@ -1722,11 +1785,32 @@
     "category": "Storefront and conversion"
   },
   {
+    "name": "product-ugc-video-production",
+    "description": "Produce creator-style product videos with an authorized presenter or clearly fictional demonstration character, without fabricating customer experiences or testimonials.",
+    "license": "MIT",
+    "version": "0.4.0",
+    "category": "Product video and animation"
+  },
+  {
+    "name": "product-video-ad-variants",
+    "description": "Render controlled product-video ad variants from approved assets by changing a defined hook or pacing variable while preserving product facts and offer terms.",
+    "license": "MIT",
+    "version": "0.4.0",
+    "category": "Product video and animation"
+  },
+  {
+    "name": "product-video-localization",
+    "description": "Localize an existing product video into requested languages with fact-preserving translation, authorized voice-over, timed captions and verified language-specific exports.",
+    "license": "MIT",
+    "version": "0.4.0",
+    "category": "Product video and animation"
+  },
+  {
     "name": "product-video-storyboard",
     "description": "Create a filmable physical-product demo storyboard with timing, proof shots, narration and edit instructions. Use for demonstration production; social channel calendars and ad campaign strategy are separate.",
     "license": "MIT",
     "version": "0.2.0",
-    "category": "Content and creative"
+    "category": "Product video and animation"
   },
   {
     "name": "production-capacity-and-sequencing",
@@ -2370,7 +2454,7 @@
     "description": "Commission a reviewable product-demo content brief with shot lists, claims, rights and deliverables. Use for paid creator production rather than selecting influencers for audience reach.",
     "license": "MIT",
     "version": "0.2.0",
-    "category": "Content and creative"
+    "category": "Product video and animation"
   },
   {
     "name": "variant-copy-consistency",

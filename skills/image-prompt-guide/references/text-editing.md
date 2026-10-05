@@ -87,12 +87,12 @@ Do not remove or modify any unspecified text. Do not redraw the product. Do not 
 ```
 
 Tool:
-- `image_generate`
+- the available image-generation/editing tool
 - `planning mode`: `focused_edit` for one local text region; `structured_composition` only for multiple selected regions or difficult perspective/curved text.
 
 ## Tool Invocation
 
-- Tool: `image_generate`
+- Tool: the available image-generation/editing tool
 - planning mode: `focused_edit` (default) / `structured_composition` (multiple text regions or complex perspective/lighting)
 - Input: 1 original image + user's three-element specification
 

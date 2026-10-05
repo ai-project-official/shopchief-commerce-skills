@@ -45,7 +45,7 @@ Do not change product labels, logos, visible text, SKU color/pattern, handles, s
 
 ## Tool Invocation
 
-- Tool: `image_generate`
+- Tool: the available image-generation/editing tool
 - planning mode: `focused_edit` or `structured_composition` (based on scene complexity)
 
 ## Notes

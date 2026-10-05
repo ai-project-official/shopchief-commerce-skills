@@ -55,13 +55,13 @@ Recommended direction mix:
 
 ### Step 3: Generate Primary Logo
 
-Call `image_generate` using the prompt template below.
+Call the available image-generation/editing tool using the prompt template below.
 
 ### Step 4: Derivative Assets (only after primary logo is selected)
 
 If the user requests mockups, specs, variants, packaging, stationery, or social assets:
 1. Confirm the primary logo has been selected
-2. Use `image_generate` (pass selected logo URL as `input_images`) or generate based on the selected direction
+2. Use the available image-generation/editing tool (pass the exact selected logo through its supported reference mechanism) or generate based on the selected direction
 3. Keep all derivatives visually consistent with the selected primary logo
 
 > Never batch-generate derivative assets before the primary logo is selected — this causes brand system inconsistency.
@@ -115,9 +115,9 @@ Commercial safety: original logo design, commercially safe, must not resemble an
 
 | Phase | Tool | planning mode |
 |-------|------|-----------|
-| Generate primary logo (Step 3) | `image_generate` | `structured_composition` |
-| Edit/adjust existing logo | `image_generate` | `focused_edit` or `structured_composition` |
-| Derivative assets (Step 4) | `image_generate` | `focused_edit` or `structured_composition` |
+| Generate primary logo (Step 3) | Available image tool | `structured_composition` |
+| Edit/adjust existing logo | Available image tool | `focused_edit` or `structured_composition` |
+| Derivative assets (Step 4) | Available image tool | `focused_edit` or `structured_composition` |
 
 ## Anti-Infringement Rules (Mandatory)
 

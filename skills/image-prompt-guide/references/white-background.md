@@ -19,7 +19,7 @@ Use the appropriate prompt variant. Do not add creative scene, layout, or market
 
 | Mode | When to Use | Execution |
 |------|-------------|-----------|
-| `pure_background_replacement` | User only wants the existing product on pure white | Prefer native background removal/compositing if available; otherwise call `image_generate` with an explicit white-background prompt. |
+| `pure_background_replacement` | User only wants the existing product on pure white | Prefer native background removal/compositing if available; otherwise call the available image-generation/editing tool with an explicit white-background prompt. |
 | `platform_white_hero` | User asks for platform/listing/main image with white background, centering, coverage, shadow, or final size | Use the platform workflow in `SKILL.md`; this scene supplies the white-background sub-task only. Final resize/format is native. |
 
 Do not use this scene as a one-step solution for multi-image listing sets, SKU batches, selling-point layouts, text edits, or crop/resize/format-only requests.
@@ -48,7 +48,7 @@ Do NOT generate a new product photo. Do NOT change perspective, product scale, s
 
 ## Tool Invocation
 
-- Tool: `image_generate`
+- Tool: the available image-generation/editing tool
 - planning mode: `white_background`
 
 ## Notes

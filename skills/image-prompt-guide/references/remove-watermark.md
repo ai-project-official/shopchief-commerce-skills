@@ -58,7 +58,7 @@ Do not remove or alter any product labels, packaging text, specifications, brand
 
 ## Tool Invocation
 
-- Tool: `image_generate`
+- Tool: the available image-generation/editing tool
 - planning mode: `watermark_removal`
 
 ## Pre-execution Guidance

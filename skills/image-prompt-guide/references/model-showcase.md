@@ -88,7 +88,7 @@ Based on the uploaded product image, generate a high-quality e-commerce model sh
 
 ## Tool Invocation
 
-- Tool: `image_generate`
+- Tool: the available image-generation/editing tool
 - planning mode: `focused_edit`
 
 ## Notes

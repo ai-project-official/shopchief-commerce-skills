@@ -19,36 +19,27 @@ Never infer hidden or occluded product details.
 
 ### Step 0.5 — Reference Image Preflight
 
-Image-to-image editing uses `image_generate` with `input_images`; there is no separate
-`image_edit` tool.
+Choose the generation/editing tool actually available in this host and inspect its schema
+before preparing a call. The reference mechanism and limits are runtime-specific.
 
-1. **Use a stable identity**: prefer a current attachment ID, a selected workspace asset ID,
-   or a durable tenant file key shaped like `tenants/<current-tenant>/...`. For a prior
-   generated image, use only the exact durable key selected for the current request.
-2. **Do not substitute display URLs for durable identity**: never pass `blob:`, `file:`, an
-   `/api/upload/file/...` browser URL copied from another tenant, or an expired signed URL.
-   An explicit public HTTPS image URL is allowed only when the user supplied that URL and it
-   is reachable by the provider.
-3. **Validate the actual image bytes**: reference images must be PNG, JPEG, or WebP, no more
-   than 40 megapixels, and within the effective `IMAGE_GENERATION_MAX_BYTES` limit (10 MiB by
-   default). Convert GIF, BMP, TIFF, AVIF, SVG, HEIC, and other formats before generation.
-4. **Persist local files first**: never pass a local filesystem path. Save/upload the image
-   into the current tenant, then pass the returned attachment ID or durable file key.
-5. **Pass references explicitly for edits**: use `input_images=[...]` with only the intended
-   images, up to 14. Use `input_images=[]` only to force text-to-image. Omitting the field lets
-   the runtime use this turn's selected image attachments/assets.
-6. **Fail closed with the returned error code**:
-   - `attachment_reference_not_durable` or `reference_image_not_durable`: the visible image
-     has no reusable tenant file key. Ask the user to upload/import or reselect it.
-   - `attachment_tenant_mismatch` or `reference_image_tenant_mismatch`: the key belongs to a
-     different tenant. Select the exact image from the current tenant.
-   - `reference_image_unsupported_format`: convert the source to PNG, JPEG, or WebP first.
-   - `reference_image_too_large` or `reference_image_dimensions_exceeded`: reduce file size
-     or dimensions before selecting it again.
-   - `reference_image_unavailable` or `reference_image_invalid`: the file, object, URL, or
-     image bytes cannot be reused. Upload or select the exact image again.
-   Never retry automatically, guess another image, or replace a durable key with its display
-   URL.
+1. **Use the exact intended image**: map each inspected source to a stable attachment,
+   asset ID, local file path or provider-readable URL supported by that tool. For prior
+   generated results, select the exact artifact requested rather than the latest image.
+2. **Validate reference access**: a browser display URL, `blob:` URL or expired signed URL
+   may not be readable by the provider. Use the supported file/reference mechanism and
+   preserve the current account/workspace boundary; do not substitute another user's asset.
+3. **Validate the actual image bytes**: check accepted formats, file size, pixel dimensions
+   and reference-count limits from the selected tool. Convert or downsize a copy only when
+   that route requires it, retaining the original.
+4. **Use local paths when supported**: do not upload solely to satisfy a historical adapter.
+   If a provider requires an upload, use the authorized destination and returned reference;
+   do not expose private files through a public URL just to make them reachable.
+5. **Pass references explicitly for edits**: use only the intended sources through the
+   documented reference field or attachment selector. Do not assume omitted fields or
+   empty lists have a particular meaning. Text-to-image must not silently replace an edit.
+6. **Resolve reference errors before retrying**: use the actual returned error and provider
+   documentation. Repair missing access, unsupported format or size, or a stale reference
+   without guessing another image. Reconcile any uncertain job before a paid retry.
 
 Inspect image contents only when the conversation model actually received the image as vision
 input. A text-only model may forward an explicit stable reference but must not claim it saw the
@@ -106,8 +97,8 @@ SKU requests are not always native-only. First classify the user's SKU intent be
 | SKU Intent | User Signals | Route |
 |------------|--------------|-------|
 | **Extract existing SKUs** | "split/crop/separate each SKU", "do not change products", "export each visible style" | Use native crop/segmentation/background removal first. Do not redraw products. |
-| **Standardize SKU listing images** | "make each SKU into a listing/main image", "white background SKU images", "Alibaba SKU images", "same style/composition for each SKU" | First isolate each visible SKU, then use `image_generate` per SKU with strict product fidelity. Final resize/format is native. |
-| **Generate SKU variants** | "generate colors/styles", "create red/blue/green variants", "make more SKU options" | Use `image_generate` with SKU Color Change when a reference exists; use generation only when the user explicitly asks for new variants. |
+| **Standardize SKU listing images** | "make each SKU into a listing/main image", "white background SKU images", "Alibaba SKU images", "same style/composition for each SKU" | First isolate each visible SKU, then use the available image-generation/editing tool per SKU with strict product fidelity. Final resize/format is native. |
+| **Generate SKU variants** | "generate colors/styles", "create red/blue/green variants", "make more SKU options" | Use the available image-generation/editing tool with SKU Color Change when a reference exists; use generation only when the user explicitly asks for new variants. |
 
 Rules:
 - Never invent SKU count, colors, materials, or variants unless the user explicitly requested them.

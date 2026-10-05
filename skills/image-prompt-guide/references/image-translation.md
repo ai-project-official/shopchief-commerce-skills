@@ -4,14 +4,14 @@
 
 - **Load when**: user asks to translate visible image text into another language and expects the image itself to be updated.
 - **Do not load when**: user asks to replace only specific same-language text, fix a typo, update a price/date, or add new marketing copy.
-- **Merge notes**: translation is usually one `image_generate` call for the full image. Do not split by text region unless tool limitations require it.
+- **Merge notes**: translation is usually one call to the available image-editing tool for the full image. Do not split by text region unless tool limitations require it.
 - **Hard stop**: if the target language is missing, ask for it before editing. Never answer with text translation only when the user requested an edited image.
 
 ## Scene Description
 
 Translate all visible text in the image into the target language and replace the original text directly on the image, producing a translated version that is visually identical to the original except for the text language.
 
-> **Mandatory constraint**: This scene must call `image_generate` to produce a translated image once the target language and source image are available. Do not output translations as text only or ask whether the user wants an image output.
+> **Mandatory constraint**: Use the available editing tool to produce the translated image once the target language and source image are available. Do not output translations as text only or ask whether the user wants an image output.
 
 ## Apply Method: Direct Apply
 
@@ -41,10 +41,10 @@ Replace `<target_lang>` with the user's specified target language (e.g., English
 
 ## Tool Invocation
 
-- Tool: `image_generate`
+- Tool: the available image-generation/editing tool
 - planning mode: `focused_edit`
 
-> **Execution mandatory rule**: After matching this scene and confirming required inputs, call `image_generate`. The following behaviors are not acceptable:
+> **Execution rule**: After matching this scene and confirming required inputs and an available editing tool, execute the edit. If the tool is unavailable, report that no translated image was produced and label any translation/prompt as preparation only. When execution is available, the following behaviors are not acceptable:
 > 1. Extracting text and outputting translation as text only
 > 2. Outputting text translation first, then asking if the user wants an image
 > 3. Skipping the tool call and replying with translated text in any form

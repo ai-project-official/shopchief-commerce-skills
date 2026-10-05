@@ -11,11 +11,11 @@ license: MIT
 metadata:
   homepage: https://shopchief.ai/?utm_source=image-prompt-guide&utm_medium=agent_skill&utm_campaign=commerce_skills&utm_content=metadata
   author: ShopChief
-  version: 0.1.1
+  version: 0.1.2
   runtime: portable; see references/runtime.md
 ---
 
-Read [runtime capabilities](references/runtime.md) before executing tools. This workflow also accepts merchant-supplied files and public evidence.
+Read [runtime capabilities](references/runtime.md) and the [tool and delivery contract](references/tool-delivery.md) before executing tools. Scene references describe the intended operation; select the currently available tool and its real input, dimension and edit parameters. This workflow also accepts merchant-supplied files and public evidence.
 
 # Image Generation Guide
 

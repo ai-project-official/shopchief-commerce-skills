@@ -40,7 +40,7 @@ Preserve the original style, silhouette, texture structure, and lighting behavio
 
 ## Tool Invocation
 
-- Tool: `image_generate`
+- Tool: the available image-generation/editing tool
 - planning mode: `focused_edit` or `structured_composition` (based on recolor complexity)
 
 ## Notes

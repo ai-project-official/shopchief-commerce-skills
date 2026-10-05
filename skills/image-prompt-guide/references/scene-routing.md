@@ -9,7 +9,7 @@
 Platform Product Image is a composite workflow — it consults platform requirements first, then delegates to White Background, Scene Image, Model Showcase, etc. as sub-tasks.
 
 **Sub-task execution rules:**
-- When the user uploaded product images, ALL sub-tasks MUST call `image_generate` with those exact images in `input_images`; never fall back to text-to-image.
+- When the user uploaded product images, ALL sub-tasks MUST use those exact images through the available editing tool's documented reference mechanism; never fall back to text-to-image.
 - Only **Selling Point Image** and **Logo Design** sub-tasks may trigger user clarification (for selling-point confirmation or brand context). All other sub-tasks execute directly unless safety or missing required inputs block execution.
 
 **Platform image set planner**:
@@ -26,7 +26,7 @@ Rules:
 - Generate or edit one final image per planned output. Do not split a single planned output into multiple AI calls unless Step 4 requires `true_sequential`.
 - If the tool can only produce one image per call, explicitly run multiple calls or state the limitation.
 - Output count must match the requested count when feasible; otherwise explain which planned images were produced and which remain.
-- For uploaded product images, every planned image must preserve product identity and call `image_generate` with explicit `input_images`.
+- For uploaded product images, every planned image must preserve product identity and pass the exact sources through the selected tool's documented reference mechanism.
 
 ### Priority 2 — Single-Purpose Scenes
 
@@ -68,7 +68,7 @@ Switch to a merged `focused_edit`, merged `structured_composition`, or `true_seq
 | **Logo Design** | design a logo, create brand mark, logo from scratch | `logo-design.md` | `structured_composition` for generation / `focused_edit` or `structured_composition` for editing |
 | **Tech Pack** | tech pack, dimension drawing, manufacturing spec, assembly diagram | `tech-pack.md` | `structured_composition` |
 
-> **Image Translation mandatory rule**: When the user requests an edited translated image, load `image-translation.md` and call `image_generate` after required inputs are available. Do not substitute a text-only translation for an image-edit request.
+> **Image Translation mandatory rule**: When the user requests an edited translated image, load `image-translation.md` and execute with the available editing tool after required inputs are available. If no editing tool is available, report that the requested image has not been produced; do not present text-only translation as the completed edit.
 
 ### Priority 4 — General (Fallback)
 
@@ -96,7 +96,7 @@ These cover the most commonly confused routing decisions:
 
 Enable this mode whenever the user asks to keep the product unchanged, produce platform/listing images from a reference, remove/replace text while preserving the product, make a white-background hero, or change only the surrounding scene/background.
 
-Append this constraint to all relevant `image_generate` prompts:
+Append this constraint to all relevant image-generation/editing prompts:
 
 ```
 Keep the product exactly unchanged — preserve geometry, color, texture, labels, and camera angle.
@@ -116,9 +116,9 @@ When product fidelity conflicts with a more creative instruction, product fideli
 
 | Request | Action |
 |---------|--------|
-| "Make it clearer / sharpen" | Call `image_generate` with the source in `input_images` and a concise preservation-first enhancement prompt. |
-| "Generate at 1K / 2K" | Pass `size="1K"` or `size="2K"`. |
-| "4K" or higher | The current route does not natively support it. Use `2K`, then a native upscaler if available and authorized; otherwise state the limit. |
+| "Make it clearer / sharpen" | Use the available enhancement/editing tool with the exact supported source reference and a concise preservation-first prompt. |
+| "Generate at 1K / 2K" | Check the current tool's supported dimensions and parameter names, then request the matching output size. |
+| "4K" or higher | Use native output at the requested size if the selected route supports it. Otherwise state its actual limit and use an available authorized upscale step when suitable; label upscaled output. |
 
 ### Planning Mode Safety Rules
 

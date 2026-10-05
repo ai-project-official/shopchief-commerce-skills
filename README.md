@@ -2,7 +2,7 @@
 
 **300+ open-source AI skills for independent ecommerce and DTC sellers.** Research products, improve your storefront, plan campaigns, retain customers and manage inventory with evidence and clear deliverables.
 
-[中文说明](README.zh-CN.md) · [Copy installation prompt](#install-with-codex-or-claude-code) · [Browse by task](docs/catalog.md) · [Workflow recipes](docs/playbooks.md) · [Worked examples](examples/README.md) · [ShopChief](https://shopchief.ai/?utm_source=github&utm_medium=opensource&utm_campaign=commerce_skills&utm_content=readme)
+[中文说明](README.zh-CN.md) · [Copy installation prompt](#install-with-codex-or-claude-code) · [Images & video](docs/media-production.md) · [Browse by task](docs/catalog.md) · [Workflow recipes](docs/playbooks.md) · [Worked examples](examples/README.md) · [ShopChief](https://shopchief.ai/?utm_source=github&utm_medium=opensource&utm_campaign=commerce_skills&utm_content=readme)
 
 ## Install with Codex or Claude Code
 
@@ -41,22 +41,26 @@ These prompts install the whole library into `.agents/skills/` for Codex or `.cl
 <!-- skill-overview:start -->
 ## Skills by category
 
-**348 skills across 8 categories.** Each skill package is counted once; translations and reference files are not additional skills.
+**360 skills across 10 categories.** Each skill package is counted once; translations and reference files are not additional skills.
 
 | Category | Skills | Typical tasks |
 |---|---:|---|
 | [Research and positioning](docs/catalog.md#research-and-positioning) | 32 | Product opportunities, competitors, customer research and positioning |
 | [Storefront and conversion](docs/catalog.md#storefront-and-conversion) | 36 | Shopify storefronts, product pages, checkout and catalog quality |
 | [Search visibility and product feeds](docs/catalog.md#search-visibility-and-product-feeds) | 29 | SEO audits, AI search visibility, structured data and shopping feeds |
-| [Content and creative](docs/catalog.md#content-and-creative) | 73 | Product copy, images, video, UGC briefs and localization |
+| [Content and creative](docs/catalog.md#content-and-creative) | 58 | Product copy, brand voice, campaign content and merchant documents |
+| [Product images and design](docs/catalog.md#product-images-and-design) | 14 | Product-page images, lifestyle scenes, bundles, campaign visuals and image localization |
+| [Product video and animation](docs/catalog.md#product-video-and-animation) | 13 | Image-to-video, demos, UGC-style clips, ad variants, localization and seamless loops |
 | [Advertising and partnerships](docs/catalog.md#advertising-and-partnerships) | 26 | Ad planning, budget pacing, creators and affiliate programs |
 | [Email and retention](docs/catalog.md#email-and-retention) | 25 | Welcome flows, cart recovery, SMS, loyalty and repeat purchases |
 | [Measurement and unit economics](docs/catalog.md#measurement-and-unit-economics) | 58 | Profit, ROAS, attribution, pricing and financial reconciliation |
 | [Inventory fulfillment and support](docs/catalog.md#inventory-fulfillment-and-support) | 69 | Replenishment, purchasing, shipping, returns and customer support |
-| **Total** | **348** | |
+| **Total** | **360** | |
 <!-- skill-overview:end -->
 
 ## Start with a merchant task
+
+**Making product images or videos?** Start with [the media production guide](docs/media-production.md): product-page image sets, lifestyle scenes, bundle compositions, campaign visuals, image-to-video, demos, UGC-style clips, localized videos, ad variants and seamless loops. Each new production skill includes English/Chinese instructions, a complete prompt or timeline example, and output checks. Generation requires a connected media tool; the image-to-video package also includes an optional Runway command-line helper.
 
 | I want to… | Skill | See the result |
 |---|---|---|
@@ -75,7 +79,7 @@ These prompts install the whole library into `.agents/skills/` for Codex or `.cl
 | Explain a payout difference | [Payment reconciliation](skills/payment-payout-reconciliation/SKILL.md) | [Signed transactions, deposit and unresolved order links](skills/payment-payout-reconciliation/assets/worked-example.md) |
 | Check whether creator content can run as an ad | [Creator paid amplification](skills/creator-paid-amplification/SKILL.md) | [Rights, dates, offer consistency and activation decision](skills/creator-paid-amplification/assets/worked-example.md) |
 
-The [task catalog](docs/catalog.md) groups skills into research, storefront conversion, search and feeds, content, advertising, retention, measurement, and operations. Choose a focused workflow; you do not need to install the whole library.
+The [task catalog](docs/catalog.md) groups skills into research, storefront conversion, search and feeds, content, product images, video, advertising, retention, measurement, and operations. Choose a focused workflow; you do not need to install the whole library.
 
 ## Install a skill
 

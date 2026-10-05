@@ -1,33 +1,36 @@
 # Release validation
 
-Checked on 2026-10-02 for v0.3.0. [Previous release record](docs/validation-v0.2.0.md).
+Media expansion, 2026-10-05, v0.4.0. [Previous release record](docs/validation-v0.3.0.md).
 
-| Check | Result |
-|---|---|
-| Package inventory | 348 distinct skills in eight merchant-task categories; 244 new packages and one enhanced existing package |
-| Candidate review | 1,055 candidates received a decision with source-body evidence: 704 contributed to adaptations, 251 were already covered, and 100 were not selected. Several sources can contribute to one package. |
-| Package format | All 348 entrypoints pass the skill-creator frontmatter validator; independently parsed YAML agrees with every generated catalog entry |
-| Package boundaries | Catalog coverage, ShopChief attribution parameters, local Markdown links, symlinks and limited secret patterns checked; installed skills do not need sibling packages |
-| Adaptation records | All 1,055 reviewed source bodies match their pinned SHA-256; adapted packages include fixed references and complete applicable original license texts and notices |
-| Independent installation | All 348 skills installed into a disposable Codex project using skills CLI 1.7.0; all 2,323 installed package files match source bytes |
-| Worked examples | Every new package includes synthetic inputs, a completed result and at least two boundary scenarios; missing evidence and unperformed live actions remain explicit |
-| Independent behavior samples | [Nine fresh-input cases](examples/release-v0.3/README.md) were completed by reviewers who did not see the worked examples, then checked independently for calculations, evidence and action boundaries |
-| Additional content review | Six further packages received independent arithmetic and decision review; an infeasible production-calendar example was corrected and rechecked |
-| Profit example | The installed script runs from an unrelated working directory and exactly matches its bundled expected JSON, including USD 150 and USD 80 post-ad contribution |
-| License labels | 252 MIT packages and 96 Apache-2.0 packages; each package retains applicable upstream texts and notices |
-| Dependency audit | `npm audit --omit=dev`: 0 vulnerabilities; this repository has no third-party npm runtime dependencies |
+## Scope
 
-The nine behavior cases are a selected offline sample, not a benchmark across all 348 skills, models or clients. Worked examples are reference cases rather than automated model evaluations. HTML examples are complete drafts; email-client, browser and print rendering are marked unexecuted where applicable. The secret scanner is a limited pattern check, not a security certification.
+The update adds six original image-production packages and six original video-production packages, each with English/Chinese instructions, a synthetic worked example, production references and a bundled MIT license. The existing image prompt guide now resolves the current tool's interface instead of assuming one tool name, fixed resolution or upload mechanism.
 
-Real merchant data, live store writes, advertising or email execution, paid APIs, generated media, signup attribution and traffic/conversion lift are not verified by this release. Hosted ShopChief workflows are released separately. See the [GitHub package-check workflow](https://github.com/ai-project-official/shopchief-commerce-skills/actions/workflows/validate.yml) for checks attached to published commits.
+The library has 360 distinct packages in ten categories. Product images/design has 14 packages and product video/animation has 13; both include planning and review helpers as well as production workflows. The remaining content category has 58 packages. Renaming a category does not add a skill.
+
+## Executable video helper
+
+The optional Python-standard-library Runway helper in `product-image-to-video` provides offline request validation, one explicit billable submission, a durable receipt, resumable status lookup and output download. Its request/task/output contract was checked against the official documentation on 2026-10-05. Model access and current supported parameters still require a check at execution time.
+
+Ten offline lifecycle scenarios passed using simulated provider responses: dry run without a request; receipt persistence; duplicate-submission prevention; status lookup using the same task ID; truncated download rejection; partial cleanup after timeout; exact-byte download on retry; existing-file preservation; unknown-submission receipt preservation; and rejection of an HTTP output redirect. These simulations do not establish real provider acceptance or video quality.
+
+## Validation boundary
+
+The full catalog and package validator passed for 360 skills. All twelve new entrypoints passed the skill-creator format validator. The twelve packages were installed from the local release source into fresh Codex and Claude Code project directories using skills CLI 1.7.0; each client's 62 package files matched source bytes, with no symlinks. The npm dependency audit reported zero vulnerabilities; no runtime npm dependency was added.
+
+[Two independent fresh-input cases](examples/release-v0.4/README.md) checked exact bundle membership/scale and a changed-price, changed-duration German video. Both produced concrete specifications without inventing source inspection, generated files or measured audio. A video-localization clarification was added from the review. These are selected offline checks, not a benchmark across the library.
+
+Package validation checks catalog coverage, entrypoint names, bundled licenses, relative links, attribution parameters and limited secret patterns. Worked examples are synthetic production specifications, not fabricated merchant results or claims that media has been generated.
+
+No paid generation jobs, live store writes, advertising publication or actual voice cloning are part of this release acceptance. Image fidelity, video coherence, audio synchronization and playback must be inspected on real generated outputs before delivery. The library includes workflows and an optional provider adapter; it does not include provider accounts or credits.
 
 ## Reproduce package checks
 
 ```sh
 python3 scripts/build_catalog.py --check
 python3 scripts/validate.py
-python3 skills/profit-margin-analyzer/scripts/profit_report.py --demo
+python3 skills/product-image-to-video/scripts/runway_video.py --help
 npm audit --omit=dev
 ```
 
-For an independent Codex installation, use a disposable project folder and the README installation command. Check that the selected skill's `LICENSE`, references and `assets/` files are present before running its example. Other clients may use different installation locations. To reproduce a behavior case, give the named skill and fresh input to an agent without supplying the captured output, then compare the evidence and calculations.
+Use the [media guide](docs/media-production.md) for task selection and the installed package's worked example for a complete input/prompt/timeline specification. Run the helper's `submit` command without `--execute` for offline payload checks. Executing billable generation requires the user's authorized scope and provider setup.

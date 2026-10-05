@@ -2,7 +2,7 @@
 
 面向独立站和 DTC 卖家的 **300+ 开源 AI 技能**。从选品、建站、搜索与广告，到客户留存、利润、库存和售后，把具体经营任务变成有依据、可审核的交付物。
 
-[English](README.md) · [复制安装指令](#一键复制安装) · [按任务查找](docs/catalog.md) · [组合工作流](docs/playbooks.md) · [完整案例](examples/README.md) · [ShopChief 官网](https://shopchief.ai/?utm_source=github&utm_medium=opensource&utm_campaign=commerce_skills&utm_content=readme_zh)
+[English](README.md) · [复制安装指令](#一键复制安装) · [生图与视频](docs/media-production.zh-CN.md) · [按任务查找](docs/catalog.md) · [组合工作流](docs/playbooks.md) · [完整案例](examples/README.md) · [ShopChief 官网](https://shopchief.ai/?utm_source=github&utm_medium=opensource&utm_campaign=commerce_skills&utm_content=readme_zh)
 
 ## 一键复制安装
 
@@ -41,22 +41,26 @@ npx --yes skills@latest add ai-project-official/shopchief-commerce-skills --agen
 <!-- skill-overview:start -->
 ## 技能分类与数量
 
-**共 348 个技能，分为 8 类。** 每个技能包只计一次，中文说明和参考文件不重复计数。
+**共 360 个技能，分为 10 类。** 每个技能包只计一次，中文说明和参考文件不重复计数。
 
 | 分类 | 数量 | 典型任务 |
 |---|---:|---|
 | [研究与定位](docs/catalog.md#research-and-positioning) | 32 | 选品机会、竞品分析、顾客研究与品牌定位 |
 | [店铺与转化](docs/catalog.md#storefront-and-conversion) | 36 | Shopify 建站、商品页、结账流程与商品目录质量 |
 | [SEO、GEO 与商品 Feed](docs/catalog.md#search-visibility-and-product-feeds) | 29 | SEO 审查、AI 搜索可见性、结构化数据与购物 Feed |
-| [内容与创意](docs/catalog.md#content-and-creative) | 73 | 商品文案、图片、视频、UGC 简报与本地化 |
+| [内容与创意](docs/catalog.md#content-and-creative) | 58 | 商品文案、品牌表达、营销内容与商家文档 |
+| [商品生图与视觉设计](docs/catalog.md#product-images-and-design) | 14 | 详情页图组、场景图、套装图、促销物料、广告图与图片本地化 |
+| [商品视频与动画](docs/catalog.md#product-video-and-animation) | 13 | 图生视频、商品演示、UGC 风格短片、广告变体、多语言与循环视频 |
 | [广告与合作](docs/catalog.md#advertising-and-partnerships) | 26 | 广告规划、预算进度、达人合作与联盟营销 |
 | [邮件与客户留存](docs/catalog.md#email-and-retention) | 25 | 欢迎邮件、弃购挽回、短信、会员与复购 |
 | [经营分析与利润](docs/catalog.md#measurement-and-unit-economics) | 58 | 利润、ROAS、归因、定价与财务对账 |
 | [库存、履约与客服](docs/catalog.md#inventory-fulfillment-and-support) | 69 | 补货、采购、物流、退换货与客户服务 |
-| **合计** | **348** | |
+| **合计** | **360** | |
 <!-- skill-overview:end -->
 
 ## 从具体任务开始
+
+**需要制作商品图片或视频？** 查看[生图与视频指南](docs/media-production.zh-CN.md)，覆盖详情页图组、场景图、套装合成、促销物料、图生视频、商品演示、UGC 风格短片、多语言视频、广告变体和循环短片。新增制作技能均附中英文说明、完整提示词或时间线案例，以及成品检查方法。实际生成需要已接入的媒体工具；图生视频包另附可选的 Runway 命令行脚本。
 
 | 商家任务 | 推荐技能 | 完整案例 |
 |---|---|---|
@@ -74,7 +78,7 @@ npx --yes skills@latest add ai-project-official/shopchief-commerce-skills --agen
 | 解释支付结算差额 | [支付到账核对](skills/payment-payout-reconciliation/SKILL.md) | [交易明细、到账金额与未确认关联](skills/payment-payout-reconciliation/assets/worked-example.md) |
 | 判断达人素材能否投广告 | [达人素材付费投放](skills/creator-paid-amplification/SKILL.md) | [使用授权、日期、活动条件与投放判断](skills/creator-paid-amplification/assets/worked-example.md) |
 
-目录按研究定位、店铺转化、搜索与 Feed、内容创意、广告合作、邮件留存、经营衡量和库存售后分组。按当前任务安装即可。
+目录按研究定位、店铺转化、搜索与 Feed、内容创意、商品图片、视频动画、广告合作、邮件留存、经营衡量和库存售后分组。按当前任务安装即可。
 
 ## 安装与首次运行
 

@@ -39,7 +39,7 @@ A detail image is purely a local zoom-in based on the original product image —
 
 ## Tool Invocation
 
-- Tool: `image_generate`
+- Tool: the available image-generation/editing tool
 - planning mode: `focused_edit`
 
 ## Notes

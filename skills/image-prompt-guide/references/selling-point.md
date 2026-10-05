@@ -146,7 +146,7 @@ Create a selling-point product image that clearly highlights the product's key a
 
 ## Tool Invocation
 
-- Tool: `image_generate`; pass explicit `input_images` when the user supplied product images, otherwise omit references for text-to-image
+- Tool: the available image-generation/editing tool; pass the exact product sources through its documented reference mechanism when supplied; use the documented text-to-image route only when no product reference is required
 - planning mode: see tier/layout tables above
 
 ## Notes
@@ -160,4 +160,4 @@ Create a selling-point product image that clearly highlights the product's key a
 - **No fabrication of occluded areas**: only base selling points on what is actually visible in the original image
 - **Keep copy concise**: L1 ≤4 words, L2/L3 ≤6 words
 - **User selling points take priority**: when user provides specific selling points, execute directly without confirmation
-- **Platform image set rule**: when called within a platform image set workflow and the user uploaded product images, call `image_generate` with those exact images in `input_images`
+- **Platform image set rule**: when called within a platform image set workflow and the user uploaded product images, pass those exact images through the available editing tool's documented reference mechanism
